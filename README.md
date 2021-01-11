@@ -1,5 +1,5 @@
 # CMS-Restaurant-Pantera
 CMS project by pantera Team: 
 - JANSEN Caroline
-- DAEMS Aline
+- DAEMS Aline.
 - BENARD Austin
