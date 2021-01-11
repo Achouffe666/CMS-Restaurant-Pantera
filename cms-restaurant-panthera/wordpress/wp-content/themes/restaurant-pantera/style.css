@@ -1,8 +1,11 @@
 body {
-  color: red; }
-  body p {
-    color: blue; }
-    body p a {
-      color: yellow; }
+  color: red;
+}
+body p {
+  color: yellow;
+}
+body p a {
+  color: blue;
+}
 
 /*# sourceMappingURL=style.css.map */
