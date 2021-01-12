@@ -8,10 +8,6 @@ wp_enqueue_style("bootstrap");
 wp_enqueue_script("bootstrap");
 }
 
-<<<<<<< HEAD
-add_action("wp_enqueue_scripts", "montheme_register_assets");
-add_theme_support( 'title-tag' );
-=======
 add_action("wp_enqueue_scripts", "pantera_register_assets");
 
 add_theme_support("post-thumbnails");
@@ -28,4 +24,3 @@ register_nav_menus( array(
         array(), 
         '1.0'
     );
->>>>>>> 0a50d9f2c991f2d2fe3430e8048b885cfe1b2f32
