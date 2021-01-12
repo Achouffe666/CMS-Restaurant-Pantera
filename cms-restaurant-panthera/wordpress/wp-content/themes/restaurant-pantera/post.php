@@ -1,7 +1,7 @@
 /*
-  Template Name: archive
+  Template Name: Posts
 */
 <?php
 get_header() ?>
-archive
+Post type
 <?php get_footer() ?>

@@ -1,7 +1,7 @@
 /*
-  Template Name: archive
+  Template Name: Single
 */
 <?php
 get_header() ?>
-archive
+Single
 <?php get_footer() ?>

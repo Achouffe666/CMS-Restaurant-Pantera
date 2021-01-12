@@ -1,3 +1,6 @@
+/*
+  Template Name: 404
+*/
 <?php
 get_header() ?>
 Test
