@@ -1,6 +1,16 @@
+.menu {
 
-body{color: red;
-p{
-    color:yellow;
-    a{color: blue;}
-} }
+    ul{ display:flex;
+    
+    li{
+        list-style-type: none;
+       padding: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        &:link {text-decoration:none; 
+        color: black; }
+        
+    }}
+}
