@@ -1,0 +1,63 @@
+Header: tous les elements sont communs sauf l'image d'arriére plan
+front-page: 
+
+** Banner top  ***
+	* Subtitle + Main Title + Img + Intern Link
+	* 3 X Icon + Title + Text
+*** Intro ***
+	* Left : Image
+	* Right : Title + Subtitle + Text + Signature (Subtitle + title)
+*** 3 Restaurants ***
+	See the posts Restaurants.
+*** Our Menu ***
+	* 4 X Img
+	* Subtitle + Title + + Text + Intern Link
+*** Testimony ***
+	* Repeater :
+		- Image
+		- Text
+		- Name
+*** Recipes Blog ***
+	See Posts Recipes
+
+    posts restaurants: 
+
+    *** Banner top  ***
+	Subtitle + Main Title + Img + Intern Link
+*** Banner Presentation ***
+	Subtitle + Title
+	Repeater :
+		- Image + Subtitle + Title + Wysiwig
+	(The first repeater text has to be called in the Front-page presentation)
+*** Location ***
+	Subtitle + Title
+	Map (for the map you can just copy the map image ;)), but if you're brave, you can download a plugin to set up a map and link it with Leaflet.
+*** Reservation ***
+	Subtitle + Title + Image
+*** Our Menu ***
+	Take the fields from the front-page
+
+    Page Menu: 
+
+    *** Banner top  ***
+	Subtitle + Main Title + Img + Intern Link
+*** The Menu ***
+	Subtitle + Title
+	Repeater :
+		- Title
+		- Repeater :
+			- Title + Text + Price
+
+            single recipe: 
+
+            *** Banner top  ***
+	Category
+	Text
+	Image
+*** Ingredients ***
+	Wysiwyg
+*** Instructions ***
+	Repeater :
+		- Wysiwyg
+		- Image (optionnal)
+	(NB: on the left of each row of the repeater, you must add a number in order to separate each step of the recipe)
