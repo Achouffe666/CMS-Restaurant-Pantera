@@ -12,21 +12,11 @@ Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
 }
 .menu ul a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .menu ul a:link {
   text-decoration: none;
-  color: white;
-}
-.menu ul img {
-  width: 15px;
-}
-
-header {
-  background-image: url("images/banner-top.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 100vw;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
