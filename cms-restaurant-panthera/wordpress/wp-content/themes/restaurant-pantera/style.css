@@ -3,5 +3,20 @@ Theme Name: pantera-restaurant
 Description: Becode project
 Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
 */
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.menu ul a {
+  text-decoration: none;
+  color: black;
+}
+.menu ul a:link {
+  text-decoration: none;
+  color: black;
+}
 
 /*# sourceMappingURL=style.css.map */
