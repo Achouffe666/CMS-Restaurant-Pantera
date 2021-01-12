@@ -1,16 +1,25 @@
+/*
+Theme Name: pantera-restaurant
+Description: Becode project
+Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
+*/
 .menu {
 
-    ul{ display:flex;
-    
-    li{
-        list-style-type: none;
-       padding: 10px;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        &:link {text-decoration:none; 
-        color: black; }
+    ul{ 
         
-    }}
+        display:flex;
+    
+        li{
+            list-style-type: none;
+        padding: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            &:link {
+                text-decoration:none; 
+                color: black; 
+            }
+        }
+    }
 }
