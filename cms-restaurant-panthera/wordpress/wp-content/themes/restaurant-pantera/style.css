@@ -7,19 +7,24 @@ body {
   font-family: "Poppins", sans-serif !important; }
 
 .menu ul {
-  display: flex; }
-  .menu ul li {
-    list-style-type: none;
-    padding: 10px; }
-  .menu ul a {
-    text-decoration: none;
-    color: white; }
-    .menu ul a:link {
-      text-decoration: none;
-      color: white; }
-  .menu ul img {
-    width: 15px;
-    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%); }
+  display: flex;
+}
+.menu ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.menu ul a {
+  text-decoration: none;
+  color: white;
+}
+.menu ul a:link {
+  text-decoration: none;
+  color: white;
+}
+.menu ul img {
+  width: 15px;
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(2000%) contrast(100%);
+}
 
 header {
   background-image: url("images/banner-top.jpg");
