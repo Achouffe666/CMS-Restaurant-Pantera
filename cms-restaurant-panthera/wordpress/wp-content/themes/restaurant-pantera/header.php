@@ -9,7 +9,7 @@
     <?php wp_head() ?>
     <title>Restaurant Pantera</title>
 </head>
-<body>
+<body <?php body_class();?>>
 <header>
 <div class="container navbar">
 <h1><a href="<?php echo home_url( '/' ); ?>">Pantera Restaurant</a></h1>

@@ -3,9 +3,10 @@ Theme Name: pantera-restaurant
 Description: Becode project
 Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
 */
-.menu {
-  font-family: "Poppins", sans-serif;
+body {
+  font-family: "Poppins", sans-serif !important;
 }
+
 .menu ul {
   display: flex;
 }
@@ -23,6 +24,7 @@ Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
 }
 .menu ul img {
   width: 15px;
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
 }
 
 header {
