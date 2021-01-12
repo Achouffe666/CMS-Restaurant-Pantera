@@ -4,23 +4,21 @@ Description: Becode project
 Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
 */
 body {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif !important; }
 
-.menu {
-  font-family: "Poppins", sans-serif; }
-  .menu ul {
-    display: flex; }
-    .menu ul li {
-      list-style-type: none;
-      padding: 10px; }
-    .menu ul a {
+.menu ul {
+  display: flex; }
+  .menu ul li {
+    list-style-type: none;
+    padding: 10px; }
+  .menu ul a {
+    text-decoration: none;
+    color: white; }
+    .menu ul a:link {
       text-decoration: none;
       color: white; }
-      .menu ul a:link {
-        text-decoration: none;
-        color: white; }
-    .menu ul img {
-      width: 15px; }
+  .menu ul img {
+    width: 15px; }
 
 header {
   background-image: url("images/banner-top.jpg");
