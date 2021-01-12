@@ -9,4 +9,4 @@ wp_enqueue_script("bootstrap");
 }
 
 add_action("wp_enqueue_scripts", "montheme_register_assets");
-
+add_theme_support( 'title-tag' );
