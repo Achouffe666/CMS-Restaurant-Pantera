@@ -11,7 +11,7 @@
 
 <?php get_footer(); ?>
 <div class="container-fluid">
-    <divc class="container">
+    <div class="container">
         <div class="row">
         <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 quality">
             <h1> Article </h1></p>
