@@ -19,8 +19,14 @@
     <p>For Happy Day</p>
     <p class="upp"> Enjoy <br/>Happy  meal </p>
 </div>
+<div class="left-bars">
+    <div class="bars bars-1"></div>
+    <div class="bars bars-2"></div>
+    <div class="bars bars-3"></div>
+    <div class="bars bars-4"></div>
+</div>
 <div class="subtitle">
-<a href="#"> - Check our menu </a>
+<div class="white-bar"></div><a href="#"> Check our menu </a>
 </div>
 <div class="hachures-blanches"></div>
 </header>
