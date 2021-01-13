@@ -53,3 +53,24 @@ register_nav_menus( array(
     
       echo '</nav>';
     }
+
+  
+function pantera_init() {
+register_taxonomy("cuisine","post", [ "labels" => [ 'name' => 'Cuisine',
+'singular_name'     => 'Cuisine',
+'plural_name'       => 'Cuisines',
+'search_items'      => 'Rechercher les cuisines',
+'all_items'         => 'Toutes les cuisines',
+'edit_item'         => 'Editer lescuisines',
+'update_item'       => 'Mettre à jour la cuisine',
+'add_new_item'      => 'Ajouter uune nouvelle cuisine',
+'new_item_name'     => 'Ajouter une nouvelle cuisine',
+'menu_name'         => 'Cuisine',
+],
+'show_in_rest' => true,
+'hierarchical' => true,
+'show_admin_column' => true,
+]);
+};
+    
+add_action("init", "pantera_init");
