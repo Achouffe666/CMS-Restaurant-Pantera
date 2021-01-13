@@ -3,6 +3,7 @@
 <div class="container home">
 bla bla bla bla bla
 
+
 	<?php $i=0; if( have_posts() ) : while( have_posts() ) : the_post();
 	if ($i==0){ $i++;
 
@@ -54,5 +55,13 @@ else{?><div class="container col-xs-12 col-sm-12">
 }
 ?>
 
-	<?php endwhile; endif; ?></div>
+
+	<?php endwhile; endif; ?>
+	<?= pantera_pagination(); ?>
+
+
+
+
+</div>
+
 <?php get_footer(); ?>
