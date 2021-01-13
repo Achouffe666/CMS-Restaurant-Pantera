@@ -9,9 +9,9 @@ wp_enqueue_script("bootstrap");
 }
 
 add_action("wp_enqueue_scripts", "pantera_register_assets");
-
 add_theme_support("post-thumbnails");
 add_theme_support("title-tag");
+
 
 register_nav_menus( array(
 'main' => 'Menu Principal',
