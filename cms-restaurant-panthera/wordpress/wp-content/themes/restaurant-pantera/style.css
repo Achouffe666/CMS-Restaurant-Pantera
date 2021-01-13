@@ -104,7 +104,16 @@ h1 {
 
 .quality {
   border: 1px solid lightgray;
-  border-radius: 15px 15px 0px 0px;
-}
+  border-radius: 15px 15px 0px 0px; }
+
+.footer {
+  margin-left: 10% !important;
+  margin-right: 10% !important; }
+  .footer .sub-footer h6 {
+    margin-bottom: 25px;
+    font-weight: bolder;
+    font-size: larger; }
+  .footer .sub-footer .media-links {
+    list-style-type: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -146,3 +146,17 @@ body {
     border: 1px solid rgb(211, 211, 211);
     border-radius: 15px 15px 0px 0px;
 }
+.footer{
+    margin-left: 10%!important;
+    margin-right: 10%!important;
+    .sub-footer{
+      h6{
+          margin-bottom: 25px;
+          font-weight: bolder;
+          font-size: larger;
+      }
+      .media-links{ list-style-type: none;
+    }
+    }
+
+}
