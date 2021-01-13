@@ -3,11 +3,17 @@ Theme Name: pantera-restaurant
 Description: Becode project
 Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   font-family: "Poppins", sans-serif !important; }
 
 .menu {
   width: 50%;
+  margin-top: 25px;
 }
 .menu ul {
   display: flex;
@@ -34,18 +40,23 @@ header {
   background-image: url("images/banner-top.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 100vw; }
+  height: 58vw;
+}
 
 .menubar {
   width: 100%;
 }
 
+h1 {
+  margin-top: 25px !important;
+}
 h1 a {
   text-decoration: none;
   color: white;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   margin-left: 150px;
+  font-weight: bolder;
 }
 h1 a:link {
   text-decoration: none;
@@ -54,6 +65,42 @@ h1 a:link {
 }
 h1 a:hover {
   color: white;
+}
+
+.first-title {
+  color: white;
+  font-size: 55px;
+  margin-left: 165px;
+  margin-top: 50px;
+}
+.first-title .upp {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.subtitle a {
+  margin-left: 165px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.subtitle alink {
+  text-decoration: none;
+}
+
+.hachures-blanches {
+  background-image: url("images/hachures-blanches-1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 250px;
+  margin-top: 350px;
+}
+
+.quality {
+  border: 1px solid black;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
