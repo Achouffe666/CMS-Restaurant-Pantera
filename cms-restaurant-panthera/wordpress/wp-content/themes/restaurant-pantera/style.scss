@@ -5,6 +5,10 @@ Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
 */
 $Poppins: 'Poppins', sans-serif;
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body {
     font-family: $Poppins!important;
 
@@ -13,6 +17,7 @@ body {
     .menu {
 
         width:50%;
+        margin-top:25px;
 
         ul{ 
             
@@ -44,26 +49,29 @@ body {
         background-image:url('images/banner-top.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 55vw;
+        height: 58vw;
         
     }
     .menubar {
 
         width:100%;
+        
     }
 
     h1 {
-
+        margin-top:25px!important;
         a {
             text-decoration: none;
             color:white;
             font-family: $Poppins;
             text-transform: uppercase;
             margin-left:150px;
+            font-weight: bolder;
+            
             &:link{
-                 text-decoration: none;
-                 color:white;
-                 font-family: $Poppins;
+                text-decoration: none;
+                color:white;
+                font-family: $Poppins;
                 }
             &:hover {
                 color:white;
@@ -71,3 +79,45 @@ body {
            
         }
     }
+
+.first-title {
+
+    color: white;
+    font-size: 55px;
+    margin-left: 165px;
+    margin-top: 50px;
+    .upp {
+        text-transform: uppercase;
+        font-size: 100px;
+        font-weight: bolder;
+        
+    }
+}
+
+.subtitle {
+
+    a {
+        margin-left:165px; 
+        text-decoration: none;
+        color:white;
+        font-size:20px;
+        &link {
+            text-decoration: none;
+        }
+    }
+}
+
+.hachures-blanches {
+    background-image: url("images/hachures-blanches-1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 250px;
+    margin-top:350px;
+}
+
+.quality {
+
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 15px 15px 0px 0px;
+}

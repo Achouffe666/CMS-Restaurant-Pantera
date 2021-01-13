@@ -15,4 +15,12 @@
 <h1><a href="<?php echo home_url( '/' ); ?>">Pantera Restaurant</a></h1>
 <div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div>
 </div>
+<div class="first-title">
+    <p>For happy Day</p>
+    <p class="upp"> Enjoy <br/>Happy meal </p>
+</div>
+<div class="subtitle">
+<a href="#"> - Check our menu </a>
+</div>
+<div class="hachures-blanches"></div>
 </header>
