@@ -9,7 +9,7 @@
 <ul class="nav nav-pills my-6">
     <?php foreach($cuisines as $cuisine): ?>
 		 <li class="nav-item">
-		<a href="<?= get_term_link($cuisine) ?>" class="nav-link <?= is_tax('sport', $cuisine->term_id) ? 'active' : '' ?>"><?= $cuisine->name ?></a>
+		<a href="<?= get_term_link($cuisine) ?>" class="nav-link <?= is_tax('cuisine', $cuisine->term_id) ? 'active' : '' ?>"><?= $cuisine->name ?></a>
     </li>
     <?php endforeach; ?>
 </ul></div>
