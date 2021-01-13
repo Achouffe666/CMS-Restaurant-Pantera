@@ -94,18 +94,49 @@ body {
         
     }
 }
+.left-bars{
+    margin-top: -75px;
+    margin-left: 20px;
+    .bars{
+        width: 10px;
+        height: 2px;
+        background-color: silver;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .bars-3{
+        background-color: white;
+        width: 40px;
+    }
+}
 
 .subtitle {
-
+    display: flex;
     a {
-        margin-left:165px; 
+        margin-left:65px; 
         text-decoration: none;
         color:white;
         font-size:20px;
         &link {
             text-decoration: none;
         }
+        
     }
+    .white-bar{
+        height: 2px;
+        width: 75px;
+        background-color: white;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 165px;
+    }
+}
+
+.foods-cards {
+
+    width: 90%;
+    align-items: center;
+    display:flex;
 }
 
 .hachures-blanches {
@@ -114,7 +145,7 @@ body {
     background-size: 100%;
     width: 100%;
     height: 250px;
-    margin-top:350px;
+    margin-top:390px;
 }
 
 .quality {
@@ -123,4 +154,11 @@ body {
     border-radius: 15px 15px 0px 0px;
     margin-left: 10px;
     margin-right: 10px;
+    width: 30%;
+    
+}
+
+.row {
+
+    flex-wrap: nowrap!important;
 }

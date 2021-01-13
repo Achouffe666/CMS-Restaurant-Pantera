@@ -1,17 +1,15 @@
-
 <?php get_header(); ?>
 
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
     
-    	<h1><?php the_title(); ?></h1>
+    	
     
     	<?php the_content(); ?>
 
 	<?php endwhile; endif; ?>
 
-<?php get_footer(); ?>
 <div class="container-fluid">
-    <div class="container">
+    <div class="container foods-cards">
         <div class="row">
         <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4 quality">
             <h1> Article </h1></p>
