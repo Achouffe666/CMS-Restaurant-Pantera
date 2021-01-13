@@ -16,8 +16,8 @@
 <div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div>
 </div>
 <div class="first-title">
-    <p>For Happy Day</p>
-    <p class="upp"> Enjoy <br/>Happy  meal </p>
+    <p>For happy Day</p>
+    <p class="upp"> Enjoy <br/>Happy meal </p>
 </div>
 <div class="left-bars">
     <div class="bars bars-1"></div>
