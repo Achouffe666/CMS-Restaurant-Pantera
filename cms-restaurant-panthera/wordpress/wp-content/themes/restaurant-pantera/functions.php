@@ -8,6 +8,7 @@ wp_enqueue_style("bootstrap");
 wp_enqueue_script("bootstrap");
 }
 
+add_action("after_setup_theme", "pantera_supports");
 add_action("wp_enqueue_scripts", "pantera_register_assets");
 add_theme_support("post-thumbnails");
 add_theme_support("title-tag");
