@@ -1,6 +1,4 @@
-/*
-  Template Name: archive
-*/
+
 <?php
 get_header() ?>
 archive
