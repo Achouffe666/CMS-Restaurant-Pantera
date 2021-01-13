@@ -108,4 +108,17 @@ h1 a:hover {
   background: #F5F5F5;
 }
 
+.home .container {
+  padding: 2%;
+}
+.home img {
+  width: 100%;
+}
+.home .reset {
+  padding: 0;
+}
+.home .card-body {
+  padding: 3% 3% 0 3%;
+}
+
 /*# sourceMappingURL=style.css.map */
