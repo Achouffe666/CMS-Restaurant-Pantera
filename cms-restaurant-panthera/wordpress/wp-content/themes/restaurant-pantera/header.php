@@ -32,6 +32,6 @@
 </div>
 
 </header>
-<div class="hachures-blanches"></div>
+
 
 
