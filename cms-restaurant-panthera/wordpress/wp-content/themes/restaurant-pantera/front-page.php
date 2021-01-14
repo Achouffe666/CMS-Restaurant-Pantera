@@ -30,7 +30,7 @@
     </div>
 </div>
 
-<!-- <div class="the-chef">
+<div class="the-chef">
     <img src="<?php echo get_template_directory_uri(); ?>/images/the-chef.jpg" alt="the-chef" class="">
     <div class="story">
         <p class="title-story">Discover</p>
@@ -42,7 +42,7 @@
        <p class="founder">Our founder</p>
        <p class="author">The Chef</p>
     </div>
-</div> -->
+</div>
 
 
 <?php get_footer() ?>
