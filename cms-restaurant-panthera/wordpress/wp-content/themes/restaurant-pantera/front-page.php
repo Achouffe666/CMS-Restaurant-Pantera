@@ -8,7 +8,7 @@
 
     <?php endwhile; endif; ?>
     
-
+<main class="bg-white">
     <div class="container-fluid card-main-box">
     
         <div class="container row  col-xs-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
@@ -70,8 +70,8 @@
 
     <div class="burger-party">
 
-    
+
     </div>
 
-
+</main>
 <?php get_footer() ?>
