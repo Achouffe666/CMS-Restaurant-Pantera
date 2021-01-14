@@ -1,118 +1,105 @@
 
-.container-fluid {
+.card-main-box {
 
-    margin-top: -150px;
+    margin-top: -200px;
+}
+
+.quality-cards {
+
+    margin-right:15px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 0px solid black !important;
+    border-radius: 50px 50px 0px 0px!important;
+    
+
+    
+
+    .quality-food-icon {
+
+        width: 20%;
+        margin-top:50px;
+        margin-left:auto;
+        margin-right:auto;
+    
+    
+    }
+
+    .quality-title{
+        text-align: center;
+        font-size:25px;
+        font-weight: bolder;
+    }
+
+    .quality-text{
+        text-align: center;
+        margin-bottom:20px!important;
+        font-size: 16px;
+        font-weight: lighter;
+        margin-top:25px;
+    }
+}
+
+.the-chef{
+
+    .story {
+
+        border:none!important;
+    }
+
+.story-card {
+
+    margin-left:-200px;
+    margin-top: 150px;
    
 
-    .foods-cards {
 
-        
-        
-
-        .front-page-cards {
-
-            flex-wrap: nowrap!important;
-           
-        }
-
-        .quality {
-
-            border: 1px solid rgb(211, 211, 211);
-            border-radius: 30px 30px 0px 0px;
-            margin-left: 10px;
-            margin-right: 10px;
-            width: 40%;
-            background-color:white;
-            background-size: 150px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            
-        
-            h1{
-                font-size:25px;
-                font-weight: bolder;
-                text-transform: uppercase;
-            }
-            .quality-food-icon{
-                margin-top:15px;
-                
-            }
-            p{
-
-                text-align: center;
-                margin-left:15px;
-                margin-right:15px;
-                margin-bottom:25px;
-            }
-        }
-
-    
-
-    }
 }
 
-.the-chef {
+.chef-img {
 
-    margin-top: 50px;
-    display:flex;
-    z-index: 0;
-    margin-left: 200px;
-    
+    position:relative;
+}
+
+.discover-title {
+
+    font-size: 42px;
+    margin-top: auto;
+    margin-left:70px;
     
 }
 
-.story {
+.story-title {
 
-    background-color: white;
-    border: 1px solid rgb(211, 211, 211);
-    position: absolute;
-    width: 850px;
-    height: 550px;
-    margin-left: 600px;
-    margin-top:250px;
-    
+    font-size: 46px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left:70px;
+}
+.story-subtitle{
 
-    p {
-        margin-left: 100px;
-        margin-right: 80px;
-        margin-bottom:0px;
-        margin-top:15px;
-        font-size:16px;
-        font-weight:light
-        
-        
-       
-        
-    }
+    @extend .story-title;
+    font-size:16px;
+    margin-left:70px;
+    margin-top:15px;
+}
 
-    .title-story {
-        font-size: 42px;
-        margin-top: 80px;
-        
-    }
-    .our-story {
-        font-size: 46px;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-top:0px;
-    }
-    
-    .subtitle-story {
-    
-        font-weight: bolder;
-        text-transform: uppercase;
-    }
-    .founder {
-        text-transform: uppercase;
-        font-weight: bolder;
-        margin-top:40px;
-        font-size:12px;
-    }
-    .author {
-        font-size: 40px;
-        margin-top:0px;
-        margin-bottom:25px;
-    }
+.story-text {
+
+    @extend .story-subtitle;
+    font-weight: lighter;
+    text-transform: initial;
+
+}
+
+.story-founder{
+    @extend .story-subtitle;
+    font-size:12px;
+}
+}
+
+.burger-party {
+
+    background-image: url('images/burger-party.png');
 }

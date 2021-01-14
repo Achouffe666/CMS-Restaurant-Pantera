@@ -109,75 +109,74 @@ h1 {
   z-index: 1;
   transform: translateY(-95%); }
 
-.container-fluid {
-  margin-top: -150px; }
-  .container-fluid .foods-cards .front-page-cards {
-    flex-wrap: nowrap !important; }
-  .container-fluid .foods-cards .quality {
-    border: 1px solid lightgray;
-    border-radius: 30px 30px 0px 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 40%;
-    background-color: white;
-    background-size: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .container-fluid .foods-cards .quality h1 {
-      font-size: 25px;
-      font-weight: bolder;
-      text-transform: uppercase; }
-    .container-fluid .foods-cards .quality .quality-food-icon {
-      margin-top: 15px; }
-    .container-fluid .foods-cards .quality p {
-      text-align: center;
-      margin-left: 15px;
-      margin-right: 15px;
-      margin-bottom: 25px; }
+.card-main-box {
+  margin-top: -200px;
+}
 
-.the-chef {
-  margin-top: 50px;
+.quality-cards {
+  margin-right: 15px;
   display: flex;
-  z-index: 0;
-  margin-left: 200px; }
+  justify-content: center;
+  flex-direction: column;
+  border: 0px solid black !important;
+  border-radius: 50px 50px 0px 0px !important;
+}
+.quality-cards .quality-food-icon {
+  width: 20%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quality-cards .quality-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.quality-cards .quality-text {
+  text-align: center;
+  margin-bottom: 20px !important;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 25px;
+}
 
-.story {
-  background-color: white;
-  border: 1px solid lightgray;
-  position: absolute;
-  width: 850px;
-  height: 550px;
-  margin-left: 600px;
-  margin-top: 250px; }
-  .story p {
-    margin-left: 100px;
-    margin-right: 80px;
-    margin-bottom: 0px;
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: light; }
-  .story .title-story {
-    font-size: 42px;
-    margin-top: 80px; }
-  .story .our-story {
-    font-size: 46px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 0px; }
-  .story .subtitle-story {
-    font-weight: bolder;
-    text-transform: uppercase; }
-  .story .founder {
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-top: 40px;
-    font-size: 12px; }
-  .story .author {
-    font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 25px; }
+.the-chef .story {
+  border: none !important;
+}
+.the-chef .story-card {
+  margin-left: -200px;
+  margin-top: 150px;
+}
+.the-chef .chef-img {
+  position: relative;
+}
+.the-chef .discover-title {
+  font-size: 42px;
+  margin-top: auto;
+  margin-left: 70px;
+}
+.the-chef .story-title, .the-chef .story-subtitle, .the-chef .story-founder, .the-chef .story-text {
+  font-size: 46px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+.the-chef .story-subtitle, .the-chef .story-founder, .the-chef .story-text {
+  font-size: 16px;
+  margin-left: 70px;
+  margin-top: 15px;
+}
+.the-chef .story-text {
+  font-weight: lighter;
+  text-transform: initial;
+}
+.the-chef .story-founder {
+  font-size: 12px;
+}
+
+.burger-party {
+  background-image: url("images/burger-party.png");
+}
 
 .bg {
   border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
@@ -319,5 +318,48 @@ h1 {
         background-color: silver; }
       .foot .footer .footer-bottom p {
         padding-top: 2%; }
+
+.menu-overview {
+  text-align: center;
+  background: white;
+}
+.menu-overview .content {
+  padding: 10% 0 10% 0;
+}
+.menu-overview .card-text {
+  padding: 2%;
+}
+.menu-overview .card-body {
+  padding-left: 10%;
+}
+.menu-overview .button {
+  padding-top: 10%;
+}
+.menu-overview .img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(2, 50%);
+  gap: 8px;
+}
+.menu-overview .img-grid img {
+  width: auto;
+  height: 200px;
+}
+.menu-overview .img-grid .grid1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.menu-overview .img-grid .grid2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.menu-overview .img-grid .grid3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.menu-overview .img-grid .grid4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
 
 /*# sourceMappingURL=style.css.map */
