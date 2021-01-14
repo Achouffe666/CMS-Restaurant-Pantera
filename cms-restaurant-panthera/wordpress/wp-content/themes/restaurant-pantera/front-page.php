@@ -9,7 +9,7 @@
 	<?php endwhile; endif; ?>
 
 <div class="container-fluid">
-    <div class="container foods-cards">
+    <div class="container foods-cards ">
         <div class="row front-page-cards d-flex justify-content-center">
         <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5 quality">
         <img src="<?php echo get_template_directory_uri(); ?>/svg/quality-food.svg" alt="quality-food-icon" class="quality-food-icon">

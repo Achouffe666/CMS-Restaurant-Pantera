@@ -1,17 +1,219 @@
-/* Error: expected "{".
- *     ,
- * 247 | <<<<<<< HEAD
- *     |             ^
- *     '
- *   style.scss 247:13  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 247 \2502  <<<<<<< HEAD\d\a     \2502              ^\a     \2575 \a   style.scss 247:13  root stylesheet';
+/*
+Theme Name: pantera-restaurant
+Description: Becode project
+Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
+*/
+* {
+  margin: 0px;
+  padding: 0px;
 }
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.menu {
+  width: 50%;
+  margin-top: 25px;
+}
+.menu ul {
+  display: flex;
+  width: 100%;
+}
+.menu ul li {
+  list-style-type: none;
+  margin: 4%;
+}
+.menu ul a {
+  text-decoration: none;
+  color: white;
+}
+.menu ul a:link {
+  text-decoration: none;
+  color: white;
+}
+.menu ul img {
+  width: 15px;
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(2000%) contrast(100%);
+}
+
+header {
+  background-image: url("images/banner-top.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 58vw;
+}
+
+.menubar {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 25px !important;
+}
+h1 a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-left: 150px;
+  font-weight: bolder;
+}
+h1 a:link {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+h1 a:hover {
+  color: white;
+}
+
+.first-title {
+  color: white;
+  font-size: 55px;
+  margin-left: 165px;
+  margin-top: 50px;
+}
+.first-title .upp {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.left-bars {
+  margin-top: -75px;
+  margin-left: 20px;
+}
+.left-bars .bars {
+  width: 10px;
+  height: 2px;
+  background-color: silver;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.left-bars .bars-3 {
+  background-color: white;
+  width: 40px;
+}
+
+.subtitle {
+  display: flex;
+}
+.subtitle a {
+  margin-left: 65px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.subtitle alink {
+  text-decoration: none;
+}
+.subtitle .white-bar {
+  height: 2px;
+  width: 75px;
+  background-color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 165px;
+}
+
+.hachures-blanches {
+  background-image: url("images/hachures-blanches-1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 250px;
+  margin-top: 390px;
+}
+
+.container-fluid {
+  margin-top: -150px;
+}
+.container-fluid .foods-cards .front-page-cards {
+  flex-wrap: nowrap !important;
+}
+.container-fluid .foods-cards .quality {
+  border: 1px solid lightgray;
+  border-radius: 30px 30px 0px 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 40%;
+  background-color: white;
+  background-size: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-fluid .foods-cards .quality h1 {
+  font-size: 25px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.container-fluid .foods-cards .quality .quality-food-icon {
+  margin-top: 15px;
+}
+.container-fluid .foods-cards .quality p {
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.the-chef {
+  margin-top: 50px;
+  display: flex;
+  z-index: 0;
+  margin-left: 200px;
+}
+
+.story {
+  background-color: white;
+  border: 1px solid lightgray;
+  position: absolute;
+  width: 850px;
+  height: 550px;
+  margin-left: 600px;
+  margin-top: 250px;
+}
+.story p {
+  margin-left: 100px;
+  margin-right: 80px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: light;
+}
+.story .title-story {
+  font-size: 42px;
+  margin-top: 80px;
+}
+.story .our-story {
+  font-size: 46px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+.story .subtitle-story {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.story .founder {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-top: 40px;
+  font-size: 12px;
+}
+.story .author {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 599px) {
+  .front-page-cards {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
