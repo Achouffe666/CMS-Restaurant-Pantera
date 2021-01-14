@@ -80,14 +80,47 @@ h1 a:hover {
   font-weight: bolder;
 }
 
+.left-bars {
+  margin-top: -75px;
+  margin-left: 20px;
+}
+.left-bars .bars {
+  width: 10px;
+  height: 2px;
+  background-color: silver;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.left-bars .bars-3 {
+  background-color: white;
+  width: 40px;
+}
+
+.subtitle {
+  display: flex;
+}
 .subtitle a {
-  margin-left: 165px;
+  margin-left: 65px;
   text-decoration: none;
   color: white;
   font-size: 20px;
 }
 .subtitle alink {
   text-decoration: none;
+}
+.subtitle .white-bar {
+  height: 2px;
+  width: 75px;
+  background-color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 165px;
+}
+
+.foods-cards {
+  width: 90%;
+  align-items: center;
+  display: flex;
 }
 
 .hachures-blanches {
@@ -96,7 +129,7 @@ h1 a:hover {
   background-size: 100%;
   width: 100%;
   height: 250px;
-  margin-top: 350px;
+  margin-top: 390px;
 }
 
 .quality {
@@ -108,6 +141,11 @@ h1 a:hover {
   background: #F5F5F5;
 }
 
+.home {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 30%;
+}
 .home .container {
   padding: 2%;
 }
@@ -151,6 +189,112 @@ h1 a:hover {
 .home .post a:link {
   text-decoration: none;
   color: #21252F;
+}
+
+.hachures-noires {
+  background-image: url("images/hachures-noires.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 30px;
+  width: 100%;
+}
+
+.foot {
+  background-color: #292929;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.foot .footer {
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  color: white;
+}
+.foot .footer ul {
+  padding: 0;
+  padding-left: 10px;
+}
+.foot .footer .sub-footer {
+  padding-top: 7.5%;
+  height: 100%;
+}
+.foot .footer .sub-footer h6 {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-weight: bolder;
+  font-size: larger;
+}
+.foot .footer .sub-footer .media-links {
+  display: flex;
+  margin-left: 5px;
+  margin-right: 15px;
+  max-width: 40px;
+  height: 40px;
+  list-style-type: none;
+  border-radius: 50%;
+}
+.foot .footer .sub-footer .media-links a {
+  margin: auto;
+}
+.foot .footer .sub-footer .media-links a img {
+  width: 10px;
+  height: 10px;
+}
+.foot .footer .sub-footer .hours .open-days {
+  list-style: url(svg/time-clock.svg);
+  display: flex;
+  width: auto;
+  margin-top: 2.5%;
+}
+.foot .footer .sub-footer .hours .open-days img {
+  margin-right: 5%;
+}
+.foot .footer .sub-footer .hours .open-days hr {
+  width: 35%;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.foot .footer .sub-footer .contact {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.foot .footer .sub-footer .contact img {
+  margin-right: 4.5%;
+}
+.foot .footer .sub-footer .contact a {
+  text-decoration: none;
+  color: white;
+}
+.foot .footer .sub-footer .insta-image {
+  height: auto;
+  width: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+}
+.foot .footer .sub-footer .insta-image img {
+  max-width: 100%;
+  height: 100%;
+}
+@media (max-width: 599px) {
+  .foot .footer .front-page-cards {
+    flex-wrap: wrap !important;
+  }
+}
+.foot .footer .footer-bottom {
+  padding-top: 5%;
+  text-align: center;
+}
+.foot .footer .footer-bottom .grey-line {
+  width: 100%;
+  height: 1px;
+  background-color: silver;
+}
+.foot .footer .footer-bottom p {
+  padding-top: 2%;
 }
 
 /*# sourceMappingURL=style.css.map */
