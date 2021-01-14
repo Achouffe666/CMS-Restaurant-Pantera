@@ -48,7 +48,7 @@ header {
     background-image:url('images/banner-top.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 58vw;
+    height: 55vw;
     
 }
 .menubar {
@@ -140,7 +140,9 @@ display:flex;
 background-image: url("images/hachures-blanches-1.png");
 background-repeat: no-repeat;
 background-size: 100%;
+height: 8%;
 width: 100%;
-height: 250px;
-margin-top:390px;
+position: absolute;
+z-index: 1;
+transform: translateY(-95%);
 }

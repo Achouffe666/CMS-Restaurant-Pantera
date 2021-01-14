@@ -30,6 +30,8 @@
 <div class="subtitle">
 <div class="white-bar"></div><a href="#"> Check our menu </a>
 </div>
-<div class="hachures-blanches"></div>
+
 </header>
+<div class="hachures-blanches"></div>
+
 
