@@ -11,7 +11,7 @@ $Poppins: 'Poppins', sans-serif;
 }
 body {
     font-family: $Poppins!important;
-   
+
 }
 
     .menu {
@@ -46,7 +46,6 @@ body {
     }
 
     header {
-
         background-image:url('images/banner-top.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -267,4 +266,82 @@ body {
        
     }
 
+    
+}
+
+.bg {
+    background: #F5F5F5;
+}
+
+//try sass lol
+.home{
+    .container {
+        padding:2%;
+       
+      
+    }
+    
+.reset {
+ 
+padding:0;
+
+}
+
+.color {
+ 
+    li{
+        list-style-type: none;
+       
+    }
+    a {
+        text-decoration: none;
+        color:#21252F;
+        
+        &:link {
+            text-decoration:none; 
+            color:#21252F;
+          
+        }
+
+        &:hover {
+           
+            color:blue;
+          
+        }
+
+}
+}
+
+.card-body {
+    padding:3% 3% 0 3%;
+    background:white;
+}
+
+.card-title{
+    padding-top: 3%;
+}
+
+.post {
+
+    ul {
+        padding:0;
+    }
+    
+    li{
+        list-style-type: none;
+       
+    }
+    a {
+        text-decoration: none;
+        color:#21252F;
+        
+        &:link {
+            text-decoration:none; 
+            color:#21252F;
+          
+        }
+
+}
+
+}
 }
