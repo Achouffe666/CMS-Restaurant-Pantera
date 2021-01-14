@@ -41,7 +41,7 @@ header {
   background-image: url("images/banner-top.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 58vw;
+  height: 55vw;
 }
 
 .menubar {
@@ -127,9 +127,16 @@ h1 a:hover {
   background-image: url("images/hachures-blanches-1.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  height: 8%;
   width: 100%;
-  height: 250px;
-  margin-top: 390px;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-95%);
+}
+
+.bg-white {
+  border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
+  padding-top: 40px;
 }
 
 .card-main-box {
@@ -202,7 +209,8 @@ h1 a:hover {
 }
 
 .bg {
-  background: #F5F5F5;
+  border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
+  padding-top: 40px;
 }
 
 .home .container {
@@ -247,16 +255,47 @@ h1 a:hover {
   color: #21252F;
 }
 
-.hachures-noires {
-  background-image: url("images/hachures-noires.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 30px;
-  width: 100%;
+.newsletter {
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  color: white;
+  border-image: url("images/hachures-noires.png") 30 fill/30px/30px;
+  height: 250px;
+  width: 80%;
+  transform: translateY(50%);
+  box-shadow: 0px 50px 70px 0px rgba(0, 0, 0, 0.5);
+}
+.newsletter .newsletter-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.newsletter .newsletter-title h5 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+.newsletter .newsletter-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter .newsletter-input input {
+  height: 50px;
+}
+.newsletter .newsletter-input button {
+  border: none;
+  background-color: white;
+  margin-left: 10px;
+  font-size: large;
+  text-transform: uppercase;
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
 }
 
 .foot {
-  background-color: #292929;
+  border-image: url("images/hachures-noires.png") 30 fill/30px/30px;
   width: 100%;
   height: auto;
   display: flex;
@@ -265,6 +304,7 @@ h1 a:hover {
 .foot .footer {
   margin-left: 10% !important;
   margin-right: 10% !important;
+  margin-top: 10%;
   color: white;
 }
 .foot .footer ul {
@@ -272,7 +312,6 @@ h1 a:hover {
   padding-left: 10px;
 }
 .foot .footer .sub-footer {
-  padding-top: 7.5%;
   height: 100%;
 }
 .foot .footer .sub-footer h6 {
@@ -346,6 +385,49 @@ h1 a:hover {
 }
 .foot .footer .footer-bottom p {
   padding-top: 2%;
+}
+
+.menu-overview {
+  text-align: center;
+  background: white;
+}
+.menu-overview .content {
+  padding: 10% 0 10% 0;
+}
+.menu-overview .card-text {
+  padding: 2%;
+}
+.menu-overview .card-body {
+  padding-left: 10%;
+}
+.menu-overview .button {
+  padding-top: 10%;
+}
+.menu-overview .img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(2, 50%);
+  gap: 8px;
+}
+.menu-overview .img-grid img {
+  width: auto;
+  height: 200px;
+}
+.menu-overview .img-grid .grid1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.menu-overview .img-grid .grid2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.menu-overview .img-grid .grid3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.menu-overview .img-grid .grid4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 /*# sourceMappingURL=style.css.map */

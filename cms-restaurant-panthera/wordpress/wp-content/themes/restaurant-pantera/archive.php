@@ -9,6 +9,7 @@
 <ul class="nav nav-pills my-6">
     <?php foreach($cuisines as $cuisine): ?>
 		 <li class="nav-item">
+		 <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;">
 		<a href="<?= get_term_link($cuisine) ?>" class="nav-link <?= is_tax('cuisine', $cuisine->term_id) ? 'active' : '' ?>"><?= $cuisine->name ?></a>
     </li>
     <?php endforeach; ?>
@@ -30,7 +31,7 @@
 	<div class="col-5 reset card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-			<article class="post"><i class="fas fa-utensils"></i> <?php the_terms(get_the_ID(),"cuisine") ?>
+			<article class="post"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;"> <?php the_terms(get_the_ID(),"cuisine") ?>
 		<h5 class="card-title"><?php the_title(); ?></h5>
             
 			<p class="card-text">
@@ -49,7 +50,7 @@ else{?><div class="container col-xs-12 col-sm-12">
 	<div class="col-5 reset card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-			<article class="post"><i class="fas fa-utensils"></i> <?php the_terms(get_the_ID(),"cuisine") ?>
+			<article class="post"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;"> <?php the_terms(get_the_ID(),"cuisine") ?>
 		<h5 class="card-title"><?php the_title(); ?></h5>
             
 			<p class="card-text">
@@ -75,5 +76,8 @@ else{?><div class="container col-xs-12 col-sm-12">
 
 
 </div>
+
+<div class="menu-overview"><?php include("menuoverview.php"); ?></div>
+
 
 <?php get_footer(); ?>
