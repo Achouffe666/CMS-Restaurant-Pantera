@@ -153,89 +153,8 @@ body {
 
 }
 
-.bg {
-    background: #F5F5F5;
-}
 
-//try sass lol
-.home{
-    .container {
-        padding:2%;
-       
-      
-    }
-    img {
-    width:100%;
-    
-}
-.reset {
- 
-padding:0;
 
-}
-
-.color {
- 
-    li{
-        list-style-type: none;
-       
-    }
-    a {
-        text-decoration: none;
-        color:#21252F;
-        
-        &:link {
-            text-decoration:none; 
-            color:#21252F;
-          
-        }
-
-        &:hover {
-           
-            color:blue;
-          
-        }
-
-}
-}
-
-.card-body {
-    padding:3% 3% 0 3%;
-    background:white;
-}
-
-.card-title{
-    padding-top: 3%;
-}
-
-.post {
-
-    ul {
-        padding:0;
-    }
-    
-    li{
-        list-style-type: none;
-       
-    }
-    a {
-        text-decoration: none;
-        color:#21252F;
-        
-        &:link {
-            text-decoration:none; 
-            color:#21252F;
-          
-        }
-
-}
-
-}
-
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 30%;
-}
 .hachures-noires{
     background-image: url('images/hachures-noires.png');
     background-repeat: no-repeat;
@@ -349,5 +268,81 @@ padding:0;
     }  
 }
     
+}
 
+.bg {
+    background: #F5F5F5;
+}
+
+//try sass lol
+.home{
+    .container {
+        padding:2%;
+       
+      
+    }
+   
+.reset {
+ 
+padding:0;
+
+}
+
+.color {
+ 
+    li{
+        list-style-type: none;
+       
+    }
+    a {
+        text-decoration: none;
+        color:#21252F;
+        
+        &:link {
+            text-decoration:none; 
+            color:#21252F;
+          
+        }
+
+        &:hover {
+           
+            color:blue;
+          
+        }
+
+}
+}
+
+.card-body {
+    padding:3% 3% 0 3%;
+    background:white;
+}
+
+.card-title{
+    padding-top: 3%;
+}
+
+.post {
+
+    ul {
+        padding:0;
+    }
+    
+    li{
+        list-style-type: none;
+       
+    }
+    a {
+        text-decoration: none;
+        color:#21252F;
+        
+        &:link {
+            text-decoration:none; 
+            color:#21252F;
+          
+        }
+
+}
+
+}
 }

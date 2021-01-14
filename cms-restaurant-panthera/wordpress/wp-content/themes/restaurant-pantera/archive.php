@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php get_header(); ?>
 <div class="bg">
 
@@ -78,15 +77,3 @@ else{?><div class="container col-xs-12 col-sm-12">
 </div>
 
 <?php get_footer(); ?>
-=======
-
-<?php get_header(); ?>
-<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-    
-	<h1><?php the_title(); ?></h1>
-
-	<?php the_content(); ?>
-
-<?php endwhile; endif; ?>
-<?php get_footer(); ?>
->>>>>>> fb618988002ff5109f69e4b77600be36d5ea9287

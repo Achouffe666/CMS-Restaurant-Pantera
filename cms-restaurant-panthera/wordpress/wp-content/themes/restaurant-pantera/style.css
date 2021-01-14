@@ -137,60 +137,6 @@ h1 a:hover {
   border-radius: 15px 15px 0px 0px;
 }
 
-.bg {
-  background: #F5F5F5;
-}
-
-.home {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 30%;
-}
-.home .container {
-  padding: 2%;
-}
-.home img {
-  width: 100%;
-}
-.home .reset {
-  padding: 0;
-}
-.home .color li {
-  list-style-type: none;
-}
-.home .color a {
-  text-decoration: none;
-  color: #21252F;
-}
-.home .color a:link {
-  text-decoration: none;
-  color: #21252F;
-}
-.home .color a:hover {
-  color: blue;
-}
-.home .card-body {
-  padding: 3% 3% 0 3%;
-  background: white;
-}
-.home .card-title {
-  padding-top: 3%;
-}
-.home .post ul {
-  padding: 0;
-}
-.home .post li {
-  list-style-type: none;
-}
-.home .post a {
-  text-decoration: none;
-  color: #21252F;
-}
-.home .post a:link {
-  text-decoration: none;
-  color: #21252F;
-}
-
 .hachures-noires {
   background-image: url("images/hachures-noires.png");
   background-repeat: no-repeat;
@@ -295,6 +241,52 @@ h1 a:hover {
 }
 .foot .footer .footer-bottom p {
   padding-top: 2%;
+}
+
+.bg {
+  background: #F5F5F5;
+}
+
+.home .container {
+  padding: 2%;
+}
+.home .reset {
+  padding: 0;
+}
+.home .color li {
+  list-style-type: none;
+}
+.home .color a {
+  text-decoration: none;
+  color: #21252F;
+}
+.home .color a:link {
+  text-decoration: none;
+  color: #21252F;
+}
+.home .color a:hover {
+  color: blue;
+}
+.home .card-body {
+  padding: 3% 3% 0 3%;
+  background: white;
+}
+.home .card-title {
+  padding-top: 3%;
+}
+.home .post ul {
+  padding: 0;
+}
+.home .post li {
+  list-style-type: none;
+}
+.home .post a {
+  text-decoration: none;
+  color: #21252F;
+}
+.home .post a:link {
+  text-decoration: none;
+  color: #21252F;
 }
 
 /*# sourceMappingURL=style.css.map */
