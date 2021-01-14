@@ -260,3 +260,11 @@ body {
         margin-bottom:25px;
     }
 }
+@media (max-width: 599px) {
+    .front-page-cards {
+
+        flex-wrap: wrap!important;
+       
+    }
+
+}
