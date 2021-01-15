@@ -4,20 +4,22 @@
 <div class="container home">
 
 <div class="color">
-<?php $cuisines = get_terms(['taxonomy' => 'cuisine']); ?>
+<?php $cuisines = get_terms(['category_name' => 'cuisine']); ?>
 
 <ul class="nav nav-pills my-6">
     <?php foreach($cuisines as $cuisine): ?>
-		 <li class="nav-item">
-		 <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;">
+		 <li class="nav-item d-flex justify-content-center">
+			 <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;">
 		<a href="<?= get_term_link($cuisine) ?>" class="nav-link <?= is_tax('cuisine', $cuisine->term_id) ? 'active' : '' ?>"><?= $cuisine->name ?></a>
     </li>
     <?php endforeach; ?>
 </ul></div>
+<?php
 
+$the_query = new WP_Query( array( 'category_name' => 'cuisine', 'posts_per_page' => 10 ) );
 
 	
-	<?php $i=0; if( have_posts() ) : while( have_posts() ) : the_post();
+	 $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post();
 
 	if ($i==0){ $i++;
 
