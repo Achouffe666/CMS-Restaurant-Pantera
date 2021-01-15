@@ -9,19 +9,15 @@
 <ul class="nav nav-pills my-6">
     <?php foreach($cuisines as $cuisine): ?>
 		 <li class="nav-item">
-		 <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;">
+		 <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;">
 		<a href="<?= get_term_link($cuisine) ?>" class="nav-link <?= is_tax('cuisine', $cuisine->term_id) ? 'active' : '' ?>"><?= $cuisine->name ?></a>
     </li>
     <?php endforeach; ?>
 </ul></div>
 
-
-	
-	<?php $i=0; if( have_posts() ) : while( have_posts() ) : the_post();
+	<?php $i=0; if(have_posts() ) : while(have_posts() ) :the_post();
 
 	if ($i==0){ $i++;
-
-
 	?>
 
     <div class="container col-xs-12 col-sm-12">
@@ -69,7 +65,9 @@ else{?><div class="container col-xs-12 col-sm-12">
 ?>
 
 
-	<?php endwhile; endif; ?>
+	<?php 
+		wp_reset_postdata();
+		endwhile; endif; ?>
 	<?= pantera_pagination(); ?>
 
 
