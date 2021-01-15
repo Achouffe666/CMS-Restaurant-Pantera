@@ -11,6 +11,7 @@
 		 <li class="nav-item d-flex justify-content-center">
 			 <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;">
 		<a href="<?= get_term_link($cuisine) ?>" class="nav-link <?= is_tax('cuisine', $cuisine->term_id) ? 'active' : '' ?>"><?= $cuisine->name ?></a>
+		
     </li>
     <?php endforeach; ?>
 </ul></div>
