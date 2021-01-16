@@ -20,7 +20,7 @@
 			<p>Gummi bears sugar plum croissant.</p>
 
 		<p class="button d-flex justify-content-center">
-		<a href="menu-page.php"><button type="button" class="btn btn-dark">View the full menu</button></a>
+		<a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">View the full menu</button></a>
             </p>
 		</article>
   </div>
