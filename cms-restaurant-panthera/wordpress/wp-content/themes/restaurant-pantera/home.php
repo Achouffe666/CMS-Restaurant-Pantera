@@ -18,7 +18,6 @@
 
 
 <?php
-// the query
 
 $the_query = new WP_Query( array( 'category_name' => 'Cuisine' ) );
 
