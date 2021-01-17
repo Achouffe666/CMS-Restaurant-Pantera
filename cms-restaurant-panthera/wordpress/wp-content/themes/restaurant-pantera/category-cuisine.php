@@ -4,13 +4,15 @@
 <div class="container home">
 
 <div class="color">
-<?php $cuisines = get_terms(['taxonomy' => 'cuisine']); ?>
+
+
+<?php $cuisines = get_terms(['category' => 'cuisine']); ?>
 
 <ul class="nav nav-pills my-6">
     <?php foreach($cuisines as $cuisine): ?>
 		 <li class="nav-item d-flex justify-content-center">
 			 <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;">
-		<a href="<?= get_term_link($cuisine) ?>" class="nav-link <?= is_tax('cuisine', $cuisine->term_id) ? 'active' : '' ?>"><?= $cuisine->name ?></a>
+		<a href="<?= get_term_link($cuisine) ?>" class="nav-link <?= is_category('cuisine', $cuisine->term_id) ? 'active' : '' ?>"><?= $cuisine->name ?></a>
 		
     </li>
     <?php endforeach; ?>
@@ -19,7 +21,7 @@
 
 <?php
 $term_id = get_queried_object_id();
-echo 'PAGE home.php   ';
+echo 'PAGE category-cuisine.php   ';
 echo 'get_queried_object_id()= '  . $term_id ; 
 
 $arr2 = array();
@@ -31,7 +33,7 @@ $args = array(
     'post_type' => 'post',
     'tax_query' => array(
         array(
-		'taxonomy' => 'cuisine',
+		'category_name' => 'cuisine',
 		'field' => 'term_id',
         'terms' => $arr2
          )
