@@ -20,12 +20,22 @@
 
 
 <?php
+
+$category = get_the_category();
+
+$subCat;
+foreach($category as $cat): 
+	if($cat->parent != 0):
+		$subCat = $cat;
+	endif;	
+endforeach;
+
+$args = array(
+	'post_type'   => 'post',
+	'category__in' => array( $subCat->term_id ),
+	'nopaging'       => true
+	);
 	
-	$args = array(
-		'category_name' => 'cuisine',
-		'paged' => get_query_var( 'paged' ) 
-		
-		);
 	$the_query = new WP_Query( $args );
 
 $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post();
@@ -36,13 +46,13 @@ $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_
 	?>
 
     <div class="main container col-xs-12 col-sm-12">
-    <div class="row">
+    <div class="row border">
 	 <div class="col-7 reset"><?php the_post_thumbnail("post-thumbnail", ["class" => "card-img", "alt" => "", "style" => "height: auto;"
     ]) ?> </div>
-	<div class="col-5 reset  border  main-content card-body">
+	<div class="col-5 reset main-content card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-			<article class="post-t"><?php the_category() ?>
+			<article class="post-t"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;"><?php the_category() ?>
 		<h5 class="main-title card-title"><?php the_title(); ?></h5>
             
 			<p class="card-text">
@@ -56,15 +66,15 @@ $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_
  </div>
 <?php } 
 else{?><div class="main container col-xs-12 col-sm-12">
-    <div class="row">
+    <div class="row border">
 	 
-	<div class="col-5 reset  border main-content card-body">
+	<div class="col-5 reset main-content card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-<article class="post-t"><?php the_category() ?>
+			<article class="post-t"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;"><?php the_category() ?>
 		<h5 class="main-title card-title"><?php the_title(); ?></h5>
             
-			<p class="card-text ">
+			<p class="card-text">
 			<?php the_excerpt(); ?>
 		<p class="d-flex justify-content-center">
                 <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">Read more</button></a>
@@ -81,7 +91,7 @@ else{?><div class="main container col-xs-12 col-sm-12">
 
 
 	<?php endwhile; endif; ?>
-	<?= pantera_pagination(); ?>
+
 
 
 
