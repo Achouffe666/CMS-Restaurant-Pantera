@@ -192,7 +192,8 @@ h1 {
 .home .card-title {
   padding-top: 2%; }
 .home .post ul {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 .home .post li {
   list-style-type: none; }
 .home .post a {
@@ -234,6 +235,32 @@ h1 {
   .menu-overview .no-gutter > [class*='col-'] {
     padding-right: 0;
     padding-left: 0; }
+
+.page-title {
+  text-align: center;
+  width: 100%;
+  height: 10%; }
+  .page-title h5 {
+    font-size: 30px; }
+  .page-title h6 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px; }
+
+.map {
+  text-align: center;
+  width: 100%;
+  height: 10%; }
+  .map h5 {
+    font-size: 30px; }
+  .map h6 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px; }
+  .map .google-map {
+    height: 250px;
+    width: 100%;
+    border: black solid 1px; }
 
 .newsletter {
   margin-left: 10% !important;
