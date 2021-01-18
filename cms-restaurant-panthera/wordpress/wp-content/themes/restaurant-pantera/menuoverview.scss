@@ -2,10 +2,6 @@
     text-align: center;
     background: white;
    
-   
-    .content {
-        padding:10% 0 10% 0;
-    }
     
     .card-text
     {
@@ -13,10 +9,10 @@
 
     }
 
-    .card-body{
-        padding-left:10%;
-       
+    .card-body {
+        padding-top:3%;
     }
+
 
     .button {
         padding-top: 10%;
@@ -28,7 +24,7 @@
      display: grid;
   grid-template-columns: repeat(2, min-content);
   grid-template-rows: repeat(2,50%);
-  gap: 8px;
+  gap: 10px;
 
 img {
     
@@ -62,5 +58,10 @@ img {
 
 }
    
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
 }
 

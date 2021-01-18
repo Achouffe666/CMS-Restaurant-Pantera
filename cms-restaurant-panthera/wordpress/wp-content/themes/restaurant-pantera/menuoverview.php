@@ -1,8 +1,8 @@
 
 <div class="container menu-overview">
 
-    <div class="content">
-    <div class="row">
+    <div class="content ">
+    <div class="row no-gutter">
 	 <div class="col-6 img-grid"><img class ="grid1" src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/berries-granola.jpg" alt="">
             <img class ="grid2"  src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/a-hot-bowl-of-soup-on-a-table-top.jpg" alt="">
             <img class ="grid3" src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/berry-cheesecake-1.jpg" alt="">
@@ -20,7 +20,7 @@
 			<p>Gummi bears sugar plum croissant.</p>
 
 		<p class="button d-flex justify-content-center">
-		<a href="menu-page.php"><button type="button" class="btn btn-dark">View the full menu</button></a>
+		<a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">View the full menu</button></a>
             </p>
 		</article>
   </div>
