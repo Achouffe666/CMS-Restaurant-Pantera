@@ -31,8 +31,6 @@
 $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post();
 
 	if ($i==0){ $i++;
-
-
 	?>
 
     <div class="main container col-xs-12 col-sm-12">
@@ -42,8 +40,8 @@ $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_
 	<div class="col-5 reset  border  main-content card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-			<article class="post-t"><?php the_category() ?>
-		<h5 class="main-title card-title"><?php the_title(); ?></h5>
+			<article class="post-t"><div class="d-flex align-items-center"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;"><?php the_category() ?></div>
+		<h5 class="card-title"><?php the_title(); ?></h5>
             
 			<p class="card-text">
 			<?php the_excerpt(); ?>
@@ -61,8 +59,8 @@ else{?><div class="main container col-xs-12 col-sm-12">
 	<div class="col-5 reset  border main-content card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-<article class="post-t"><?php the_category() ?>
-		<h5 class="main-title card-title"><?php the_title(); ?></h5>
+<article class="post-t"><div class="d-flex align-items-center"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;"><?php the_category() ?></div>
+		<h5 class="card-title"><?php the_title(); ?></h5>
             
 			<p class="card-text ">
 			<?php the_excerpt(); ?>
@@ -80,7 +78,9 @@ else{?><div class="main container col-xs-12 col-sm-12">
 ?>
 
 
-	<?php endwhile; endif; ?>
+	<?php 
+		wp_reset_postdata();
+		endwhile; endif; ?>
 	<?= pantera_pagination(); ?>
 
 
