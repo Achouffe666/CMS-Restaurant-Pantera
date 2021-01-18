@@ -42,7 +42,8 @@ $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_
 	<div class="col-5 reset card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-			<article class="post"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;"><?php the_category() ?>
+			<article class="post">
+<i class="fas fa-utensils"></i><?php the_category() ?>
 		<h5 class="card-title"><?php the_title(); ?></h5>
             
 			<p class="card-text">
