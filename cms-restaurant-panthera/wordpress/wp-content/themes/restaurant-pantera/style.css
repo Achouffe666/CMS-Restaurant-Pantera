@@ -213,7 +213,7 @@ h1 a:hover {
   padding-top: 40px;
 }
 
-.home .container {
+.home .main {
   padding: 2%;
 }
 .home .reset {
@@ -233,24 +233,24 @@ h1 a:hover {
 .home .color a:hover {
   color: blue;
 }
-.home .card-body {
+.home .main-content {
   padding: 2% 2% 0 2%;
   background: white;
 }
-.home .card-title {
+.home .main-title {
   padding-top: 2%;
 }
-.home .post ul {
+.home .post-t ul {
   padding: 0;
 }
-.home .post li {
+.home .post-t li {
   list-style-type: none;
 }
-.home .post a {
+.home .post-t a {
   text-decoration: none;
   color: #21252F;
 }
-.home .post a:link {
+.home .post-t a:link {
   text-decoration: none;
   color: #21252F;
 }
@@ -259,10 +259,10 @@ h1 a:hover {
   text-align: center;
   background: white;
 }
-.menu-overview .card-text {
+.menu-overview .main-text {
   padding: 2%;
 }
-.menu-overview .card-body {
+.menu-overview .main-body {
   padding-top: 3%;
 }
 .menu-overview .button {
@@ -274,7 +274,7 @@ h1 a:hover {
   grid-template-rows: repeat(2, 50%);
   gap: 10px;
 }
-.menu-overview .img-grid img {
+.menu-overview .img-grid .img-foot {
   width: auto;
   height: 200px;
 }
@@ -299,6 +299,16 @@ h1 a:hover {
   padding-left: 0;
 }
 
+.single a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+.single a:link {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
 .single .img-intro {
   width: 100%;
   height: 500px;
@@ -313,7 +323,7 @@ h1 a:hover {
   color: white;
 }
 .single .instruction p .number {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .newsletter {

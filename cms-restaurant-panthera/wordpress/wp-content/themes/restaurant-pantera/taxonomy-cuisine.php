@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="bg">
 
-<div class="container home">
+<div class="main container home">
 
 <div class="color">
 
@@ -35,15 +35,15 @@ $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_
 
 	?>
 
-    <div class="container col-xs-12 col-sm-12">
-    <div class="row border">
+    <div class="main container col-xs-12 col-sm-12">
+    <div class="row">
 	 <div class="col-7 reset"><?php the_post_thumbnail("post-thumbnail", ["class" => "card-img", "alt" => "", "style" => "height: auto;"
     ]) ?> </div>
-	<div class="col-5 reset card-body">
+	<div class="col-5 reset  border  main-content card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-			<article class="post"><?php the_category() ?>
-		<h5 class="card-title"><?php the_title(); ?></h5>
+			<article class="post-t"><?php the_category() ?>
+		<h5 class="main-title card-title"><?php the_title(); ?></h5>
             
 			<p class="card-text">
 			<?php the_excerpt(); ?>
@@ -55,16 +55,16 @@ $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_
 </div>
  </div>
 <?php } 
-else{?><div class="container col-xs-12 col-sm-12">
-    <div class="row border">
+else{?><div class="main container col-xs-12 col-sm-12">
+    <div class="row">
 	 
-	<div class="col-5 reset card-body">
+	<div class="col-5 reset  border main-content card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-			<article class="post"><?php the_category() ?>
-		<h5 class="card-title"><?php the_title(); ?></h5>
+<article class="post-t"><?php the_category() ?>
+		<h5 class="main-title card-title"><?php the_title(); ?></h5>
             
-			<p class="card-text">
+			<p class="card-text ">
 			<?php the_excerpt(); ?>
 		<p class="d-flex justify-content-center">
                 <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">Read more</button></a>
