@@ -4,7 +4,7 @@
 <div class="container home">
 
 <div class="color">
-<?php $cuisines = get_terms(['category' => 'cuisine']); ?>
+<?php $cuisines = get_terms(['taxonomy' => 'cuisine']); ?>
 
 <ul class="nav nav-pills my-6">
     <?php foreach($cuisines as $cuisine): ?>
@@ -19,7 +19,7 @@
 <?php
 // the query
 
-$the_query = new WP_Query( array( 'category_name' => 'Cuisine' ) );
+$the_query = new WP_Query( array( 'category_name' => 'Cuisine', 'posts_per_page' => 5) );
 
 $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post();
 

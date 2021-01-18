@@ -205,7 +205,20 @@ h1 a:hover {
 }
 
 .burger-party {
+  border-image: url("images/hachures-blanches.png") 30 fill/30px/30px;
+  padding-top: 40px;
   background-image: url("images/burger-party.png");
+}
+.burger-party .discover-restaurant {
+  font-size: 42px;
+  margin-top: auto;
+  margin-left: 70px;
+}
+.burger-party .our-restaurant {
+  font-size: 46px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-left: 70px;
 }
 
 .bg {
