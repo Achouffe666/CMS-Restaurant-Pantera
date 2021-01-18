@@ -263,8 +263,7 @@ h1 a:hover {
   padding: 2%;
 }
 .menu-overview .card-body {
-  padding-left: 12%;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 .menu-overview .button {
   padding-top: 10%;
@@ -273,11 +272,11 @@ h1 a:hover {
   display: grid;
   grid-template-columns: repeat(2, min-content);
   grid-template-rows: repeat(2, 50%);
-  gap: 8px;
+  gap: 10px;
 }
 .menu-overview .img-grid img {
   width: auto;
-  height: 220px;
+  height: 200px;
 }
 .menu-overview .img-grid .grid1 {
   grid-column: 1/2;
@@ -294,6 +293,10 @@ h1 a:hover {
 .menu-overview .img-grid .grid4 {
   grid-column: 2/3;
   grid-row: 2/3;
+}
+.menu-overview .no-gutter > [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .newsletter {

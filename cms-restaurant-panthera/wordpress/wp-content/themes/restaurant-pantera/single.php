@@ -13,16 +13,14 @@
 <li><?php the_date(); ?></li>
 <li><?php the_category(); ?></li>
 </ul>
-<?php
-echo 'single.php'?>
+</div>
 
 
-<h1><?php the_title(); ?></h1>
-          <?php the_date(); ?>
+<h5 class="card-title"><?php the_title(); ?></h5>
 
          
       <div class="post__content">
-        <?php the_content(); ?>
+       
         </article>
 </div>
 </div>

@@ -9,10 +9,10 @@
 
     }
 
-    .card-body{
-        padding-left:12%;
-        padding-top: 5%;
+    .card-body {
+        padding-top:3%;
     }
+
 
     .button {
         padding-top: 10%;
@@ -24,12 +24,12 @@
      display: grid;
   grid-template-columns: repeat(2, min-content);
   grid-template-rows: repeat(2,50%);
-  gap: 8px;
+  gap: 10px;
 
 img {
     
         width: auto;
-        height: 220px;
+        height: 200px;
 
      
 }
@@ -58,5 +58,10 @@ img {
 
 }
    
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
 }
 
