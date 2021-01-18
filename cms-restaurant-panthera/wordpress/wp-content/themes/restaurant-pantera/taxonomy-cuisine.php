@@ -20,22 +20,12 @@
 
 
 <?php
-
-$category = get_the_category();
-
-$subCat;
-foreach($category as $cat): 
-	if($cat->parent != 0):
-		$subCat = $cat;
-	endif;	
-endforeach;
-
-$args = array(
-	'post_type'   => 'post',
-	'category__in' => array( $subCat->term_id ),
-	'nopaging'       => true
-	);
 	
+	$args = array(
+		'category_name' => 'cuisine',
+		'paged' => get_query_var( 'paged' ) 
+		
+		);
 	$the_query = new WP_Query( $args );
 
 $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post();
@@ -52,7 +42,7 @@ $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_
 	<div class="col-5 reset card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-			<article class="post"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;"><?php the_category() ?>
+			<article class="post"><?php the_category() ?>
 		<h5 class="card-title"><?php the_title(); ?></h5>
             
 			<p class="card-text">
@@ -71,7 +61,7 @@ else{?><div class="container col-xs-12 col-sm-12">
 	<div class="col-5 reset card-body">
 	<i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
 	</p>
-			<article class="post"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;margin-right: 5px;"><?php the_category() ?>
+			<article class="post"><?php the_category() ?>
 		<h5 class="card-title"><?php the_title(); ?></h5>
             
 			<p class="card-text">
@@ -91,7 +81,7 @@ else{?><div class="container col-xs-12 col-sm-12">
 
 
 	<?php endwhile; endif; ?>
-
+	<?= pantera_pagination(); ?>
 
 
 

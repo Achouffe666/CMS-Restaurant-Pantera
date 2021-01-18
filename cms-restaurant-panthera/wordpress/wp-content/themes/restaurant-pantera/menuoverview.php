@@ -1,7 +1,7 @@
 
 <div class="container menu-overview">
 
-    <div class="content">
+    <div class="content ">
     <div class="row">
 	 <div class="col-6 img-grid"><img class ="grid1" src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/berries-granola.jpg" alt="">
             <img class ="grid2"  src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/a-hot-bowl-of-soup-on-a-table-top.jpg" alt="">
