@@ -1,7 +1,8 @@
 <?php get_header(); ?>
   <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
     
-    
+  <div class="bg-single">
+
   <div class="container single">
  
   
@@ -22,7 +23,7 @@
     <div class="navbar-collapse collapse w-100 order-2 dual-collapse2">
         <ol class="navbar-nav ml-auto">
             <li class="nav-item " >
-            <?php the_category(); ?>
+            <div class="d-flex align-items-center"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;"><?php the_category() ?></div>
             </li>
            
         </ol>
@@ -63,17 +64,17 @@
   <div class="card-body instruction">
   <p class="card-text instruction">
   <h2 class="title-instruction">Instruction</h2>
-<p><span class="number">&nbsp;&nbsp;1&nbsp;&nbsp;</span> Powder soufflé jelly-o lemon drops cotton candy tart ice cream. Jujubes brownie icing macaroon jelly ice cream jelly beans cookie cookie. Jelly tootsie roll wafer.
+<span class="number1 d-flex justify-content-center">1</span> <p class="text1">Powder soufflé jelly-o lemon drops cotton candy tart ice cream. Jujubes brownie icing macaroon jelly ice cream jelly beans cookie cookie. Jelly tootsie roll wafer.
 Tootsie roll bonbon cotton candy sweet roll powder marshmallow. Sugar plum sweet roll cheesecake. Fruitcake carrot cake tart sugar plum dessert.</p>
 </p>
-<p>I love danish sweet topping cake tiramisu oat cake sweet roll donut. Sugar plum I love tootsie roll pie danish cheesecake I love danish biscuit. Croissant fruitcake cake. Croissant I love I love macaroon. Marshmallow jelly icing tart cake bonbon I love halvah dessert. Halvah I love donut cupcake topping dessert I love. Ice cream tiramisu brownie sweet I love carrot cake.</p>
-<p><span class="number">&nbsp;&nbsp;2&nbsp;&nbsp;</span> Chocolate bar bonbon cookie caramels. Marzipan croissant caramels candy canes. Brownie carrot cake I love chupa chups. Ice cream I love I love marzipan. Dragée oat cake I love tiramisu lollipop candy canes. Topping lemon drops macaroon cake bonbon.</p>
-<p>Lollipop wafer I love. Donut halvah donut bonbon lemon drops. Dragée biscuit wafer lollipop danish lemon drops croissant lemon drops. Jujubes danish lollipop oat cake I love candy dragée powder powder.</p>
-<p><img class ="img-instruction"src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/restaurant.jpg" alt=""></p>
-<p><span class="number">&nbsp;&nbsp;3&nbsp;&nbsp;</span> Candy candy cake fruitcake bear claw gummies caramels. Cheesecake sesame snaps gummi bears lemon drops sweet roll dessert donut carrot cake. Sugar plum tiramisu tiramisu jelly beans sugar plum icing pie jujubes powder. Sweet roll marshmallow dragée tart chocolate bar donut tart tiramisu.</p>
-<p>Gummies cookie ice cream sweet candy. Dessert marzipan halvah sweet roll gingerbread cake. Pudding I love bonbon chupa chups. Lemon drops cookie powder chupa chups dragée tart.</p>
-<p><span class="number">&nbsp;&nbsp;4&nbsp;&nbsp;</span> Dragée danish lemon drops cake tiramisu macaroon oat cake. Sweet muffin chocolate topping. Soufflé I love I love chocolate bar wafer. Jujubes sugar plum I love.</p>
-<p>Dragée danish donut candy canes jelly beans marshmallow cookie marzipan pastry. Bonbon jujubes I love marshmallow. Sugar plum cake pastry gummi bears.</p>
+<p class="text2">I love danish sweet topping cake tiramisu oat cake sweet roll donut. Sugar plum I love tootsie roll pie danish cheesecake I love danish biscuit. Croissant fruitcake cake. Croissant I love I love macaroon. Marshmallow jelly icing tart cake bonbon I love halvah dessert. Halvah I love donut cupcake topping dessert I love. Ice cream tiramisu brownie sweet I love carrot cake.</p>
+<span class="number2 d-flex justify-content-center ">&nbsp;&nbsp;2&nbsp;&nbsp;</span><p class="text3">Chocolate bar bonbon cookie caramels. Marzipan croissant caramels candy canes. Brownie carrot cake I love chupa chups. Ice cream I love I love marzipan. Dragée oat cake I love tiramisu lollipop candy canes. Topping lemon drops macaroon cake bonbon.</p>
+<p class="text4" >Lollipop wafer I love. Donut halvah donut bonbon lemon drops. Dragée biscuit wafer lollipop danish lemon drops croissant lemon drops. Jujubes danish lollipop oat cake I love candy dragée powder powder.</p>
+<p class="text5"><img class ="img-instruction"src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/restaurant.jpg" alt=""></p>
+<span class="number3 d-flex justify-content-center">&nbsp;&nbsp;3&nbsp;&nbsp;</span><p class="text6"> Candy candy cake fruitcake bear claw gummies caramels. Cheesecake sesame snaps gummi bears lemon drops sweet roll dessert donut carrot cake. Sugar plum tiramisu tiramisu jelly beans sugar plum icing pie jujubes powder. Sweet roll marshmallow dragée tart chocolate bar donut tart tiramisu.</p>
+<p class="text7">Gummies cookie ice cream sweet candy. Dessert marzipan halvah sweet roll gingerbread cake. Pudding I love bonbon chupa chups. Lemon drops cookie powder chupa chups dragée tart.</p>
+<span class="number4 d-flex justify-content-center">&nbsp;&nbsp;4&nbsp;&nbsp;</span><p class="text8" > Dragée danish lemon drops cake tiramisu macaroon oat cake. Sweet muffin chocolate topping. Soufflé I love I love chocolate bar wafer. Jujubes sugar plum I love.</p>
+<p class="text9">Dragée danish donut candy canes jelly beans marshmallow cookie marzipan pastry. Bonbon jujubes I love marshmallow. Sugar plum cake pastry gummi bears.</p>
 
     <div>
       </article>

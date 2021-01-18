@@ -300,6 +300,10 @@ h1 a:hover {
   padding-left: 0;
 }
 
+.single .bg-single {
+  border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
+  padding-top: 40px;
+}
 .single a {
   text-decoration: none;
   list-style-type: none;
@@ -344,13 +348,95 @@ h1 a:hover {
   padding-top: 3%;
   padding-bottom: 3%;
 }
-.single .instruction .number {
+.single .instruction {
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-template-rows: 10;
+}
+.single .instruction .title-instruction {
+  padding-bottom: 1%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.single .instruction .text1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.single .instruction .text2 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.single .instruction .text3 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.single .instruction .text4 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.single .instruction .text5 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.single .instruction .text6 {
+  grid-column: 2/3;
+  grid-row: 7/8;
+}
+.single .instruction .text7 {
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+.single .instruction .text8 {
+  grid-column: 2/3;
+  grid-row: 9/10;
+}
+.single .instruction .text9 {
+  grid-column: 2/3;
+  grid-row: 10/11;
+}
+.single .instruction .number1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
   background: black;
   border-radius: 50%;
   color: white;
+  width: 25px;
+  height: 25px;
+  margin-left: 50%;
+  margin-top: 10%;
 }
-.single .instruction p .number {
-  font-size: 15px;
+.single .instruction .number2 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  background: black;
+  border-radius: 50%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  margin-left: 50%;
+  margin-top: 10%;
+}
+.single .instruction .number3 {
+  grid-column: 1/2;
+  grid-row: 7/8;
+  background: black;
+  border-radius: 50%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  margin-left: 50%;
+  margin-top: 10%;
+}
+.single .instruction .number4 {
+  grid-column: 1/2;
+  grid-row: 9/10;
+  background: black;
+  border-radius: 50%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  margin-left: 50%;
+  margin-top: 10%;
 }
 .single .post-categories {
   list-style: none;
@@ -371,9 +457,6 @@ h1 a:hover {
   padding-top: 15%;
 }
 .single .title-intro {
-  padding-bottom: 1%;
-}
-.single .title-instruction {
   padding-bottom: 1%;
 }
 
