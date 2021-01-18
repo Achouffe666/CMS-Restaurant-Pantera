@@ -247,11 +247,11 @@ h1 a:hover {
   color: blue;
 }
 .home .card-body {
-  padding: 3% 3% 0 3%;
+  padding: 2% 2% 0 2%;
   background: white;
 }
 .home .card-title {
-  padding-top: 3%;
+  padding-top: 2%;
 }
 .home .post ul {
   padding: 0;
@@ -266,6 +266,50 @@ h1 a:hover {
 .home .post a:link {
   text-decoration: none;
   color: #21252F;
+}
+
+.menu-overview {
+  text-align: center;
+  background: white;
+}
+.menu-overview .card-text {
+  padding: 2%;
+}
+.menu-overview .card-body {
+  padding-top: 3%;
+}
+.menu-overview .button {
+  padding-top: 10%;
+}
+.menu-overview .img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(2, 50%);
+  gap: 10px;
+}
+.menu-overview .img-grid img {
+  width: auto;
+  height: 200px;
+}
+.menu-overview .img-grid .grid1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.menu-overview .img-grid .grid2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.menu-overview .img-grid .grid3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.menu-overview .img-grid .grid4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.menu-overview .no-gutter > [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .newsletter {
@@ -398,49 +442,6 @@ h1 a:hover {
 }
 .foot .footer .footer-bottom p {
   padding-top: 2%;
-}
-
-.menu-overview {
-  text-align: center;
-  background: white;
-}
-.menu-overview .content {
-  padding: 10% 0 10% 0;
-}
-.menu-overview .card-text {
-  padding: 2%;
-}
-.menu-overview .card-body {
-  padding-left: 10%;
-}
-.menu-overview .button {
-  padding-top: 10%;
-}
-.menu-overview .img-grid {
-  display: grid;
-  grid-template-columns: repeat(2, min-content);
-  grid-template-rows: repeat(2, 50%);
-  gap: 8px;
-}
-.menu-overview .img-grid img {
-  width: auto;
-  height: 200px;
-}
-.menu-overview .img-grid .grid1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.menu-overview .img-grid .grid2 {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-.menu-overview .img-grid .grid3 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-.menu-overview .img-grid .grid4 {
-  grid-column: 2/3;
-  grid-row: 2/3;
 }
 
 /*# sourceMappingURL=style.css.map */
