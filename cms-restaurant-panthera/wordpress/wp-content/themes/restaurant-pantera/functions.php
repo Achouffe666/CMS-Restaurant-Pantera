@@ -29,10 +29,10 @@ register_nav_menus( array(
 
     function pantera_pagination () {
         $pages = paginate_links(["type" => "array"]);
-    if ($pages === null)
-    {
-        return;
-    }
+        if ($pages === null)
+        {
+            return;
+        }
         echo '<nav aria-label="Pagination" class="my-4 d-flex justify-content-center">';
         echo '<ul class="pagination">';
     

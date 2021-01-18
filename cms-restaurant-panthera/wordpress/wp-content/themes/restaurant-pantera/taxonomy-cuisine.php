@@ -20,12 +20,22 @@
 
 
 <?php
+
+$category = get_the_category();
+
+$subCat;
+foreach($category as $cat): 
+	if($cat->parent != 0):
+		$subCat = $cat;
+	endif;	
+endforeach;
+
+$args = array(
+	'post_type'   => 'post',
+	'category__in' => array( $subCat->term_id ),
+	'nopaging'       => true
+	);
 	
-	$args = array(
-		'category_name' => 'cuisine',
-		'paged' => get_query_var( 'paged' ) 
-		
-		);
 	$the_query = new WP_Query( $args );
 
 $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post();
@@ -81,7 +91,7 @@ else{?><div class="container col-xs-12 col-sm-12">
 
 
 	<?php endwhile; endif; ?>
-	<?= pantera_pagination(); ?>
+
 
 
 

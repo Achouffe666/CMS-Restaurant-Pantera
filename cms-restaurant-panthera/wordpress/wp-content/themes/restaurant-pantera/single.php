@@ -13,7 +13,8 @@
 <li><?php the_date(); ?></li>
 <li><?php the_category(); ?></li>
 </ul>
-
+<?php
+echo 'single.php'?>
 
 
 <h1><?php the_title(); ?></h1>
