@@ -74,3 +74,5 @@ register_taxonomy("cuisine","post", [ "labels" => [ 'name' => 'Cuisine',
 };
     
 add_action("init", "pantera_init");
+
+
