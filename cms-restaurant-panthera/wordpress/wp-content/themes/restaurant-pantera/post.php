@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 <div class="bg-white">
 <div class="page-title">
   <h5>Welcome in Liege</h5>
@@ -107,4 +107,4 @@
 </div>
 </div>
 
-<?php get_footer() ?>
+<?php get_footer();?>
