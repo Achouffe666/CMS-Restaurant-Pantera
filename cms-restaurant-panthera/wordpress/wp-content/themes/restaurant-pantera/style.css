@@ -300,23 +300,64 @@ h1 a:hover {
   padding-left: 0;
 }
 
-.single .bg-single {
+.background-sing {
+  background: none;
+  background-color: #292929;
+  height: 800px;
+  margin-top: 550px;
+}
+.background-sing a:hover {
+  background-color: white;
+  color: black !important;
+}
+
+.bg-single {
   border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
   padding-top: 40px;
+}
+
+.title-nav a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+.title-nav a:link {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.single {
+  margin-top: -600px;
 }
 .single a {
   text-decoration: none;
   list-style-type: none;
-  color: black;
+  color: white;
 }
 .single a:link {
   text-decoration: none;
   list-style-type: none;
-  color: black;
+  color: white;
 }
 .single a ul {
   text-decoration: none;
   list-style-type: none;
+}
+.single .color-date {
+  color: white;
+}
+.single .svg-color {
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(15000%) contrast(100%);
+}
+.single .color-title {
+  color: white;
+}
+.single .color-intro {
+  color: white;
+}
+.single .fa-arrow-left {
+  color: white;
 }
 .single .align {
   padding-left: 20px;
@@ -393,6 +434,7 @@ h1 a:hover {
 .single .instruction .text9 {
   grid-column: 2/3;
   grid-row: 10/11;
+  padding-bottom: 5%;
 }
 .single .instruction .number1 {
   grid-column: 1/2;
@@ -491,6 +533,16 @@ h1 a:hover {
   height: 250px;
   width: 100%;
   border: black solid 1px;
+}
+
+.bg-post {
+  border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
+  padding-top: 40px;
+}
+
+.last-post .title-post {
+  padding-bottom: 2%;
+  padding-top: 1%;
 }
 
 .newsletter {

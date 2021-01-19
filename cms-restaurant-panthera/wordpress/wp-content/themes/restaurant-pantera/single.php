@@ -1,6 +1,30 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <?php wp_head() ?>
+    <title>Restaurant Pantera</title>
+</head>
+<body <?php body_class();?>>
+<header class="background-sing">
+
+<div class="navbar menubar title-nav">
+<h1><a href="<?php echo home_url( '/' ); ?>">Pantera Restaurant</a></h1>
+<div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div>
+</div>
+
+
+
+</header>
+
   <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-    
+   
   <div class="bg-single">
 
   <div class="container single">
@@ -14,7 +38,7 @@
             <li class="border-right d-flex align-items-center nav-item active">
             <i class="fas fa-arrow-left"></i>                <a class="nav-link" href="<?php echo home_url( '/' ); ?>">Retour</a>
             </li>
-            <li class="nav-item d-flex align-items-center align">
+            <li class="nav-item d-flex align-items-center align color-date">
               <?php the_date(); ?>
             </li>
         </ul>
@@ -23,7 +47,7 @@
     <div class="navbar-collapse collapse w-100 order-2 dual-collapse2">
         <ol class="navbar-nav ml-auto">
             <li class="nav-item " >
-            <div class="d-flex align-items-center"> <img src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;"><?php the_category() ?></div>
+            <div class="d-flex align-items-center"> <img class="svg-color" src="<?php echo get_template_directory_uri(); ?>/svg/cutelry.svg" alt="" style="width: 15px;"><?php the_category() ?></div>
             </li>
            
         </ol>
@@ -32,9 +56,9 @@
 
 
 
-<div class="card-body intro">
-<h1 class="card-title"><?php the_title(); ?></h1>
-<p class="card-text intro"> Cake donut oat cake. Chocolate bar pastry gingerbread dessert chocolate. Lollipop cheesecake cupcake. Halvah muffin donut chupa chups caramels. Tart lemon drops oat cake candy canes halvah sesame snaps tootsie roll jelly-o. Icing sweet jelly pastry sugar plum halvah chocolate. Chocolate cake cotton candy cotton candy gummi bears pie. Jelly-o icing bear claw tiramisu. Cake icing muffin cake.</p>
+<div class="card-body intro ">
+<h1 class="card-title color-title"><?php the_title(); ?></h1>
+<p class="card-text intro color-intro"> Cake donut oat cake. Chocolate bar pastry gingerbread dessert chocolate. Lollipop cheesecake cupcake. Halvah muffin donut chupa chups caramels. Tart lemon drops oat cake candy canes halvah sesame snaps tootsie roll jelly-o. Icing sweet jelly pastry sugar plum halvah chocolate. Chocolate cake cotton candy cotton candy gummi bears pie. Jelly-o icing bear claw tiramisu. Cake icing muffin cake.</p>
          
       <div class="post__content">
         
@@ -87,5 +111,5 @@ Tootsie roll bonbon cotton candy sweet roll powder marshmallow. Sugar plum sweet
 
   <?php endwhile; endif; ?>
  
+<?php include("include-last-post.php"); ?>
 
-<div class="test"><?php get_footer(); ?></div>

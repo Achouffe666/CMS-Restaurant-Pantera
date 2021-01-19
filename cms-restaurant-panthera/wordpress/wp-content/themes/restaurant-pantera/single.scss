@@ -1,18 +1,60 @@
-.single {
-    
-    .bg-single {
-        border-image: url('images/hachures-blanches-1.png') 30 fill / 30px / 30px;
-        padding-top: 40px;
-    
+
+
+.background-sing {
+  background:none;
+  background-color: #292929;
+  height: 800px;
+  margin-top: 550px;
+   //transform: translateY(250px);
+   //border-image: url('images/hachures-blanches-1.png') 30  / 30px / 30px;
+   a {
+    &:hover {
+        
+        background-color: white;
+        color:black !important;
+       
     }
+   
+    }
+  
+}
+
+.bg-single {
+  border-image: url('images/hachures-blanches-1.png') 30 fill / 30px / 30px;
+  padding-top: 40px;
+
+
+  
+}
+
+
+
+.title-nav{
+  a {text-decoration: none;
+    list-style-type: none; 
+color: white;
+&:link {
+    text-decoration:none; 
+    list-style-type: none; 
+    color: white; 
+}
+}}
+
+.single {
+  
+  
+//transform: translateY(-350px);
+margin-top: -600px;
+  
+
   
     a {text-decoration: none;
         list-style-type: none; 
-    color: black;
+    color: white;
     &:link {
         text-decoration:none; 
         list-style-type: none; 
-        color: black; 
+        color: white; 
     }
     ul {
         text-decoration:none; 
@@ -21,6 +63,25 @@
     
   
 
+}
+
+.color-date {
+  color:white;
+}
+
+.svg-color{
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(15000%) contrast(100%);
+}
+
+.color-title {
+  color:white;
+}
+.color-intro {
+  color:white;
+}
+
+.fa-arrow-left{
+  color:white;
 }
 
     .align {
@@ -47,6 +108,7 @@
 .intro {
     padding-bottom: 2%;
     padding-top: 1%;
+   
 
 }
     .img-intro {
@@ -118,6 +180,7 @@
       .text9{
         grid-column: 2/3;
         grid-row: 10/11;
+        padding-bottom: 5%;
       }
 
       .number1{
