@@ -6,14 +6,27 @@
 
 
     .menu-container {
-        padding: 5% 15% 10% 15%;
-        
+        padding: 5% 16% 11% 16%;
+
+        .border-dark {
+            
+                border-width:3px !important;
+            
+        }
+
+        .highlighted {
+            padding-bottom: 2%;
+        }
+
+        .color-yellow {
+            border: solid #E8D13E 2px;
+           
+        }
+
        .menu-padding{
            padding: 10% 0 10% 0;
        }
 
     }
 
-    .bot{
-        border-bottom: 5px solid black;
-    }
+  

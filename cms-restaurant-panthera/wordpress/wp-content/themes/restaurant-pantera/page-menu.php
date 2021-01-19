@@ -14,49 +14,59 @@ get_header() ?>
     <div class="col">
 
         <div class="card-text ">
-          <h3 class="d-flex justify-content-center"><span class="bot">STARTERS</span></h3>
-       
-Cupcake ipsum dolor sit amet candy muffin chupa chups oat cake. Pudding halvah cake. Danish cheesecake sugar plum muffin chupa chups candy apple pie toffee halvah.
-
-Caramels gummies muffin gingerbread cake soufflé I love biscuit chocolate bar. Cake fruitcake gingerbread caramels marshmallow icing. Bonbon danish I love soufflé pudding. Tart lollipop brownie.
-
-Gummi bears oat cake lollipop toffee I love sweet pudding tiramisu. Sweet roll marshmallow dragée tootsie roll. Gingerbread liquorice liquorice cake bonbon I love I love muffin powder. Sesame snaps muffin pudding oat cake.
-
-Dragée danish lemon drops cake tiramisu macaroon oat cake. Sweet muffin chocolate topping. Soufflé I love I love chocolate bar wafer. Jujubes sugar plum I love.
-
-Dragée danish donut candy canes jelly beans marshmallow cookie marzipan pastry. Bonbon jujubes I love marshmallow. Sugar plum cake pastry gummi bears.
-    
+          <h3 class="highlighted d-flex justify-content-center"><span class="border-bottom border-dark">STARTERS</span></h3>
+          <p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+    &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<div class="color-yellow"><p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p></div>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
     </div>
   
 
     <div class="card-text menu-padding">
-    <h3 class="d-flex justify-content-center"><span class="bot">MAINS</span></h3>
+    <h3 class="highlighted d-flex justify-content-center"><span class="border-bottom border-dark">MAINS</span></h3>
        
-Cupcake ipsum dolor sit amet candy muffin chupa chups oat cake. Pudding halvah cake. Danish cheesecake sugar plum muffin chupa chups candy apple pie toffee halvah.
+    <p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+    &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
 
-Caramels gummies muffin gingerbread cake soufflé I love biscuit chocolate bar. Cake fruitcake gingerbread caramels marshmallow icing. Bonbon danish I love soufflé pudding. Tart lollipop brownie.
-
-Gummi bears oat cake lollipop toffee I love sweet pudding tiramisu. Sweet roll marshmallow dragée tootsie roll. Gingerbread liquorice liquorice cake bonbon I love I love muffin powder. Sesame snaps muffin pudding oat cake.
-
-Dragée danish lemon drops cake tiramisu macaroon oat cake. Sweet muffin chocolate topping. Soufflé I love I love chocolate bar wafer. Jujubes sugar plum I love.
-
-Dragée danish donut candy canes jelly beans marshmallow cookie marzipan pastry. Bonbon jujubes I love marshmallow. Sugar plum cake pastry gummi bears.
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<div class="color-yellow"><p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p></div>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+    </div>
     
-       </div>
+       
 
        <div class="card-text">
-       <h3 class="d-flex justify-content-center"><span class="bot">DESSERTS</span></h3>
+       <h3 class="highlighted d-flex justify-content-center"><span class="border-bottom border-dark">DESSERTS</span></h3>
 
-    
-Cupcake ipsum dolor sit amet candy muffin chupa chups oat cake. Pudding halvah cake. Danish cheesecake sugar plum muffin chupa chups candy apple pie toffee halvah.
+       <p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+    &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<div class="color-yellow"><p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p></div>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
+&nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+    </div>
 
-Caramels gummies muffin gingerbread cake soufflé I love biscuit chocolate bar. Cake fruitcake gingerbread caramels marshmallow icing. Bonbon danish I love soufflé pudding. Tart lollipop brownie.
-
-Gummi bears oat cake lollipop toffee I love sweet pudding tiramisu. Sweet roll marshmallow dragée tootsie roll. Gingerbread liquorice liquorice cake bonbon I love I love muffin powder. Sesame snaps muffin pudding oat cake.
-
-Dragée danish lemon drops cake tiramisu macaroon oat cake. Sweet muffin chocolate topping. Soufflé I love I love chocolate bar wafer. Jujubes sugar plum I love.
-
-Dragée danish donut candy canes jelly beans marshmallow cookie marzipan pastry. Bonbon jujubes I love marshmallow. Sugar plum cake pastry gummi bears.
        </div>
        </div>
         </div>
