@@ -14,7 +14,7 @@
 <body <?php body_class();?>>
 <header class="background-sing">
 
-<div class="navbar menubar title-nav">
+<div class="navbar menubar title-nav color-white">
 <h1><a href="<?php echo home_url( '/' ); ?>">Pantera Restaurant</a></h1>
 <div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div>
 </div>

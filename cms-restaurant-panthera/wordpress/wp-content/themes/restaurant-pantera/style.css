@@ -640,6 +640,16 @@ h1 a:hover {
   padding-top: 40px;
 }
 
+.menu-container {
+  padding: 5% 15% 10% 15%;
+}
+.menu-container .black {
+  border: 5px solid black;
+}
+.menu-container .menu-padding {
+  padding: 10% 0 10% 0;
+}
+
 .bg-post {
   border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
   padding-top: 40px;
