@@ -28,7 +28,6 @@
 }
 
 
-
 .title-nav{
   a {text-decoration: none;
     list-style-type: none; 
@@ -40,6 +39,7 @@ color: white;
 }
 }}
 
+
 .single {
   
   
@@ -48,22 +48,22 @@ margin-top: -600px;
   
 
   
-    a {text-decoration: none;
-        list-style-type: none; 
-    color: white;
-    &:link {
-        text-decoration:none; 
-        list-style-type: none; 
-        color: white; 
-    }
-    ul {
-        text-decoration:none; 
-        list-style-type: none; 
-    }
-    
-  
+a {text-decoration: none;
+  list-style-type: none; 
+color: white;
+&:link {
+  text-decoration:none; 
+  list-style-type: none; 
+  color: white; 
+}
+ul {
+  text-decoration:none; 
+  list-style-type: none; 
+}
 
-  }
+
+
+}
 
 .color-date {
   color:white;
