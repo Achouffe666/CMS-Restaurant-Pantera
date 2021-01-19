@@ -6,6 +6,17 @@ wp_deregister_script("jquerymin");
 wp_register_script("jquery","https://code.jquery.com/jquery-3.2.1.slim.min.js", [], false, true);
 wp_enqueue_style("bootstrap");
 wp_enqueue_script("bootstrap");
+
+}
+
+
+
+function my_acf_google_map_api( $api ){
+    $api['key'] = 'AIzaSyDVIvqjTKzFsDeAWCDuh3mxBgrLAy-Xfx0';
+    return $api;
+};
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyDVIvqjTKzFsDeAWCDuh3mxBgrLAy-Xfx0');
 }
 
 
@@ -76,3 +87,5 @@ register_taxonomy("cuisine","post", [ "labels" => [ 'name' => 'Cuisine',
 add_action("init", "pantera_init");
 
 
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+add_action('acf/init', 'my_acf_init');
