@@ -80,7 +80,7 @@
   <div class="p-2 bd-highlight"><a href="https://www.facebook.com"><i class="fab fa-facebook-f emote1"></i></a></div>
   <div class="p-2 bd-highlight"><a href="https://www.twitter.com"><i class="fab fa-twitter emote2"></i></a></div>
   <div class="p-2 bd-highlight"><a href="https://www.instagram.com"><i class="fab fa-instagram emote3"></i></a></div>
-  <div class="p-2 bd-highlight"><a href="https://www.outlook.com"><i class="fas fa-envelope"></i></a></div>
+  <div class="p-2 bd-highlight"><a href="https://www.outlook.com"><i class="fas fa-envelope emote4"></i></a></div>
 </div>
 
 </div>
