@@ -19,6 +19,7 @@ get_header() ?>
     &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
 <p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
 &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<div class="chef-selection">CHEF SELECTION</div>
 <div class="color-yellow"><p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
 &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p></div>
 <p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
@@ -42,6 +43,7 @@ get_header() ?>
 &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
 <p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
 &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<div class="chef-selection">CHEF SELECTION</div>
 <div class="color-yellow"><p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
 &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p></div>
 <p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
@@ -57,6 +59,7 @@ get_header() ?>
     &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
 <p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
 &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p>
+<div class="chef-selection">CHEF SELECTION</div>
 <div class="color-yellow"><p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
 &nbsp;Cupcake ipsum dolor sit amet candy muffin chupa chups oat.</p></div>
 <p><h5>&nbsp;ROASTED STEAK ROULADE .......................................................................................................... 19 €</h5>
