@@ -1,60 +1,622 @@
 /*
-Error: File to import not found or unreadable: page-reservation.php.
-        on line 6 of style.scss
-
-1: @import 'header.scss';
-2: @import 'front-page.scss';
-3: @import 'category-cuisine.scss';
-4: @import 'menuoverview.scss';
-5: @import 'single.scss';
-6: @import 'page-reservation.php';
-7: @import 'include-last-post.scss';
-8: @import 'footer.scss';
-
-Backtrace:
-style.scss:6
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:67:in `rescue in import'
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:44:in `import'
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:28:in `imported_file'
-/usr/lib/ruby/vendor_ruby/sass/tree/import_node.rb:37:in `css_import?'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:310:in `visit_import'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:135:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:10:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:443:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:320:in `block in watch'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+Theme Name: pantera-restaurant
+Description: Becode project
+Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: page-reservation.php.\A         on line 6 of style.scss\A \A 1: @import 'header.scss';\A 2: @import 'front-page.scss';\A 3: @import 'category-cuisine.scss';\A 4: @import 'menuoverview.scss';\A 5: @import 'single.scss';\A 6: @import 'page-reservation.php';\A 7: @import 'include-last-post.scss';\A 8: @import 'footer.scss';"; }
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: "Poppins", sans-serif !important; }
+
+.menu {
+  width: 50%;
+  margin-top: 25px; }
+  .menu ul {
+    display: flex;
+    width: 100%; }
+    .menu ul li {
+      list-style-type: none;
+      margin: 4%; }
+    .menu ul a {
+      text-decoration: none;
+      color: white; }
+      .menu ul a:link {
+        text-decoration: none;
+        color: white; }
+    .menu ul img {
+      width: 15px;
+      filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(2000%) contrast(100%); }
+
+header {
+  background-image: url("images/banner-top.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 55vw; }
+
+.menubar {
+  width: 100%; }
+
+h1 {
+  margin-top: 25px !important; }
+  h1 a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    margin-left: 150px;
+    font-weight: bolder; }
+    h1 a:link {
+      text-decoration: none;
+      color: white;
+      font-family: "Poppins", sans-serif; }
+    h1 a:hover {
+      color: white; }
+
+.first-title {
+  color: white;
+  font-size: 55px;
+  margin-left: 165px;
+  margin-top: 50px; }
+  .first-title .upp {
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: bolder; }
+
+.left-bars {
+  margin-top: -75px;
+  margin-left: 20px; }
+  .left-bars .bars {
+    width: 10px;
+    height: 2px;
+    background-color: silver;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .left-bars .bars-3 {
+    background-color: white;
+    width: 40px; }
+
+.subtitle {
+  display: flex; }
+  .subtitle a {
+    margin-left: 65px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px; }
+    .subtitle alink {
+      text-decoration: none; }
+  .subtitle .white-bar {
+    height: 2px;
+    width: 75px;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 165px; }
+
+.foods-cards {
+  width: 90%;
+  align-items: center;
+  display: flex; }
+
+.hachures-blanches {
+  background-image: url("images/hachures-blanches-1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 8%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-95%); }
+
+.bg-white {
+  border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
+  padding-top: 40px; }
+
+.card-main-box {
+  margin-top: -200px; }
+
+.quality-cards {
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 0px solid black !important;
+  border-radius: 50px 50px 0px 0px !important; }
+  .quality-cards .quality-food-icon {
+    width: 20%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; }
+  .quality-cards .quality-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder; }
+  .quality-cards .quality-text {
+    text-align: center;
+    margin-bottom: 20px !important;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 25px; }
+
+.the-chef {
+  margin-bottom: 50px; }
+  .the-chef .story {
+    border: none !important; }
+  .the-chef .story-card {
+    margin-left: -200px;
+    margin-top: 150px;
+    background-color: white; }
+  .the-chef .story-card-right {
+    background-color: white;
+    margin-right: -200px;
+    margin-top: 150px;
+    z-index: 1; }
+  .the-chef .chef-img {
+    position: relative; }
+  .the-chef .discover-title {
+    font-size: 42px;
+    margin-top: auto;
+    margin-left: 70px; }
+  .the-chef .story-title, .the-chef .story-subtitle, .the-chef .story-text, .the-chef .story-founder {
+    font-size: 46px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left: 70px; }
+  .the-chef .story-subtitle, .the-chef .story-text, .the-chef .story-founder {
+    font-size: 16px;
+    margin-left: 70px;
+    margin-top: 15px; }
+  .the-chef .story-text {
+    font-weight: lighter;
+    text-transform: initial; }
+  .the-chef .story-founder {
+    font-size: 12px; }
+
+.burger-party {
+  border-image: url("images/hachures-blanches.png") 30 fill/30px/30px;
+  padding-top: 40px;
+  background-image: url("images/burger-party.png"); }
+  .burger-party .discover-restaurant {
+    font-size: 42px;
+    margin-top: auto;
+    margin-left: 70px; }
+  .burger-party .our-restaurant {
+    font-size: 46px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left: 70px; }
+
+.bg {
+  border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
+  padding-top: 40px; }
+
+.home .main {
+  padding: 2%; }
+.home .reset {
+  padding: 0; }
+.home .color li {
+  list-style-type: none; }
+.home .color a {
+  text-decoration: none;
+  color: #21252F; }
+  .home .color a:link {
+    text-decoration: none;
+    color: #21252F; }
+  .home .color a:hover {
+    color: blue; }
+.home .main-content {
+  padding: 2% 2% 0 2%;
+  background: white; }
+.home .main-title {
+  padding-top: 2%; }
+.home .post-t ul {
+  padding: 0;
+  margin: 0; }
+.home .post-t li {
+  list-style-type: none; }
+.home .post-t a {
+  text-decoration: none;
+  color: #21252F; }
+  .home .post-t a:link {
+    text-decoration: none;
+    color: #21252F; }
+
+.menu-overview {
+  text-align: center;
+  background: white; }
+  .menu-overview .main-text {
+    padding: 2%; }
+  .menu-overview .main-body {
+    padding-top: 3%; }
+  .menu-overview .button {
+    padding-top: 10%; }
+  .menu-overview .img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(2, 50%);
+    gap: 10px; }
+    .menu-overview .img-grid .img-foot {
+      width: auto;
+      height: 200px; }
+    .menu-overview .img-grid .grid1 {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+    .menu-overview .img-grid .grid2 {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .menu-overview .img-grid .grid3 {
+      grid-column: 1/2;
+      grid-row: 2/3; }
+    .menu-overview .img-grid .grid4 {
+      grid-column: 2/3;
+      grid-row: 2/3; }
+  .menu-overview .no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0; }
+
+.background-sing {
+  background: none;
+  background-color: #292929;
+  height: 800px;
+  margin-top: 550px; }
+  .background-sing a:hover {
+    background-color: white;
+    color: black !important; }
+
+.bg-single {
+  border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
+  padding-top: 40px; }
+
+.title-nav a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white; }
+  .title-nav a:link {
+    text-decoration: none;
+    list-style-type: none;
+    color: white; }
+
+.single {
+  margin-top: -600px; }
+  .single a {
+    text-decoration: none;
+    list-style-type: none;
+    color: white; }
+    .single a:link {
+      text-decoration: none;
+      list-style-type: none;
+      color: white; }
+    .single a ul {
+      text-decoration: none;
+      list-style-type: none; }
+  .single .color-date {
+    color: white; }
+  .single .svg-color {
+    filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(15000%) contrast(100%); }
+  .single .color-title {
+    color: white; }
+  .single .color-intro {
+    color: white; }
+  .single .fa-arrow-left {
+    color: white; }
+  .single .align {
+    padding-left: 20px; }
+  .single .border-right {
+    padding-left: 5px;
+    padding-right: 15px; }
+  .single .emote1 {
+    color: #3B5999; }
+  .single .emote2 {
+    color: #55ACEF; }
+  .single .emote3 {
+    color: #E44261; }
+  .single .intro {
+    padding-bottom: 2%;
+    padding-top: 1%; }
+  .single .img-intro {
+    width: 100%;
+    height: 500px; }
+  .single .img-instruction {
+    width: 100%;
+    height: 300px;
+    padding-top: 3%;
+    padding-bottom: 3%; }
+  .single .instruction {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 10; }
+    .single .instruction .title-instruction {
+      padding-bottom: 1%;
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .single .instruction .text1 {
+      grid-column: 2/3;
+      grid-row: 2/3; }
+    .single .instruction .text2 {
+      grid-column: 2/3;
+      grid-row: 3/4; }
+    .single .instruction .text3 {
+      grid-column: 2/3;
+      grid-row: 4/5; }
+    .single .instruction .text4 {
+      grid-column: 2/3;
+      grid-row: 5/6; }
+    .single .instruction .text5 {
+      grid-column: 2/3;
+      grid-row: 6/7; }
+    .single .instruction .text6 {
+      grid-column: 2/3;
+      grid-row: 7/8; }
+    .single .instruction .text7 {
+      grid-column: 2/3;
+      grid-row: 8/9; }
+    .single .instruction .text8 {
+      grid-column: 2/3;
+      grid-row: 9/10; }
+    .single .instruction .text9 {
+      grid-column: 2/3;
+      grid-row: 10/11;
+      padding-bottom: 5%; }
+    .single .instruction .number1 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      background: black;
+      border-radius: 50%;
+      color: white;
+      width: 25px;
+      height: 25px;
+      margin-left: 50%;
+      margin-top: 10%; }
+    .single .instruction .number2 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      background: black;
+      border-radius: 50%;
+      color: white;
+      width: 25px;
+      height: 25px;
+      margin-left: 50%;
+      margin-top: 10%; }
+    .single .instruction .number3 {
+      grid-column: 1/2;
+      grid-row: 7/8;
+      background: black;
+      border-radius: 50%;
+      color: white;
+      width: 25px;
+      height: 25px;
+      margin-left: 50%;
+      margin-top: 10%; }
+    .single .instruction .number4 {
+      grid-column: 1/2;
+      grid-row: 9/10;
+      background: black;
+      border-radius: 50%;
+      color: white;
+      width: 25px;
+      height: 25px;
+      margin-left: 50%;
+      margin-top: 10%; }
+  .single .post-categories {
+    list-style: none; }
+  .single .grid-intro {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1;
+    padding-top: 3%; }
+  .single .ingredient {
+    grid-column: 2/3;
+    grid-row: 1; }
+  .single .social-media {
+    grid-column: 1/2;
+    grid-row: 1;
+    padding-top: 15%; }
+  .single .title-intro {
+    padding-bottom: 1%; }
+
+.bg-white {
+  border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
+  padding-top: 40px; }
+
+.page-title {
+  text-align: center;
+  width: 100%;
+  height: 10%; }
+  .page-title h5 {
+    font-size: 30px; }
+  .page-title h6 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px; }
+
+.presentations-cards {
+  border: black solid 1px;
+  margin-top: 2.5%;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .presentations-cards .presentation-cards-image {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0; }
+    .presentations-cards .presentation-cards-image img {
+      width: 100%;
+      height: 100%; }
+  .presentations-cards .presentation-cards-text {
+    height: 80%; }
+    .presentations-cards .presentation-cards-text p {
+      text-align: left;
+      margin-top: 5%;
+      margin-left: 25%;
+      margin-right: 25%;
+      height: 80%;
+      line-height: 60px; }
+
+.map {
+  margin-top: 5%;
+  text-align: center;
+  width: 100%; }
+  .map h5 {
+    font-size: 30px; }
+  .map h6 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px; }
+  .map .google-map {
+    height: 600px;
+    width: 100%;
+    border: black solid 1px;
+    filter: grayscale(100%); }
+
+.reservation {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 800px; }
+  .reservation h5 {
+    text-align: center;
+    font-size: 30px; }
+  .reservation h6 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px; }
+  .reservation .reservation-container {
+    margin-top: 5%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    margin-right: 3%; }
+    .reservation .reservation-container img {
+      transform: translateX(12%);
+      height: 125%;
+      width: 70%; }
+    .reservation .reservation-container .reservation-form {
+      position: relative;
+      z-index: 1;
+      margin-right: 5%;
+      padding: 2%;
+      width: 30%;
+      background-color: silver; }
+
+.bg-post {
+  border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
+  padding-top: 40px; }
+
+.last-post .title-post {
+  padding-bottom: 2%;
+  padding-top: 1%; }
+
+.newsletter {
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  color: white;
+  border-image: url("images/hachures-noires.png") 30 fill/30px/30px;
+  height: 250px;
+  width: 80%;
+  transform: translateY(50%);
+  box-shadow: 0px 50px 70px 0px rgba(0, 0, 0, 0.5); }
+  .newsletter .newsletter-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase; }
+    .newsletter .newsletter-title h5 {
+      font-size: 60px;
+      font-weight: bolder; }
+  .newsletter .newsletter-input {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .newsletter .newsletter-input input {
+      height: 50px; }
+    .newsletter .newsletter-input button {
+      border: none;
+      background-color: white;
+      margin-left: 10px;
+      font-size: large;
+      text-transform: uppercase;
+      height: 50px;
+      width: 150px;
+      border-radius: 5px; }
+
+.foot {
+  border-image: url("images/hachures-noires.png") 30 fill/30px/30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center; }
+  .foot .footer {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    margin-top: 11.5%;
+    color: white; }
+    .foot .footer ul {
+      padding: 0;
+      padding-left: 10px; }
+    .foot .footer .sub-footer {
+      height: 100%; }
+      .foot .footer .sub-footer h6 {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        font-weight: bolder;
+        font-size: larger; }
+      .foot .footer .sub-footer .media-links {
+        display: flex;
+        margin-left: 5px;
+        margin-right: 15px;
+        max-width: 40px;
+        height: 40px;
+        list-style-type: none;
+        border-radius: 50%; }
+        .foot .footer .sub-footer .media-links a {
+          margin: auto; }
+          .foot .footer .sub-footer .media-links a img {
+            width: 10px;
+            height: 10px; }
+      .foot .footer .sub-footer .hours .open-days {
+        list-style: url(svg/time-clock.svg);
+        display: flex;
+        width: auto;
+        margin-top: 2.5%; }
+        .foot .footer .sub-footer .hours .open-days img {
+          margin-right: 5%; }
+        .foot .footer .sub-footer .hours .open-days hr {
+          width: 35%;
+          margin: auto;
+          margin-left: 5%;
+          margin-right: 5%; }
+      .foot .footer .sub-footer .contact {
+        margin-top: 5px;
+        margin-bottom: 15px; }
+        .foot .footer .sub-footer .contact img {
+          margin-right: 4.5%; }
+        .foot .footer .sub-footer .contact a {
+          text-decoration: none;
+          color: white; }
+      .foot .footer .sub-footer .insta-image {
+        height: auto;
+        width: auto;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%; }
+        .foot .footer .sub-footer .insta-image img {
+          max-width: 100%;
+          height: 100%; }
+    .foot .footer .footer-bottom {
+      padding-top: 5%;
+      text-align: center; }
+      .foot .footer .footer-bottom .grey-line {
+        width: 100%;
+        height: 1px;
+        background-color: silver; }
+      .foot .footer .footer-bottom p {
+        padding-top: 2%; }
+
+/*# sourceMappingURL=style.css.map */

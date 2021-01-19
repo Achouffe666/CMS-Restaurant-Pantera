@@ -2,8 +2,8 @@
 
 <div class="bg-white">
 <div class="page-title">
-  <h5>Welcome in Liege</h5>
-  <h6>Presentation</h6>
+  <h5><?php echo get_field("banner_presentation_title");?></h5>
+  <h6><?php echo get_field("banner_presentation_subtitle");?></h6>
 </div>
 
 <!-- for each cards... -->
@@ -35,12 +35,29 @@
 </div>
 
 <div class='map'>
-  <h5>Find us</h5>
-  <h6>Location</h6>
-  <div class="google-map">
-    google map here
-  </div>
-</div>
+  <h5><?php echo get_field("location_title");?></h5>
+  <h6><?php echo get_field("location_subtitle");?></h6>
+
+  <?php if (have_rows('location')) : ?>
+
+<?php while (have_rows('location')) : the_row(); ?>
+
+    <?php
+    get_template_part('template-parts/content', get_post_format());
+
+    $location = get_sub_field('map');
+
+    if (!empty($location)) :
+    ?>
+        <div class="acf-map google-map">
+            <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+        </div>
+    <?php endif; ?>
+
+
+<?php endwhile;
+endif; ?>
+
 
 <div class="reservation">
   <h5>Submit information to place order</h5>
