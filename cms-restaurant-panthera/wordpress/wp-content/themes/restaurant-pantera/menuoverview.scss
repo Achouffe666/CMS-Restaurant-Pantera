@@ -3,13 +3,13 @@
     background: white;
    
     
-    .card-text
+    .main-text
     {
         padding:2%;
 
     }
 
-    .card-body {
+    .main-body {
         padding-top:3%;
     }
 
@@ -26,7 +26,7 @@
   grid-template-rows: repeat(2,50%);
   gap: 10px;
 
-img {
+.img-foot {
     
         width: auto;
         height: 200px;

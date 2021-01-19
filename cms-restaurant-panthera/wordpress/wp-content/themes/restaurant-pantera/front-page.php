@@ -67,7 +67,7 @@
             <div class="card-body story-card shadow p-3 mb-5 ">
                 <h5 class="card-title discover-title">Discover</h5>
                 <h6 class="card-subtitle  story-title">Our story</h6>
-                <h6 class="card-subtitle  story-subtitle">Ultimate dinning experience lile no other</h6>
+                <h6 class="card-subtitle  story-subtitle">Ultimate dinning experience like no other</h6>
                 <p class="card-text story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui iure, odio deserunt nesciunt excepturi eius assumenda perferendis velit hic illum voluptate provident soluta, maiores repudiandae fuga praesentium reiciendis officiis rerum recusandae natus quasi voluptatum commodi? Adipisci esse obcaecati odit veritatis dignissimos. Libero voluptas a perferendis eius quidem officia aliquid dolores nulla perspiciatis vitae ut consequuntur, in repellat sunt enim, assumenda expedita impedit et quis! Ex possimus, cumque laudantium ipsam sunt quae, aliquam quidem voluptatibus quas hic nobis perspiciatis officia voluptates recusandae dignissimos at enim repudiandae explicabo suscipit doloribus vitae. Veritatis magni quisquam, ratione adipisci fugiat optio! Aperiam, similique deleniti..</p>
                 <p class="story-founder">Our founder</p>
                 <p class="discover-title"> The Chef </p>
@@ -109,46 +109,47 @@
 
         ?>
 
-        <div class="container col-xs-12 col-sm-12">
-        <div class="row">
-        <div class="col-5 reset"><?php the_post_thumbnail("post-thumbnail", ["class" => "card-img", "alt" => "", "style" => "height: auto;"
+<div class="container-fluid  d-flex justify-content-center the-chef">
+<div class="col-5"><?php the_post_thumbnail("post-thumbnail", ["class" => "card-img", "alt" => "", "style" => "height: 100%; width:100%;"
         ]) ?> </div>
-        <div class="col-5 reset  border card-body">
-        <i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
-        </p>
-                <article class="post"><?php the_category() ?>
-            <h5 class="card-title"><?php the_title(); ?></h5>
-                
-                <p class="card-text">
-                <?php the_excerpt(); ?>
-            <p class="d-flex justify-content-center">
-                    <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">Read more</button></a>
+
+
+        <div class="card story" style="width: 50rem; height: 45rem;">
+            <div class="card-body story-card shadow p-3 mb-5 ">
+                <h5 class="card-title discover-title">Our original Restaurant 1</h5>
+                <h6 class="card-subtitle  story-title">The chef's cafetaria</h6>
+                <p class="card-text story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui iure, odio deserunt nesciunt excepturi eius assumenda perferendis velit hic illum voluptate provident soluta, maiores repudiandae fuga praesentium reiciendis officiis rerum recusandae natus quasi voluptatum commodi? Adipisci esse obcaecati odit veritatis dignissimos. Libero voluptas a perferendis eius quidem officia aliquid dolores nulla perspiciatis vitae ut consequuntur, in repellat sunt enim, assumenda expedita impedit et quis! Ex possimus, cumque laudantium ipsam sunt quae, aliquam quidem voluptatibus quas hic nobis perspiciatis officia voluptates recusandae dignissimos at enim repudiandae explicabo suscipit doloribus vitae. Veritatis magni quisquam, ratione adipisci fugiat optio! Aperiam, similique deleniti..</p>
+                <p class="d-flex justify-content-center">
+                    <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">More infos</button></a>
                 </p>
-            </article>
-    </div>
-    </div>
-    </div>
+            
+            </div>
+        </div> <!-- END OF CARD STORY -->
+
+    </div> <!-- END OF THE CHEF -->
+
+
     <?php } 
-    else{?><div class="container col-xs-12 col-sm-12">
-        <div class="row">
-        
-        <div class="col-5 reset  border card-body">
-        <i class="far fa-clock"></i> <?php the_time( get_option( 'date_format' ) ); ?> 
-        </p>
-    <article class="post"><?php the_category() ?>
-            <h5 class="card-title"><?php the_title(); ?></h5>
-                
-                <p class="card-text ">
-                <?php the_excerpt(); ?>
-            <p class="d-flex justify-content-center">
-                    <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">Read more</button></a>
+    else{?><div class="container-fluid  d-flex justify-content-center the-chef">
+
+
+
+        <div class="card story" style="width: 50rem; height: 45rem;">
+            <div class="card-body story-card-right shadow p-3 mb-5 ">
+                <h5 class="card-title discover-title">Our original Restaurant 2</h5>
+                <h6 class="card-subtitle  story-title">The chef's cafetaria</h6>
+                <p class="card-text story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui iure, odio deserunt nesciunt excepturi eius assumenda perferendis velit hic illum voluptate provident soluta, maiores repudiandae fuga praesentium reiciendis officiis rerum recusandae natus quasi voluptatum commodi? Adipisci esse obcaecati odit veritatis dignissimos. Libero voluptas a perferendis eius quidem officia aliquid dolores nulla perspiciatis vitae ut consequuntur, in repellat sunt enim, assumenda expedita impedit et quis! Ex possimus, cumque laudantium ipsam sunt quae, aliquam quidem voluptatibus quas hic nobis perspiciatis officia voluptates recusandae dignissimos at enim repudiandae explicabo suscipit doloribus vitae. Veritatis magni quisquam, ratione adipisci fugiat optio! Aperiam, similique deleniti..</p>
+                <p class="d-flex justify-content-center">
+                    <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">More infos</button></a>
                 </p>
-            </article>
-    </div>
-    <div class="col-5 reset"><?php the_post_thumbnail("post-thumbnail", ["class" => "card-img", "alt" => "", "style" => "height: auto;"
+               
+            </div>
+           
+        </div> <!-- END OF CARD STORY -->
+        <div class="col-5"><?php the_post_thumbnail("post-thumbnail", ["class" => "card-img", "alt" => "", "style" => "height: 100%; width:100%;"
         ]) ?> </div>
-    </div>
-    </div>
+    </div> <!-- END OF THE CHEF -->
+
     <?php $i=0;
     }
     ?>
@@ -158,8 +159,7 @@
 
 
 
-    </div>
-   
+</div>
 </div>
 
 

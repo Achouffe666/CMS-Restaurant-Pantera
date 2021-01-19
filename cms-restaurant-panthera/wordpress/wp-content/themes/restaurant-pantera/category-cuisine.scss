@@ -5,7 +5,7 @@
 }
 
 .home{
-    .container {
+    .main{
         padding:2%;
     }
 .reset {
@@ -41,19 +41,20 @@ padding:0;
 
 
 
-.card-body {
+.main-content {
     padding:2% 2% 0 2%;
     background:white;
 }
 
-.card-title{
+.main-title{
     padding-top: 2%;
 }
 
-.post {
+.post-t{
 
     ul {
         padding:0;
+        margin: 0;
     }
     
     li{
