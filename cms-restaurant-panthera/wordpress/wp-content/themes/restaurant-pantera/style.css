@@ -311,6 +311,8 @@ h1 {
     color: #55ACEF; }
   .single .emote3 {
     color: #E44261; }
+  .single .emote4 {
+    color: black; }
   .single .intro {
     padding-bottom: 2%;
     padding-top: 1%; }
@@ -504,10 +506,35 @@ h1 {
       width: 30%;
       background-color: silver; }
 
+.bg-menu {
+  border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
+  padding-top: 40px; }
+
+.menu-container {
+  padding: 5% 16% 11% 16%; }
+  .menu-container .border-dark {
+    border-width: 3px !important; }
+  .menu-container .highlighted {
+    padding-bottom: 2%; }
+  .menu-container .color-yellow {
+    border: solid #E8D13E 2px; }
+  .menu-container .chef-selection {
+    background-color: #E8D13E;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    width: 115px;
+    height: 15px;
+    padding: 0px 20px 0px 20px; }
+  .menu-container .menu-padding {
+    padding: 10% 0 10% 0; }
+
 .bg-post {
   border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
   padding-top: 40px; }
 
+.last-post .title-read {
+  color: black !important; }
 .last-post .title-post {
   padding-bottom: 2%;
   padding-top: 1%; }
