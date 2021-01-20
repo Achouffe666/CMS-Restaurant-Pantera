@@ -132,24 +132,23 @@
             
             );
         $the_query = new WP_Query( $args );
-
+        $t=1; 
     $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post();
-
+    var_dump(get_field('3_restaurants_restaurant_'.$t.'_subtitle'));
         if ($i==0){ $i++;
 
 
         ?>
 
 <div class="container-fluid  d-flex justify-content-center the-chef">
-<div class="col-5"><?php the_post_thumbnail("post-thumbnail", ["class" => "card-img", "alt" => "", "style" => "height: 100%; width:100%;"
-        ]) ?> </div>
+<div class="col-5"><?php the_field('restaurant_1_img');?> </div>
 
-
+  
         <div class="card story" style="width: 50rem; height: 45rem;">
             <div class="card-body story-card shadow p-3 mb-5 ">
-                <h5 class="card-title discover-title"><?php the_title() ?></h5>
-                <h6 class="card-subtitle  story-title">The chef's cafetaria</h6>
-                <p class="card-text story-text"><?php the_excerpt() ?></p>
+                <h5 class="card-title discover-title"><?php echo get_field('restaurant_1_subtitle');?></h5>
+                <h6 class="card-subtitle story-title"><?php the_field('restaurant_1_title');?></h6>
+                <p class="card-text story-text"><?php the_field('restaurant_1_text');?></p>
                 <p class="d-flex justify-content-center">
                     <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">More infos</button></a>
                 </p>
@@ -158,20 +157,29 @@
         </div> <!-- END OF CARD STORY -->
 
     </div> <!-- END OF THE CHEF -->
+   
+
+    <?php 
+     } 
 
 
-    <?php } 
-    else{?><div class="container-fluid  d-flex justify-content-center the-chef">
+    else{
+        var_dump($t);
+       
+        
+        ?>
+    
+    <div class="container-fluid  d-flex justify-content-center the-chef">
 
 
 
         <div class="card story" style="width: 50rem; height: 45rem;">
             <div class="card-body story-card-right shadow p-3 mb-5 ">
-                <h5 class="card-title discover-title"><?php the_title() ?></h5>
-                <h6 class="card-subtitle  story-title">The chef's cafetaria</h6>
-                <p class="card-text story-text"><p class="card-text story-text"><?php the_excerpt() ?></p>
+                <h5 class="card-title discover-title"><?php echo get_field('restaurant_3_subtitle');?></h5>
+                <h6 class="card-subtitle  story-title"><?php echo get_field('restaurant_3_title');?></h6>
+                <p class="card-text story-text"><?php echo get_field('restaurant_3_text');?></p>
                 <p class="d-flex justify-content-center">
-                    <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">More infos</button></a>
+                    <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">More lol infos</button></a>
                 </p>
                
             </div>
@@ -182,7 +190,9 @@
     </div> 
 
     <?php $i=0;
+    
     }
+    $t++;
     ?>
 
 
@@ -213,4 +223,5 @@
 </div>
 
 <?php get_footer() ?>
+
 
