@@ -73,6 +73,9 @@ h1 a:hover {
   font-size: 55px;
   margin-left: 165px;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
 }
 .first-title .upp {
   text-transform: uppercase;
