@@ -231,6 +231,36 @@ h1 a:hover {
   margin-left: 70px;
 }
 
+.citation {
+  height: 30vw;
+  width: 10vw;
+  margin-top: 50px;
+  border-image: url("images/hachures-noires.png") 30 fill/30px/30px;
+  background-size: cover;
+  background-position: center center;
+}
+.citation .picture-citation {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.citation .g-bg {
+  color: white;
+}
+.citation .white-quote {
+  font-size: 46px;
+  font-weight: bolder;
+}
+.citation .text-citation {
+  font-size: 42px;
+  font-weight: bolder;
+}
+.citation .author-citation {
+  font-size: 16px;
+}
+
 .bg {
   border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
   padding-top: 40px;

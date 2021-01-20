@@ -169,5 +169,16 @@
 
 
 
-  
+<div class="container-fluid  row  citation">
+    
+    <div class="g-bg col-6 d-flex justify-content-center flex-column">
+        <p class="white-quote"> " </p>
+        <p class="text-citation"> Any time We Start Something New It Is Exciting And We Are Very Motivated and Committed. As Time Goes By </p>
+        <p class="author-citation">  - Devil Roy Barman </p>
+    </div>
+    <div class="picture-citation col-6" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/resto1.jpg'); ?>">
+    
+    </div>
+</div>
+
 <?php get_footer() ?>
