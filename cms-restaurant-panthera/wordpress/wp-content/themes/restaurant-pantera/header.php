@@ -11,7 +11,7 @@
     <?php wp_head() ?>
     <title>Restaurant Pantera</title>
 </head>
-<body <?php body_class();?>>
+<body >
 <header>
 <div class="navbar menubar">
 <h1><a href="<?php echo home_url( '/' ); ?>">Pantera Restaurant</a></h1>

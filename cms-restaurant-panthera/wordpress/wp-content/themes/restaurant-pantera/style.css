@@ -353,15 +353,84 @@ h1 a:hover {
   padding-left: 0;
 }
 
+.background-sing {
+  background: none;
+  background-color: #292929;
+  height: 800px;
+  margin-top: 550px;
+}
+.background-sing a:hover {
+  background-color: white;
+  color: black !important;
+}
+
+.bg-single {
+  border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
+  padding-top: 40px;
+}
+
+.title-nav a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+.title-nav a:link {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.single {
+  margin-top: -600px;
+}
 .single a {
   text-decoration: none;
   list-style-type: none;
-  color: black;
+  color: white;
 }
 .single a:link {
   text-decoration: none;
   list-style-type: none;
-  color: black;
+  color: white;
+}
+.single a ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+.single .color-date {
+  color: white;
+}
+.single .svg-color {
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(15000%) contrast(100%);
+}
+.single .color-title {
+  color: white;
+}
+.single .color-intro {
+  color: white;
+}
+.single .fa-arrow-left {
+  color: white;
+}
+.single .align {
+  padding-left: 20px;
+}
+.single .border-right {
+  padding-left: 5px;
+  padding-right: 15px;
+}
+.single .emote1 {
+  color: #3B5999;
+}
+.single .emote2 {
+  color: #55ACEF;
+}
+.single .emote3 {
+  color: #E44261;
+}
+.single .intro {
+  padding-bottom: 2%;
+  padding-top: 1%;
 }
 .single .img-intro {
   width: 100%;
@@ -370,14 +439,120 @@ h1 a:hover {
 .single .img-instruction {
   width: 100%;
   height: 300px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
-.single .instruction .number {
+.single .instruction {
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-template-rows: 10;
+}
+.single .instruction .title-instruction {
+  padding-bottom: 1%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.single .instruction .text1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.single .instruction .text2 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.single .instruction .text3 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.single .instruction .text4 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.single .instruction .text5 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.single .instruction .text6 {
+  grid-column: 2/3;
+  grid-row: 7/8;
+}
+.single .instruction .text7 {
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+.single .instruction .text8 {
+  grid-column: 2/3;
+  grid-row: 9/10;
+}
+.single .instruction .text9 {
+  grid-column: 2/3;
+  grid-row: 10/11;
+  padding-bottom: 5%;
+}
+.single .instruction .number1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
   background: black;
   border-radius: 50%;
   color: white;
+  width: 25px;
+  height: 25px;
+  margin-left: 50%;
+  margin-top: 10%;
 }
-.single .instruction p .number {
-  font-size: 15px;
+.single .instruction .number2 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  background: black;
+  border-radius: 50%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  margin-left: 50%;
+  margin-top: 10%;
+}
+.single .instruction .number3 {
+  grid-column: 1/2;
+  grid-row: 7/8;
+  background: black;
+  border-radius: 50%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  margin-left: 50%;
+  margin-top: 10%;
+}
+.single .instruction .number4 {
+  grid-column: 1/2;
+  grid-row: 9/10;
+  background: black;
+  border-radius: 50%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  margin-left: 50%;
+  margin-top: 10%;
+}
+.single .post-categories {
+  list-style: none;
+}
+.single .grid-intro {
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-template-rows: 1;
+  padding-top: 3%;
+}
+.single .ingredient {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+.single .social-media {
+  grid-column: 1/2;
+  grid-row: 1;
+  padding-top: 15%;
+}
+.single .title-intro {
+  padding-bottom: 1%;
 }
 
 .bg-white {
@@ -445,9 +620,10 @@ h1 a:hover {
   font-size: 40px;
 }
 .map .google-map {
-  height: 250px;
+  height: 600px;
   width: 100%;
   border: black solid 1px;
+  filter: grayscale(100%);
 }
 
 .reservation {
@@ -485,6 +661,16 @@ h1 a:hover {
   padding: 2%;
   width: 30%;
   background-color: silver;
+}
+
+.bg-post {
+  border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
+  padding-top: 40px;
+}
+
+.last-post .title-post {
+  padding-bottom: 2%;
+  padding-top: 1%;
 }
 
 .newsletter {
