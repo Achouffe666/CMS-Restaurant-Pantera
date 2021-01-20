@@ -29,7 +29,7 @@ while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
 
     <p class="card-text"><?php the_excerpt() ?>
 </p>
-<a href="<?php the_permalink() ?>" class="card-link">................................... READ MORE</a>
+<a class="title-read" href="<?php the_permalink() ?>" class="card-link title-read">................................... READ MORE</a>
 
     
     </div>
