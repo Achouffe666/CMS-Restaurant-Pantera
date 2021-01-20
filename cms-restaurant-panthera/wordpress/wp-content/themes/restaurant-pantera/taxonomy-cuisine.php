@@ -4,9 +4,7 @@
 <div class="main container home">
 
 <div class="color">
-
-
-<?php $cuisines = get_terms(['category' => 'cuisine']); ?>
+<?php $cuisines = get_terms(['taxonomy' => 'cuisine']); ?>
 
 <ul class="nav nav-pills my-6">
     <?php foreach($cuisines as $cuisine): ?>

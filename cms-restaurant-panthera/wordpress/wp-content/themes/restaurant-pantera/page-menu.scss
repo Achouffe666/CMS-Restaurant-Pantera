@@ -1,0 +1,44 @@
+.bg-menu {
+    border-image: url('images/hachures-blanches-1.png') 30 fill / 30px / 30px;
+    padding-top: 40px;
+  
+}
+
+
+    .menu-container {
+        padding: 5% 16% 11% 16%;
+
+        .border-dark {
+            
+                border-width:3px !important;
+            
+        }
+
+        .highlighted {
+            padding-bottom: 2%;
+        }
+
+        .color-yellow {
+            border: solid #E8D13E 2px;
+           
+        }
+
+        .chef-selection{
+            background-color: #E8D13E ;
+            color:white;
+            font-size: 9px;
+            font-weight: bold;
+           width:115px;
+           height:15px;
+           padding: 0px 20px 0px 20px;
+         
+           
+        }
+
+       .menu-padding{
+           padding: 10% 0 10% 0;
+       }
+
+    }
+
+  

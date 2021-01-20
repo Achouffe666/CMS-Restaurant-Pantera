@@ -52,6 +52,7 @@
 
 .the-chef{
 
+    margin-bottom:50px;
     .story {
 
         border:none!important;
@@ -61,9 +62,17 @@
 
     margin-left:-200px;
     margin-top: 150px;
+    background-color: white;
    
 
 
+}
+
+.story-card-right {
+    background-color: white;
+    margin-right: -200px;
+    margin-top: 150px;
+    z-index:1;
 }
 
 .chef-img {
@@ -109,6 +118,74 @@
 }
 
 .burger-party {
-
+    border-image: url('images/hachures-blanches.png') 30 fill / 30px / 30px;
+    padding-top: 40px;
     background-image: url('images/burger-party.png');
+
+
+
+.discover-restaurant{
+
+    font-size: 42px;
+    margin-top: auto;
+    margin-left:70px;
+    
+    
+}
+
+.our-restaurant {
+    font-size: 46px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left:70px;
+}
+}
+
+.citation {
+
+    height: 30vw;
+    width: 10vw;
+    margin-top: 50px;
+    border-image: url('images/hachures-noires.png') 30 fill / 30px / 30px;
+    background-size: cover;
+    background-position: center center;
+
+
+
+    .picture-citation {
+
+        padding: 0;
+        margin:0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        
+    }
+
+    .g-bg {
+
+        
+        color:white;
+    }
+
+    .white-quote {
+
+        font-size:46px;
+        font-weight: bolder;
+    }
+
+    .text-citation {
+
+        font-size: 42px;
+        font-weight: bolder;
+    }
+
+    .author-citation {
+
+        font-size: 16px;
+    }
+
+  
+    
 }
