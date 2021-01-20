@@ -4,7 +4,15 @@
 }
 
 .last-post {
-  .title-read{color: black !important;}
+  .title-read{color: black !important;
+
+        a {
+
+            text-decoration: none;
+            &link{
+                text-decoration: none;
+            };
+        }}
     .title-post{
         padding-bottom: 2%;
         padding-top:1%;
