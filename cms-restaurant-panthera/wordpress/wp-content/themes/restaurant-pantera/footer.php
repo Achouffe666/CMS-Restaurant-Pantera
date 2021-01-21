@@ -13,7 +13,7 @@
 <div class="foot">
 
 <div class=" row footer">
-
+    
     <div class="col-3 sub-footer">
         <h6 style="font-size: 40px;">Pantera restaurant</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam asperiores ullam sequi natus odio! Pariatur, atque? Architecto suscipit perferendis .</p>
