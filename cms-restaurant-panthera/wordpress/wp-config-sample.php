@@ -22,17 +22,17 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define( 'DB_NAME', 'team-pantera' );
+define( 'DB_NAME', 'votre_nom_de_bdd' );
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'team-pantera' );
+define( 'DB_USER', 'votre_utilisateur_de_bdd' );
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', '4imFB.MedEkv' );
+define( 'DB_PASSWORD', 'votre_mdp_de_bdd' );
 
 /** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', 'http://188.166.24.55/' );
-define('FS_METHOD','direct');
+define( 'DB_HOST', 'localhost' );
+
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8' );
 

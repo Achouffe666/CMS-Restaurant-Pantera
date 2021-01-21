@@ -1,0 +1,77 @@
+.bg {
+    border-image: url('images/hachures-grises-180.png') 30 fill / 30px / 30px ;
+    padding-top: 40px;
+
+}
+
+.home{
+    .container {
+        padding:2%;
+    }
+.reset {
+ 
+padding:0;
+
+}
+
+.color {
+ 
+    li{
+        list-style-type: none;
+       
+    }
+    a {
+        text-decoration: none;
+        color:#21252F;
+        
+        &:link {
+            text-decoration:none; 
+            color:#21252F;
+          
+        }
+
+        &:hover {
+           
+            color:blue;
+          
+        }
+
+}
+}
+
+
+
+.card-body {
+    padding:3% 3% 0 3%;
+    background:white;
+}
+
+.card-title{
+    padding-top: 3%;
+}
+
+.post {
+
+    ul {
+        padding:0;
+    }
+    
+    li{
+        list-style-type: none;
+       
+    }
+    a {
+        text-decoration: none;
+        color:#21252F;
+        
+        &:link {
+            text-decoration:none; 
+            color:#21252F;
+          
+        }
+
+}
+
+}
+}
+
