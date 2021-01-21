@@ -1,11 +1,11 @@
 <div class="row newsletter">
         <div class="col-4 newsletter-title">
-        <h5>Join our<br>newsletter</h5>
+        <h5><?php the_field('newsletter_main_title', 'option'); ?><br><?php the_field('newsletter_subtitle', 'option'); ?></h5>
         </div>
         <div class="col-8 newsletter-input">
         <form action="">
             <input type="text" placeholder="Yous Email Adress">
-            <button>SUBSCRIBE</button>
+            <button><?php the_field('newsletter_subscribe', 'option'); ?></button>
         </form>
         </div>
     </div>
@@ -13,16 +13,18 @@
 <div class="foot">
 
 <div class=" row footer">
-    
+
     <div class="col-3 sub-footer">
 
         <h6 style="font-size: 40px;"><?php the_field('description_title', 'option'); ?></h6>
         <p><?php the_field('description_short_description', 'option'); ?></p>
         <ul class="row media">
-            <li class="col-4 media-links" style="background-color: #3B5999;"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/svg/facebook.svg" alt="Facebook"></a></li>
-            <li class="col-4 media-links" style="background-color: #56ADF0;"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/svg/twitter.svg" alt="Twitter"></a></li>
-            <li class="col-4 media-links" style="background-color: #E54261;"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/svg/instagram.svg" alt="Instagram"></a></li>
-            <li class="col-4 media-links" style="background-color: #0077B4;"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/svg/linkedin.svg" alt="Linkdin"></a></li>
+            <?php 
+            $medias = get_field('social_media','option');
+            foreach($medias as $elem) {
+               ?>
+            <li class="col-4 media-links" ><a href="<?php echo $elem['link']; ?>"><img src="<?php echo $elem['image']['url'];?>"></a></li>
+            <?php } ?>
         </ul>
     </div>
     <div class="col-3 sub-footer">
