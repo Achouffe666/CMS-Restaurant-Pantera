@@ -116,8 +116,8 @@
 
 
                     <!-- DISCOVER OURS RESTAURANTS PART -->
-
-<div class=" container-fluid d-flex flex-column justify-content-center align-items-center burger-party">
+<div class=" hachures-grises">
+<div class=" container-fluid d-flex flex-column justify-content-center align-items-center burger-party ">
 <p class="discover-restaurant"> Discover our franchise </p>
         <p class="our-restaurant"> Our restaurants </p>
    
@@ -210,7 +210,7 @@
 
 </div>
 </div>
-
+</div>
 
 
 
@@ -222,14 +222,19 @@
     
     <div class="g-bg col-6 d-flex justify-content-center flex-column">
         <p class="white-quote"> " </p>
-        <p class="text-citation"> Any time We Start Something New It Is Exciting And We Are Very Motivated and Committed. As Time Goes By </p>
-        <p class="author-citation">  - Devil Roy Barman </p>
+        <p class="text-citation"> <?php the_field('testimony_text');?> </p>
+        <p class="author-citation"> <?php the_field('testimony_name');?></p>
     </div>
-    <div class="picture-citation col-6" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/resto1.jpg'); ?>">
+
+    <?php
+    $image_id2 = get_field('testimony_image');
+    ?>
+    <div class=" col-6 picture-citation" style="background-image:url('<?php echo $image_id2 ['url']; ?>;')">
     
     </div>
 </div>
 
+<?php include("include-last-post.php"); ?>
 <?php get_footer() ?>
 
 

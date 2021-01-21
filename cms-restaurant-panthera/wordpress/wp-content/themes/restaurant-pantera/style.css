@@ -147,6 +147,7 @@ h1 {
 }
 .the-chef .story {
   border: none !important;
+  background-color: transparent;
 }
 .the-chef .story-card {
   margin-left: -200px;
@@ -191,19 +192,30 @@ h1 {
   font-size: 12px;
 }
 
+.hachures-grises {
+  height: 100%;
+  width: 100%;
+  border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
+}
+
 .burger-party {
-  border-image: url("images/hachures-blanches.png") 30 fill/30px/30px;
   padding-top: 40px;
-  background-image: url("images/burger-party.png"); }
-  .burger-party .discover-restaurant {
-    font-size: 42px;
-    margin-top: auto;
-    margin-left: 70px; }
-  .burger-party .our-restaurant {
-    font-size: 46px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    margin-left: 70px; }
+  opacity: 50%;
+  background-image: url("images/burger_party_grey.png");
+  opacity: 100%;
+  margin-bottom: 5%;
+}
+.burger-party .discover-restaurant {
+  font-size: 42px;
+  margin-top: auto;
+  margin-left: 70px;
+}
+.burger-party .our-restaurant {
+  font-size: 46px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
 
 .citation {
   height: 30vw;
@@ -211,23 +223,30 @@ h1 {
   margin-top: 50px;
   border-image: url("images/hachures-noires.png") 30 fill/30px/30px;
   background-size: cover;
-  background-position: center center; }
-  .citation .picture-citation {
-    padding: 0;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; }
-  .citation .g-bg {
-    color: white; }
-  .citation .white-quote {
-    font-size: 46px;
-    font-weight: bolder; }
-  .citation .text-citation {
-    font-size: 42px;
-    font-weight: bolder; }
-  .citation .author-citation {
-    font-size: 16px; }
+  background-position: center center;
+}
+.citation .picture-citation {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 90%;
+}
+.citation .g-bg {
+  color: white;
+}
+.citation .white-quote {
+  font-size: 46px;
+  font-weight: bolder;
+}
+.citation .text-citation {
+  font-size: 2em;
+  font-weight: bolder;
+}
+.citation .author-citation {
+  font-size: 16px;
+}
 
 .resto-card {
   margin-right: -200px;
