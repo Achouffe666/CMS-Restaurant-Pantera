@@ -125,46 +125,55 @@
         
 
         <?php
-        
+   
         $args = array(
             'category_name' => 'Restaurant',
-            'paged' => get_query_var( 'paged' ) 
+            // 'paged' => get_query_var( 'paged' ) 
             
             );
         $the_query = new WP_Query( $args );
-        $t=1; 
-    $i=0; if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post();
-    var_dump(get_field('3_restaurants_restaurant_'.$t.'_subtitle'));
-        if ($i==0){ $i++;
+    
+       
+     $restaurant = get_field("3_restaurants");
+     $i = 0;
+    foreach ($restaurant AS $article){
 
-
+    if ($i == 0){
+        $i++;
+    
+      
+   
+     
+        
         ?>
 
 <div class="container-fluid  d-flex justify-content-center the-chef">
-
-
-  
+    
         <div class="card story" style="width: 50rem; height: 45rem;">
-            <div class="card-body story-card shadow p-3 mb-5 ">
-                <h5 class="card-title discover-title"><?php echo get_field('restaurant_1_subtitle');?></h5>
-                <h6 class="card-subtitle story-title"><?php the_field('restaurant_1_title');?></h6>
-                <p class="card-text story-text"><?php the_field('restaurant_1_text');?></p>
+            <div class="card-body resto-card shadow p-3 mb-5 ">
+                <h5 class="card-title discover-title"><?php echo $article["subtitle"];?></h5>
+                <h6 class="card-subtitle story-title"><?php echo $article ["title"];?></h6>
+                <p class="card-text story-text"><?php echo $article ["text"];;?></p>
                 <p class="d-flex justify-content-center">
-                    <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">More infos</button></a>
+                    <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">More infos !!!!</button></a>
                 </p>
             
             </div>
         </div> <!-- END OF CARD STORY -->
-        <img src="<?php the_field('restaurant_1_img');?>" class="chef-img;  col-6;" style="width: 50%;"/> 
+        <img src="<?php echo $article ["img"];?>" class="chef-img; col-6;" style="width: 50%;"/> 
     </div> <!-- END OF THE CHEF -->
    
-
+   
     <?php 
-     } 
+    
+    } else {
 
 
-    else{
-        var_dump($t);
+ 
+
+
+
+       
        
         
         ?>
@@ -172,12 +181,12 @@
     <div class="container-fluid  d-flex justify-content-center the-chef">
 
 
-
+    <img src="<?php echo $article ["img"];?>" class="chef-img; col-6;" style="width: 50%;"/> 
         <div class="card story" style="width: 50rem; height: 45rem;">
-            <div class="card-body story-card-right shadow p-3 mb-5 ">
-                <h5 class="card-title discover-title"><?php echo get_field('restaurant_3_subtitle');?></h5>
-                <h6 class="card-subtitle  story-title"><?php echo get_field('restaurant_3_title');?></h6>
-                <p class="card-text story-text"><?php echo get_field('restaurant_3_text');?></p>
+            <div class="card-body story-card shadow p-3 mb-5 ">
+                <h5 class="card-title discover-title"><?php echo $article["subtitle"];?></h5>
+                <h6 class="card-subtitle story-title"><?php echo $article["title"];?></h6>
+                <p class="card-text story-text"><?php echo $article["text"];?></p>
                 <p class="d-flex justify-content-center">
                     <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">More lol infos</button></a>
                 </p>
@@ -185,18 +194,18 @@
             </div>
            
         </div> <!-- END OF CARD STORY -->
-        <div class="col-5"><?php the_post_thumbnail("post-thumbnail", ["class" => "card-img", "alt" => "", "style" => "height: 100%; width:100%;"
-        ]) ?> </div>
+        
     </div> 
 
-    <?php $i=0;
-    
-    }
-    $t++;
+    <?php 
+      $i=0;
+}
+} 
+  
     ?>
 
 
-        <?php endwhile; endif; ?>
+        <?php ?>
 
 
 

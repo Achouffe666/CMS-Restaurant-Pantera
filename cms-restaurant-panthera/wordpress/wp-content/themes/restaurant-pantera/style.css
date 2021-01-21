@@ -143,6 +143,7 @@ h1 {
     margin-top: 25px; }
 
 .the-chef {
+<<<<<<< HEAD
   margin-bottom: 50px; }
   .the-chef .story {
     border: none !important; }
@@ -175,6 +176,55 @@ h1 {
     text-transform: initial; }
   .the-chef .story-founder {
     font-size: 12px; }
+=======
+  margin-bottom: 50px;
+}
+.the-chef .story {
+  border: none !important;
+}
+.the-chef .story-card {
+  margin-left: -200px;
+  margin-top: 150px;
+  background-color: white;
+}
+.the-chef .story-card-right {
+  background-color: white;
+  margin-right: -200px;
+  margin-top: 150px;
+  z-index: 1;
+}
+.the-chef .story-card-left {
+  background-color: white;
+  margin-left: -200px;
+  margin-top: 150px;
+}
+.the-chef .chef-img {
+  position: relative;
+}
+.the-chef .discover-title {
+  font-size: 42px;
+  margin-top: auto;
+  margin-left: 70px;
+}
+.the-chef .story-title, .the-chef .story-subtitle, .the-chef .story-founder, .the-chef .story-text {
+  font-size: 46px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+.the-chef .story-subtitle, .the-chef .story-founder, .the-chef .story-text {
+  font-size: 16px;
+  margin-left: 70px;
+  margin-top: 15px;
+}
+.the-chef .story-text {
+  font-weight: lighter;
+  text-transform: initial;
+}
+.the-chef .story-founder {
+  font-size: 12px;
+}
+>>>>>>> 2727b4c58c33b7999f987764fa49166df64f0720
 
 .burger-party {
   border-image: url("images/hachures-blanches.png") 30 fill/30px/30px;
@@ -213,6 +263,12 @@ h1 {
     font-weight: bolder; }
   .citation .author-citation {
     font-size: 16px; }
+
+.resto-card {
+  margin-right: -200px;
+  margin-top: 150px;
+  background-color: white;
+}
 
 .bg {
   border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
