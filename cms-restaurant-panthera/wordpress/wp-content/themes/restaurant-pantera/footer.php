@@ -23,7 +23,7 @@
             $medias = get_field('social_media','option'); 
             foreach($medias as $media){
             ?>
-            <li class="col-4 media-links" ><a href="<?php echo $media['link']; ?>"><img src="<?php echo $media['image']['url']; ?>" alt="Facebook"></a></li>
+            <li class="col-4 media-links" ><a href="<?php echo $media['link']; ?>"><img src="<?php echo $media['image']['url']; ?>" alt="media-link"></a></li>
        <?php 
        } ?>
         </ul>
