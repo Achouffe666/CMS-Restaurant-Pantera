@@ -178,6 +178,7 @@ h1 a:hover {
 }
 .the-chef .story {
   border: none !important;
+  background-color: transparent;
 }
 .the-chef .story-card {
   margin-left: -200px;
@@ -222,10 +223,18 @@ h1 a:hover {
   font-size: 12px;
 }
 
+.hachures-grises {
+  height: 100%;
+  width: 100%;
+  border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
+}
+
 .burger-party {
-  border-image: url("images/hachures-blanches.png") 30 fill/30px/30px;
   padding-top: 40px;
-  background-image: url("images/burger-party.png");
+  opacity: 50%;
+  background-image: url("images/burger_party_grey.png");
+  opacity: 100%;
+  margin-bottom: 5%;
 }
 .burger-party .discover-restaurant {
   font-size: 42px;
@@ -253,6 +262,7 @@ h1 a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-size: 90%;
 }
 .citation .g-bg {
   color: white;
@@ -262,7 +272,7 @@ h1 a:hover {
   font-weight: bolder;
 }
 .citation .text-citation {
-  font-size: 42px;
+  font-size: 2em;
   font-weight: bolder;
 }
 .citation .author-citation {

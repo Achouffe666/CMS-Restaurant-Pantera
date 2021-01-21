@@ -23,7 +23,26 @@
 
 </header>
 
-  <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+  <?php if( have_posts() ) : while( have_posts() ) : the_post(); 
+
+  $cuisines = get_terms(['category' => 'cuisine']);
+  $cuisineSlug = array_column($cuisines, 'slug');
+  $categories = get_the_category();
+
+  $isCuisine = false;
+
+  foreach($categories as $categorie)
+  {
+    
+    if(in_array($categorie->slug, $cuisineSlug))
+    {
+      $isCuisine = true;
+      break; 
+    }
+    
+  }
+  
+  ?>
    
   <div class="bg-single">
 
@@ -67,7 +86,7 @@
 <div class="ingredient">
         <p class="card-text ">
 <h2 class="title-intro">Ingredients</h2>
-<p>For 4 peoples - preparation 30 min :</p>
+<p>For 4 peoples - preparation 300 min :</p>
 <p> • &nbsp;&nbsp;&nbsp;&nbsp; Pommes de terre à chair ferme : 500 gr </p>
 <p> • &nbsp;&nbsp;&nbsp;&nbsp; Haricots verts : 800 gr</p>
 <p> • &nbsp;&nbsp;&nbsp;&nbsp; Oignon : 1</p>
