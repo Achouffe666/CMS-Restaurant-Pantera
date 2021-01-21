@@ -1,4 +1,23 @@
 <?php get_header();?>
+<header style="background-image:url('<?php echo get_field("banner_top_image")['url']; ?>');">
+<div class="navbar menubar">
+<h1><a href="<?php echo home_url( '/' ); ?>"><?php echo get_field("banner_top_main_title");?></a></h1>
+<div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div>
+</div>
+<div class="first-title">
+    <p><?php echo get_field("banner_top_subtitle");?></p>
+</div>
+<div class="left-bars">
+    <div class="bars bars-1"></div>
+    <div class="bars bars-2"></div>
+    <div class="bars bars-3"></div>
+    <div class="bars bars-4"></div>
+</div>
+<div class="subtitle">
+<div class="white-bar"></div><a href="#"> Check our menu </a>
+</div>
+
+</header>
 
 <div class="bg-white">
 <div class="page-title">
@@ -7,32 +26,46 @@
 </div>
 
 <!-- for each cards... -->
+<?php 
+$repeater = get_field("banner_presentation_repeater");
+$r = 0;
+
+foreach ($repeater as $element){
+
+?>
+  <?php if($r==0){ ?>
 <div class="row presentations-cards">
+
   <div class="col-6 presentation-cards-image">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/the-chef.jpg">
+    <img src="<?php echo $element['image']['url'];?>">
   </div>
   <!-- if i=0 => -->
   <div class="col-6 presentation-cards-text">
-    <h5>Our original restaurant</h5>
-    <h6>The chef's cafeteria</h6>
+    <h5><?php echo $element['title'];?></h5>
+    <h6><?php echo $element['subtitle'];?></h6>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, consequatur eaque. Ab architecto possimus quasi iusto dolor quia inventore quae in assumenda similique, ipsum officia provident tempore, repellat ratione voluptates.
-    </p>
+    <?php echo $element['text_area'];?>  
+  </p>
   </div>
 </div>
+<?php }else{ ?>
 <!-- else -->
 <div class="row presentations-cards">
-  <div class="col-6 presentation-cards-text">
-    <h5>Our original restaurant</h5>
-    <h6>The chef's cafeteria</h6>
+<div class="col-6 presentation-cards-text">
+    <h5><?php echo $element['title'];?></h5>
+    <h6><?php echo $element['subtitle'];?></h6>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, consequatur eaque. Ab architecto possimus quasi iusto dolor quia inventore quae in assumenda similique, ipsum officia provident tempore, repellat ratione voluptates.
-    </p>
+    <?php echo $element['text_area'];?>  
+  </p>
   </div>
   <div class="col-6 presentation-cards-image">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/the-chef.jpg">
+    <img src="<?php echo $element['image']['url'];?>">
   </div>
 </div>
+<?php $r = 0;} ?>
+<?php 
+ $r++;
+}?>
 
 <div class='map'>
   <h5><?php echo get_field("location_title");?></h5>
@@ -60,10 +93,10 @@ endif; ?>
 
 
 <div class="reservation">
-  <h5>Submit information to place order</h5>
-  <h6>Reserve a table</h6>
+  <h5><?php echo get_field("reservation_title");?></h5>
+  <h6><?php echo get_field("reservation_subtitle");?></h6>
   <div class='reservation-container'>
-  <img src="<?php echo get_template_directory_uri(); ?>/images/the-chef.jpg">
+  <img src="<?php echo get_field("reservation_image")['url']; ?>">
     <div class='reservation-form'>
       <form action="">
         <div class="form-row">

@@ -12,7 +12,7 @@
     <title>Restaurant Pantera</title>
 </head>
 <body >
-<header>
+<!-- <header>
 <div class="navbar menubar">
 <h1><a href="<?php echo home_url( '/' ); ?>">Pantera Restaurant</a></h1>
 <div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div>
@@ -32,6 +32,6 @@
 </div>
 
 </header>
-
+ -->
 
 
