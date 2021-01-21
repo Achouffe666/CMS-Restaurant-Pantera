@@ -143,42 +143,53 @@ h1 {
     margin-top: 25px; }
 
 .the-chef {
-  margin-bottom: 50px; }
-  .the-chef .story {
-    border: none !important; }
-  .the-chef .story-card {
-    margin-left: -200px;
-    margin-top: 150px;
-    background-color: white; }
-  .the-chef .story-card-right {
-    background-color: white;
-    margin-right: -200px;
-    margin-top: 150px;
-    z-index: 1; }
-  .the-chef .story-card-left {
-    background-color: white;
-    margin-left: -200px;
-    margin-top: 150px; }
-  .the-chef .chef-img {
-    position: relative; }
-  .the-chef .discover-title {
-    font-size: 42px;
-    margin-top: auto;
-    margin-left: 70px; }
-  .the-chef .story-title, .the-chef .story-subtitle, .the-chef .story-text, .the-chef .story-founder {
-    font-size: 46px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    margin-left: 70px; }
-  .the-chef .story-subtitle, .the-chef .story-text, .the-chef .story-founder {
-    font-size: 16px;
-    margin-left: 70px;
-    margin-top: 15px; }
-  .the-chef .story-text {
-    font-weight: lighter;
-    text-transform: initial; }
-  .the-chef .story-founder {
-    font-size: 12px; }
+  margin-bottom: 50px;
+}
+.the-chef .story {
+  border: none !important;
+}
+.the-chef .story-card {
+  margin-left: -200px;
+  margin-top: 150px;
+  background-color: white;
+}
+.the-chef .story-card-right {
+  background-color: white;
+  margin-right: -200px;
+  margin-top: 150px;
+  z-index: 1;
+}
+.the-chef .story-card-left {
+  background-color: white;
+  margin-left: -200px;
+  margin-top: 150px;
+}
+.the-chef .chef-img {
+  position: relative;
+}
+.the-chef .discover-title {
+  font-size: 42px;
+  margin-top: auto;
+  margin-left: 70px;
+}
+.the-chef .story-title, .the-chef .story-subtitle, .the-chef .story-founder, .the-chef .story-text {
+  font-size: 46px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+.the-chef .story-subtitle, .the-chef .story-founder, .the-chef .story-text {
+  font-size: 16px;
+  margin-left: 70px;
+  margin-top: 15px;
+}
+.the-chef .story-text {
+  font-weight: lighter;
+  text-transform: initial;
+}
+.the-chef .story-founder {
+  font-size: 12px;
+}
 
 .burger-party {
   border-image: url("images/hachures-blanches.png") 30 fill/30px/30px;
@@ -570,23 +581,29 @@ h1 {
   padding-top: 40px; }
 
 .menu-container {
-  padding: 5% 16% 11% 16%; }
-  .menu-container .border-dark {
-    border-width: 3px !important; }
-  .menu-container .highlighted {
-    padding-bottom: 2%; }
-  .menu-container .color-yellow {
-    border: solid #E8D13E 2px; }
-  .menu-container .chef-selection {
-    background-color: #E8D13E;
-    color: white;
-    font-size: 9px;
-    font-weight: bold;
-    width: 115px;
-    height: 15px;
-    padding: 0px 20px 0px 20px; }
-  .menu-container .menu-padding {
-    padding: 10% 0 10% 0; }
+  padding: 5% 16% 11% 16%;
+}
+.menu-container .border-dark {
+  border-width: 3px !important;
+}
+.menu-container .highlighted {
+  padding-bottom: 2%;
+}
+.menu-container .color-yellow {
+  border: solid #E8D13E 2px;
+}
+.menu-container .chef-selection {
+  background-color: #E8D13E;
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  width: 115px;
+  height: 15px;
+  padding: 0px 20px 0px 20px;
+}
+.menu-container .menu-padding {
+  padding: 10% 0 0 0;
+}
 
 .bg-post {
   border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;

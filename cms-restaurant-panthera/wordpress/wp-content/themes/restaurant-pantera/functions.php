@@ -1,4 +1,6 @@
 <?php
+
+
 function pantera_register_assets () {
 wp_register_style("bootstrap","https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", []);
 wp_register_script("bootstrap","https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"); //l'order dans lequel il execute ( il a besoin de popper et jquery avant de lancer bootstrap )
@@ -14,9 +16,11 @@ wp_enqueue_script( 'map', get_template_directory_uri() . '/map.js', array('googl
 
 function my_acf_init() {
     acf_update_setting('google_api_key', 'AIzaSyDVIvqjTKzFsDeAWCDuh3mxBgrLAy-Xfx0');
-}
 
+}
 if( function_exists('acf_add_options_page') ) {
+
+
 	
 	acf_add_options_page('footer');
 }
