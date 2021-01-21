@@ -33,5 +33,5 @@
 
 </header>
  -->
-
+<?php get_post() ?>
 
