@@ -56,6 +56,7 @@
     .story {
 
         border:none!important;
+        background-color: transparent;
     }
 
 .story-card {
@@ -123,13 +124,24 @@
     font-size:12px;
 }
 }
+.hachures-grises
+ {
+   
+    height: 100%;
+    width:100%;
+    
+    border-image: url('images/hachures-grises-180.png') 30 fill / 30px / 30px;
+}
 
-.burger-party {
-    border-image: url('images/hachures-blanches.png') 30 fill / 30px / 30px;
+.burger-party
+ {
+
     padding-top: 40px;
-    background-image: url('images/burger-party.png');
-
-
+    opacity: 50%;
+    background-image: url('images/burger_party_grey.png');
+    opacity:100%;
+    margin-bottom:5%;
+    
 
 .discover-restaurant{
 
@@ -166,6 +178,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        background-size: 90%;
+
 
         
     }
@@ -184,7 +198,7 @@
 
     .text-citation {
 
-        font-size: 42px;
+        font-size: 2em;
         font-weight: bolder;
     }
 
