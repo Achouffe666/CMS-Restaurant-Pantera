@@ -1,90 +1,8 @@
 /*
-Error: Invalid CSS after "": expected selector, was "<<<<<<< HEAD"
-        on line 5 of menuoverview.scss
-        from line 4 of style.scss
-
-1: @import 'header.scss';
-2: @import 'front-page.scss';
-3: @import 'category-cuisine.scss';
-4: @import 'menuoverview.scss';
-5: @import 'single.scss';
-6: @import 'page-reservation.scss';
-7: @import 'page-menu.scss';
-8: @import 'include-last-post.scss';
-9: @import 'footer.scss';
-
-Backtrace:
-menuoverview.scss:5
-style.scss:4
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1308:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1238:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1218:in `expr!'
-/usr/lib/ruby/vendor_ruby/sass/scss/static_parser.rb:20:in `parse_selector'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:434:in `visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:135:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:440:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:438:in `visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:135:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:325:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:88:in `block in with_import'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:135:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:88:in `with_import'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:322:in `visit_import'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:135:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:10:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:443:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:320:in `block in watch'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+Theme Name: pantera-restaurant
+Description: Becode project
+Authors: JANSEN caroline - DAEMS Aline - BENARD Austin
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"\": expected selector, was \"<<<<<<< HEAD\"\A         on line 5 of menuoverview.scss\A         from line 4 of style.scss\A \A 1: @import 'header.scss';\A 2: @import 'front-page.scss';\A 3: @import 'category-cuisine.scss';\A 4: @import 'menuoverview.scss';\A 5: @import 'single.scss';\A 6: @import 'page-reservation.scss';\A 7: @import 'page-menu.scss';\A 8: @import 'include-last-post.scss';\A 9: @import 'footer.scss';"; }
 * {
   margin: 0px;
   padding: 0px; }
@@ -115,7 +33,7 @@ header {
   background-image: url("images/banner-top.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 55vw; }
+  height: 40vw; }
 
 .menubar {
   width: 100%; }
@@ -225,53 +143,42 @@ h1 {
     margin-top: 25px; }
 
 .the-chef {
-  margin-bottom: 50px;
-}
-.the-chef .story {
-  border: none !important;
-}
-.the-chef .story-card {
-  margin-left: -200px;
-  margin-top: 150px;
-  background-color: white;
-}
-.the-chef .story-card-right {
-  background-color: white;
-  margin-right: -200px;
-  margin-top: 150px;
-  z-index: 1;
-}
-.the-chef .story-card-left {
-  background-color: white;
-  margin-left: -200px;
-  margin-top: 150px;
-}
-.the-chef .chef-img {
-  position: relative;
-}
-.the-chef .discover-title {
-  font-size: 42px;
-  margin-top: auto;
-  margin-left: 70px;
-}
-.the-chef .story-title, .the-chef .story-subtitle, .the-chef .story-founder, .the-chef .story-text {
-  font-size: 46px;
-  font-weight: bolder;
-  text-transform: uppercase;
-  margin-left: 70px;
-}
-.the-chef .story-subtitle, .the-chef .story-founder, .the-chef .story-text {
-  font-size: 16px;
-  margin-left: 70px;
-  margin-top: 15px;
-}
-.the-chef .story-text {
-  font-weight: lighter;
-  text-transform: initial;
-}
-.the-chef .story-founder {
-  font-size: 12px;
-}
+  margin-bottom: 50px; }
+  .the-chef .story {
+    border: none !important; }
+  .the-chef .story-card {
+    margin-left: -200px;
+    margin-top: 150px;
+    background-color: white; }
+  .the-chef .story-card-right {
+    background-color: white;
+    margin-right: -200px;
+    margin-top: 150px;
+    z-index: 1; }
+  .the-chef .story-card-left {
+    background-color: white;
+    margin-left: -200px;
+    margin-top: 150px; }
+  .the-chef .chef-img {
+    position: relative; }
+  .the-chef .discover-title {
+    font-size: 42px;
+    margin-top: auto;
+    margin-left: 70px; }
+  .the-chef .story-title, .the-chef .story-subtitle, .the-chef .story-text, .the-chef .story-founder {
+    font-size: 46px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left: 70px; }
+  .the-chef .story-subtitle, .the-chef .story-text, .the-chef .story-founder {
+    font-size: 16px;
+    margin-left: 70px;
+    margin-top: 15px; }
+  .the-chef .story-text {
+    font-weight: lighter;
+    text-transform: initial; }
+  .the-chef .story-founder {
+    font-size: 12px; }
 
 .burger-party {
   border-image: url("images/hachures-blanches.png") 30 fill/30px/30px;
@@ -314,8 +221,7 @@ h1 {
 .resto-card {
   margin-right: -200px;
   margin-top: 150px;
-  background-color: white;
-}
+  background-color: white; }
 
 .bg {
   border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
@@ -355,6 +261,8 @@ h1 {
 .menu-overview {
   text-align: center;
   background: white; }
+  .menu-overview .content {
+    padding: 10% 0 0 0; }
   .menu-overview .main-text {
     padding: 2%; }
   .menu-overview .main-body {
@@ -558,9 +466,10 @@ h1 {
   .page-title h5 {
     font-size: 30px; }
   .page-title h6 {
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size: 40px; }
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 45px;
+    margin-top: 30px; }
 
 .presentations-cards {
   border: black solid 1px;
@@ -580,14 +489,21 @@ h1 {
       width: 100%;
       height: 100%; }
   .presentations-cards .presentation-cards-text {
-    height: 80%; }
+    height: 100%; }
+    .presentations-cards .presentation-cards-text h5 {
+      font-size: 50px;
+      margin-top: 5%; }
+    .presentations-cards .presentation-cards-text h6 {
+      font-size: 50px;
+      font-weight: 900;
+      margin-top: 2.5%; }
     .presentations-cards .presentation-cards-text p {
       text-align: left;
-      margin-top: 5%;
+      margin-top: 2.5%;
       margin-left: 25%;
       margin-right: 25%;
       height: 80%;
-      line-height: 60px; }
+      line-height: 55px; }
 
 .map {
   margin-top: 5%;
@@ -596,11 +512,13 @@ h1 {
   .map h5 {
     font-size: 30px; }
   .map h6 {
-    text-transform: capitalize;
-    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    text-transform: uppercase;
+    font-weight: bolder;
     font-size: 40px; }
   .map .google-map {
-    height: 600px;
+    height: 800px;
     width: 100%;
     border: black solid 1px;
     filter: grayscale(100%); }
@@ -612,29 +530,40 @@ h1 {
   height: 800px; }
   .reservation h5 {
     text-align: center;
-    font-size: 30px; }
+    font-size: 40px; }
   .reservation h6 {
     text-align: center;
-    text-transform: capitalize;
-    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bolder;
     font-size: 40px; }
   .reservation .reservation-container {
     margin-top: 5%;
-    height: 75%;
+    padding-bottom: 5%;
+    height: 90%;
     display: flex;
     align-items: center;
-    margin-right: 3%; }
+    justify-content: center; }
     .reservation .reservation-container img {
       transform: translateX(12%);
       height: 125%;
-      width: 70%; }
+      width: 40%; }
     .reservation .reservation-container .reservation-form {
+      text-align: left;
       position: relative;
       z-index: 1;
       margin-right: 5%;
       padding: 2%;
-      width: 30%;
-      background-color: silver; }
+      width: 25%;
+      background-color: #F5F5F5; }
+      .reservation .reservation-container .reservation-form .revervation-button {
+        height: 50px;
+        width: 160px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        font-size: large;
+        font-weight: bolder;
+        text-transform: uppercase; }
 
 .bg-menu {
   border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
@@ -780,3 +709,4 @@ h1 {
       .foot .footer .footer-bottom p {
         padding-top: 2%; }
 
+/*# sourceMappingURL=style.css.map */
