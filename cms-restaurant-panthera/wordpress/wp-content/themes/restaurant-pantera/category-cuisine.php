@@ -88,7 +88,6 @@ else{?><div class="main container col-xs-12 col-sm-12">
 
 </div>
 
-<?php include("menuoverview.php"); ?></div>
-
+<?php include("menuoverview.php"); ?>
 
 <?php get_footer(); ?>
