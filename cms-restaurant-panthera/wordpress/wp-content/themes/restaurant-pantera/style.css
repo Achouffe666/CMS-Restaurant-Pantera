@@ -62,6 +62,7 @@ body {
       filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(2000%) contrast(100%); }
 
 header {
+  background-image: url("images/banner-top.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 
