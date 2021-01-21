@@ -141,7 +141,7 @@
         ?>
 
 <div class="container-fluid  d-flex justify-content-center the-chef">
-<div class="col-5"><?php the_field('restaurant_1_img');?> </div>
+
 
   
         <div class="card story" style="width: 50rem; height: 45rem;">
@@ -155,7 +155,7 @@
             
             </div>
         </div> <!-- END OF CARD STORY -->
-
+        <img src="<?php the_field('restaurant_1_img');?>" class="chef-img;  col-6;" style="width: 50%;"/> 
     </div> <!-- END OF THE CHEF -->
    
 
