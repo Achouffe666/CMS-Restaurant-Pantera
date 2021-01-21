@@ -635,8 +635,8 @@ h1 {
         .foot .footer .sub-footer .media-links a {
           margin: auto; }
           .foot .footer .sub-footer .media-links a img {
-            width: 10px;
-            height: 10px; }
+            width: 40px;
+            height: 40px; }
       .foot .footer .sub-footer .hours .open-days {
         list-style: url(svg/time-clock.svg);
         display: flex;
