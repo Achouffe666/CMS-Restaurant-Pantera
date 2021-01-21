@@ -189,6 +189,11 @@ h1 a:hover {
   margin-top: 150px;
   z-index: 1;
 }
+.the-chef .story-card-left {
+  background-color: white;
+  margin-left: -200px;
+  margin-top: 150px;
+}
 .the-chef .chef-img {
   position: relative;
 }
@@ -261,6 +266,12 @@ h1 a:hover {
 }
 .citation .author-citation {
   font-size: 16px;
+}
+
+.resto-card {
+  margin-right: -200px;
+  margin-top: 150px;
+  background-color: white;
 }
 
 .bg {
