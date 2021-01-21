@@ -20,8 +20,11 @@ function my_acf_init() {
 }
 if( function_exists('acf_add_options_page') ) {
 
-    acf_add_options_page('footer');
+
+	
+	acf_add_options_page('footer');
 }
+
 
 add_action("wp_enqueue_scripts", "pantera_register_assets");
 add_theme_support("post-thumbnails");

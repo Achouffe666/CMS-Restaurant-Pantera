@@ -1,4 +1,5 @@
 <?php get_header();?>
+
 <header style="background-image:url('<?php echo get_field("banner_top_image")['url']; ?>');">
 <div class="navbar menubar">
 <h1><a href="<?php echo home_url( '/' ); ?>"><?php echo get_field("banner_top_main_title");?></a></h1>
