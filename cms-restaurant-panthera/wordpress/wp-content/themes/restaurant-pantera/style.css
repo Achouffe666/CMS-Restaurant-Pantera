@@ -41,7 +41,7 @@ header {
   background-image: url("images/banner-top.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 55vw;
+  height: 40vw;
 }
 
 .menubar {
@@ -73,6 +73,9 @@ h1 a:hover {
   font-size: 55px;
   margin-left: 165px;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
 }
 .first-title .upp {
   text-transform: uppercase;
@@ -693,7 +696,7 @@ h1 a:hover {
   padding: 0px 20px 0px 20px;
 }
 .menu-container .menu-padding {
-  padding: 10% 0 10% 0;
+  padding: 10% 0 0 0;
 }
 
 .bg-post {
@@ -793,8 +796,8 @@ h1 a:hover {
   margin: auto;
 }
 .foot .footer .sub-footer .media-links a img {
-  width: 10px;
-  height: 10px;
+  width: 40px;
+  height: 40px;
 }
 .foot .footer .sub-footer .hours .open-days {
   list-style: url(svg/time-clock.svg);
