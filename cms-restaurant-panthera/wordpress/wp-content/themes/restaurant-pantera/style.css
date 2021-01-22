@@ -291,6 +291,10 @@ h1 a:hover {
   background: white;
 }
 
+.header-category {
+  background-image: url("images/resto1.jpg");
+}
+
 .home {
   padding-bottom: 3%;
 }
@@ -456,28 +460,20 @@ h1 a:hover {
   padding-left: 5px;
   padding-right: 15px;
 }
-.single .emote1 {
-  color: #3B5999;
-}
-.single .emote2 {
-  color: #55ACEF;
-}
-.single .emote3 {
-  color: #E44261;
-}
-.single .emote4 {
-  color: black;
+.single .social-media {
+  height: 20px;
+  width: 20px;
 }
 .single .intro {
   padding-bottom: 2%;
   padding-top: 1%;
 }
 .single .img-intro {
-  width: 100%;
+  width: auto;
   height: 500px;
 }
 .single .img-instruction {
-  width: 100%;
+  width: auto;
   height: 300px;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -485,7 +481,7 @@ h1 a:hover {
 .single .instruction {
   display: grid;
   grid-template-columns: 10% 1fr;
-  grid-template-rows: 10;
+  grid-template-rows: auto;
 }
 .single .instruction .title-instruction {
   padding-bottom: 1%;
@@ -528,6 +524,19 @@ h1 a:hover {
   grid-column: 2/3;
   grid-row: 10/11;
   padding-bottom: 5%;
+}
+.single .instruction .step-content {
+  grid-column: 2/3;
+}
+.single .instruction .step-number {
+  grid-column: 1/2;
+  background: black;
+  border-radius: 50%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  margin-left: 50%;
+  margin-top: 10%;
 }
 .single .instruction .number1 {
   grid-column: 1/2;

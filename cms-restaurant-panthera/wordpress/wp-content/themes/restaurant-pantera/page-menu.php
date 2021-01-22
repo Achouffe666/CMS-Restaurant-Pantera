@@ -39,7 +39,7 @@ $menu = get_field('the_menu');
 
 <div class="menu-container">
 <div class="row">
-    <div class="col">
+    <div class="col-lg-12 col-md-12 col-sm-12">
 
     <?php
 

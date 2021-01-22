@@ -5,12 +5,12 @@
 
     <div class="content ">
     <div class="row no-gutter">
-	 <div class="col-6 img-grid"><img class ="grid1 img-foot" src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/berries-granola-3-scaled.jpg" alt="">
+	 <div class="col-lg-6 col-md-12 col-sm-12 img-grid"><img class ="grid1 img-foot" src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/berries-granola-3-scaled.jpg" alt="">
             <img class ="grid2 img-foot"  src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/a-hot-bowl-of-soup-on-a-table-top.jpg" alt="">
             <img class ="grid3 img-foot" src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/berry-cheesecake-2-scaled.jpg" alt="">
 			<img class ="grid4 img-foot"  src="http://localhost/CMS-Restaurant-Pantera/cms-restaurant-panthera/wordpress/wp-content/uploads/2021/01/milkshake-on-pink-1.jpg" alt="">
 		</div>
-	<div class="col-6 card-body d-flex justify-content-center main-body">
+	<div class="col-lg-6 col-md-12 col-sm-12 card-body d-flex justify-content-center main-body">
 			<article class="post">
 			<h5 class="card-title">LET'S DISCOVER FOOD</h5>
 

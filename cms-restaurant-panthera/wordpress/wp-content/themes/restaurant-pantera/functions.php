@@ -1,6 +1,5 @@
 <?php
 
-
 function pantera_register_assets () {
 wp_register_style("bootstrap","https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", []);
 wp_register_script("bootstrap","https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"); //l'order dans lequel il execute ( il a besoin de popper et jquery avant de lancer bootstrap )
@@ -12,6 +11,14 @@ wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AI
 wp_enqueue_script( 'map', get_template_directory_uri() . '/map.js', array('google-map', 'jquery'), '0.1', true );
 }
 
+function wpm_new_image(){
+
+    add_post_type_support( 'page', 'post-formats');
+    add_image_size('wpm_taille_2', 800, 350, true);
+    
+    }
+
+    add_action( 'after_setup_theme', 'wpm_new_image' );
 
 
 function my_acf_init() {
@@ -91,6 +98,5 @@ register_taxonomy("cuisine","post", [ "labels" => [ 'name' => 'Cuisine',
 };
     
 add_action("init", "pantera_init");
-
-
 add_action('acf/init', 'my_acf_init');
+
