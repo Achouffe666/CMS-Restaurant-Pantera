@@ -517,30 +517,37 @@ h1 {
   height: 750px;
   justify-content: center;
   align-items: center;
-  text-align: center; }
-  .presentations-cards .presentation-cards-image {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0; }
-    .presentations-cards .presentation-cards-image img {
-      width: 100%;
-      height: 100%; }
-  .presentations-cards .presentation-cards-text {
-    height: 100%; }
-    .presentations-cards .presentation-cards-text h5 {
-      font-size: 50px;
-      margin-top: 5%; }
-    .presentations-cards .presentation-cards-text h6 {
-      font-size: 50px;
-      font-weight: 900;
-      margin-top: 2.5%; }
-    .presentations-cards .presentation-cards-text p {
-      text-align: left;
-      margin-top: 2.5%;
-      margin-left: 25%;
-      margin-right: 25%;
-      line-height: 55px; }
+  text-align: center;
+}
+.presentations-cards .presentation-cards-image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.presentations-cards .presentation-cards-image img {
+  width: 100%;
+  height: 100%;
+}
+.presentations-cards .presentation-cards-text {
+  height: 100%;
+}
+.presentations-cards .presentation-cards-text h5 {
+  font-size: 50px;
+  margin-top: 5%;
+}
+.presentations-cards .presentation-cards-text h6 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 2.5%;
+}
+.presentations-cards .presentation-cards-text p {
+  text-align: left;
+  margin-top: 2.5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  line-height: 55px;
+}
 
 .map {
   margin-top: 5%;
