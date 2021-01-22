@@ -139,6 +139,8 @@ h1 a:hover {
 .bg-white {
   border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-main-box {
@@ -152,6 +154,7 @@ h1 a:hover {
   flex-direction: column;
   border: 0px solid black !important;
   border-radius: 50px 50px 0px 0px !important;
+  width: 30rem;
 }
 .quality-cards .quality-food-icon {
   width: 20%;
@@ -172,53 +175,56 @@ h1 a:hover {
   margin-top: 25px;
 }
 
-.the-chef {
+.the-chef, .burger-party .resto {
   margin-bottom: 50px;
 }
-.the-chef .story {
+.the-chef .story, .burger-party .resto .story {
   border: none !important;
   background-color: transparent;
+  width: 50rem;
+  height: 45rem;
 }
-.the-chef .story-card {
+.the-chef .story-card, .burger-party .resto .story-card {
   margin-left: -200px;
   margin-top: 150px;
   background-color: white;
 }
-.the-chef .story-card-right {
+.the-chef .story-card-right, .burger-party .resto .story-card-right {
   background-color: white;
   margin-right: -200px;
   margin-top: 150px;
   z-index: 1;
 }
-.the-chef .story-card-left {
+.the-chef .story-card-left, .burger-party .resto .story-card-left {
   background-color: white;
   margin-left: -200px;
   margin-top: 150px;
 }
-.the-chef .chef-img {
+.the-chef .chef-img, .burger-party .resto .chef-img {
   position: relative;
+  width: 50%;
 }
-.the-chef .discover-title {
+.the-chef .discover-title, .burger-party .resto .discover-title {
   font-size: 42px;
   margin-top: auto;
   margin-left: 70px;
 }
-.the-chef .story-title, .the-chef .story-subtitle, .the-chef .story-founder, .the-chef .story-text {
+.the-chef .story-title, .burger-party .resto .story-title, .the-chef .story-subtitle, .burger-party .resto .story-subtitle, .the-chef .story-founder, .burger-party .resto .story-founder, .the-chef .story-text, .burger-party .resto .story-text {
   font-size: 46px;
   font-weight: bolder;
   text-transform: uppercase;
   margin-left: 70px;
 }
-.the-chef .story-subtitle, .the-chef .story-founder, .the-chef .story-text {
+.the-chef .story-subtitle, .burger-party .resto .story-subtitle, .the-chef .story-founder, .burger-party .resto .story-founder, .the-chef .story-text, .burger-party .resto .story-text {
   font-size: 16px;
   margin-left: 70px;
   margin-top: 15px;
 }
-.the-chef .story-text {
+.the-chef .story-text, .burger-party .resto .story-text {
   font-weight: lighter;
   text-transform: initial;
 }
-.the-chef .story-founder {
+.the-chef .story-founder, .burger-party .resto .story-founder {
   font-size: 12px;
 }
 
@@ -230,10 +236,12 @@ h1 a:hover {
 
 .burger-party {
   padding-top: 40px;
-  opacity: 50%;
   background-image: url("images/burger_party_grey.png");
   opacity: 100%;
   margin-bottom: 5%;
+}
+.burger-party .resto-img {
+  width: 50%;
 }
 .burger-party .discover-restaurant {
   font-size: 42px;
@@ -868,6 +876,88 @@ h1 a:hover {
 }
 .foot .footer .footer-bottom p {
   padding-top: 2%;
+}
+
+@media all and (max-width: 480px) {
+  .card-main-box {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quality-cards {
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: none !important;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0 !important;
+  }
+  .quality-cards .quality-text {
+    display: none;
+  }
+  .quality-cards .quality-food-icon {
+    margin-top: 0;
+    width: 50%;
+  }
+
+  .the-chef, .burger-party .resto {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .the-chef .story, .burger-party .resto .story {
+    width: 100%;
+    height: 100%;
+  }
+  .the-chef .story-card, .burger-party .resto .story-card {
+    box-shadow: none !important;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .the-chef .discover-title, .burger-party .resto .discover-title {
+    margin-left: 0;
+    font-size: 32px;
+  }
+  .the-chef .story-title, .burger-party .resto .story-title, .the-chef .story-subtitle, .the-chef .story-text, .the-chef .story-founder, .burger-party .resto .story-subtitle, .burger-party .resto .story-text, .burger-party .resto .story-founder {
+    margin-left: 0;
+  }
+  .the-chef .story-subtitle, .burger-party .resto .story-subtitle, .the-chef .story-text, .the-chef .story-founder, .burger-party .resto .story-text, .burger-party .resto .story-founder {
+    margin-left: 0;
+  }
+  .the-chef .story-text, .burger-party .resto .story-text {
+    margin-left: 0;
+  }
+
+  .burger-party {
+    margin-left: 0 !important;
+    font-size: 32px !important;
+    padding: 0 !important;
+  }
+  .burger-party .discover-restaurant {
+    margin-left: 0 !important;
+    font-size: 32px !important;
+  }
+  .burger-party .our-restaurant {
+    margin-left: 0;
+    text-align: center;
+  }
+  .burger-party .story-card-right {
+    width: 100%;
+    box-shadow: none !important;
+    margin-top: 0;
+  }
+  .burger-party .story-card {
+    width: 100%;
+    box-shadow: none !important;
+    margin-top: 0;
+  }
+  .burger-party .resto-img {
+    width: 100%;
+    padding: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
