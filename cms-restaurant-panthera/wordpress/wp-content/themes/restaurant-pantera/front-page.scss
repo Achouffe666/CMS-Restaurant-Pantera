@@ -1,0 +1,242 @@
+.bg-white {
+
+    
+        border-image: url('images/hachures-blanches-1.png') 30 fill / 30px / 30px;
+        padding-top: 40px;
+        display:flex;
+        flex-direction: column;
+    
+    
+}
+
+.card-main-box {
+
+margin-top: -200px;
+}
+
+.quality-cards {
+
+    margin-right:15px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 0px solid black !important;
+    border-radius: 50px 50px 0px 0px!important;
+    width: 30rem;
+    
+
+
+
+
+.quality-food-icon {
+
+    width: 20%;
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+
+
+}
+
+.quality-title{
+    text-align: center;
+    font-size:25px;
+    font-weight: bolder;
+}
+
+.quality-text{
+    text-align: center;
+    margin-bottom:20px!important;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top:25px;
+}
+}
+
+.the-chef{
+
+margin-bottom:50px;
+.story {
+
+        border:none!important;
+        background-color: transparent;
+        width: 50rem;
+        height: 45rem;
+    }
+
+    .story-card {
+
+        margin-left:-200px;
+        margin-top: 150px;
+        background-color: white;
+    
+
+
+    }
+
+.story-card-right {
+background-color: white;
+margin-right: -200px;
+margin-top: 150px;
+z-index:1;
+}
+
+.story-card-left {
+background-color: white;
+margin-left: -200px;
+margin-top: 150px;
+
+}
+
+.chef-img {
+
+    position:relative;
+    width:50%;
+}
+
+.discover-title {
+
+font-size: 42px;
+margin-top: auto;
+margin-left:70px;
+
+}
+
+.story-title {
+
+font-size: 46px;
+font-weight: bolder;
+text-transform: uppercase;
+margin-left:70px;
+}
+.story-subtitle{
+
+@extend .story-title;
+font-size:16px;
+margin-left:70px;
+margin-top:15px;
+}
+
+.story-text {
+
+@extend .story-subtitle;
+font-weight: lighter;
+text-transform: initial;
+
+}
+
+.story-founder{
+@extend .story-subtitle;
+font-size:12px;
+}
+}
+.hachures-grises
+{
+
+height: 100%;
+width:100%;
+
+border-image: url('images/hachures-grises-180.png') 30 fill / 30px / 30px;
+}
+
+.burger-party
+{
+
+padding-top: 40px;
+opacity: 50%;
+background-image: url('images/burger_party_grey.png');
+opacity:100%;
+margin-bottom:5%;
+
+    padding-top: 40px;
+    
+    background-image: url('images/burger_party_grey.png');
+    opacity:100%;
+    margin-bottom:5%;
+    
+.resto {
+
+    @extend .the-chef;
+}
+.resto-img {
+
+    
+    width: 50%;
+    
+}
+
+.discover-restaurant{
+
+font-size: 42px;
+margin-top: auto;
+margin-left:70px;
+
+
+}
+
+.our-restaurant {
+font-size: 46px;
+font-weight: bolder;
+text-transform: uppercase;
+margin-left:70px;
+}
+}
+
+.citation {
+
+height: 30vw;
+width: 10vw;
+margin-top: 50px;
+border-image: url('images/hachures-noires.png') 30 fill / 30px / 30px;
+background-size: cover;
+background-position: center center;
+
+
+
+.picture-citation {
+
+    padding: 0;
+    margin:0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 90%;
+
+
+    
+}
+
+.g-bg {
+
+    
+    color:white;
+}
+
+.white-quote {
+
+    font-size:46px;
+    font-weight: bolder;
+}
+
+.text-citation {
+
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.author-citation {
+
+    font-size: 16px;
+}
+
+
+
+}
+
+.resto-card {
+margin-right:-200px;
+margin-top: 150px;
+background-color: white;
+
+
+}

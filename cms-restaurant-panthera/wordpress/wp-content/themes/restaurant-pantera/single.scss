@@ -1,0 +1,269 @@
+
+
+.background-sing {
+  background:none;
+  background-color: #292929;
+  height: 800px;
+  margin-top: 550px;
+   //transform: translateY(250px);
+   //border-image: url('images/hachures-blanches-1.png') 30  / 30px / 30px;
+   a {
+    &:hover {
+        
+        background-color: white;
+        color:black !important;
+       
+    }
+   
+    }
+  
+}
+
+.bg-single {
+  border-image: url('images/hachures-blanches-1.png') 30 fill / 30px / 30px;
+  padding-top: 40px;
+
+
+  
+}
+
+
+.title-nav{
+  a {text-decoration: none;
+    list-style-type: none; 
+color: white;
+&:link {
+    text-decoration:none; 
+    list-style-type: none; 
+    color: white; 
+}
+}}
+
+
+.single {
+  
+  
+//transform: translateY(-350px);
+margin-top: -600px;
+  
+
+  
+a {text-decoration: none;
+  list-style-type: none; 
+color: white;
+&:link {
+  text-decoration:none; 
+  list-style-type: none; 
+  color: white; 
+}
+ul {
+  text-decoration:none; 
+  list-style-type: none; 
+}
+
+
+
+  }
+
+.color-date {
+  color:white;
+}
+
+.svg-color{
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(15000%) contrast(100%);
+}
+
+.color-title {
+  color:white;
+}
+.color-intro {
+  color:white;
+}
+
+.fa-arrow-left{
+  color:white;
+}
+
+    .align {
+        padding-left:20px;
+    }
+
+    .border-right{
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+
+    .social-media {
+      height: 20px;
+      width: 20px;
+    }
+
+.intro {
+    padding-bottom: 2%;
+    padding-top: 1%;
+   
+
+}
+   .img-intro {	width: auto;
+    height:500px;
+     }
+    
+
+.img-instruction{
+    width: auto;
+    height: 300px;
+    padding-top:3%;
+    padding-bottom: 3%;
+}
+
+   .instruction { 
+
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: auto;
+
+    .title-instruction {
+        padding-bottom: 1%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+
+      .text1{
+      
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+
+      .text2{
+        grid-column: 2/3;
+        grid-row: 3/4;
+      }
+
+      .text3{
+      
+        grid-column: 2/3;
+        grid-row: 4/5;
+      }
+
+      .text4{
+        grid-column: 2/3;
+        grid-row: 5/6;
+      }
+
+      .text5{
+      
+        grid-column: 2/3;
+        grid-row: 6/7;
+      }
+
+      .text6{
+        grid-column: 2/3;
+        grid-row: 7/8;
+      }
+
+      .text7{
+      
+        grid-column: 2/3;
+        grid-row: 8/9;
+      }
+
+      .text8{
+        grid-column: 2/3;
+        grid-row: 9/10;
+      }
+      .text9{
+        grid-column: 2/3;
+        grid-row: 10/11;
+        padding-bottom: 5%;
+      }
+      .step-content
+      {
+        grid-column: 2/3;
+      }
+      .step-number
+      {
+        grid-column: 1/2;
+        background: black;
+        border-radius: 50%;
+        color: white;
+        width: 25px;
+        height: 25px;
+        margin-left: 50%;
+        margin-top: 10%;
+      }
+
+      .number1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background: black;
+        border-radius: 50%;
+        color: white;
+        width: 25px;
+        height: 25px;
+        margin-left: 50%;
+        margin-top: 10%;
+      }
+      .number2{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background: black;
+        border-radius: 50%;
+        color: white;
+        width: 25px;
+        height: 25px;
+        margin-left: 50%;
+        margin-top: 10%;
+      }
+      .number3{
+        grid-column: 1/2;
+        grid-row: 7/8;
+        background: black;
+        border-radius: 50%;
+        color: white;
+        width: 25px;
+        height: 25px;
+        margin-left: 50%;
+        margin-top: 10%;
+      }
+
+      .number4{
+        grid-column: 1/2;
+        grid-row: 9/10;
+        background: black;
+        border-radius: 50%;
+        color: white;
+        width: 25px;
+        height: 25px;
+        margin-left: 50%;
+        margin-top: 10%;
+      }
+}
+
+.post-categories {
+    list-style: none;
+  }
+  .grid-intro{
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1;
+    padding-top: 3%;
+  }
+
+  .ingredient {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+
+  .social-media {
+    grid-column: 1/2;
+    grid-row: 1;
+    padding-top: 15%;
+  }
+  .title-intro {
+      padding-bottom: 1%;
+  }
+
+  
+
+}
+
