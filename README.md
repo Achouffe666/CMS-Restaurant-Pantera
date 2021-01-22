@@ -28,7 +28,7 @@ Creation of a custom WordPress theme, respecting an existing wireframe. Use of P
 * Bootstrap
 
 ## 💻 Project structure
-.</br>
+</br>
 ├── 404.php</br>
 ├── category-cuisine.php</br>
 ├── footer.php</br>
