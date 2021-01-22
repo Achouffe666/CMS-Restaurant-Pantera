@@ -177,7 +177,7 @@
                     <h6 class="card-subtitle story-title"><?php echo $article["title"];?></h6>
                     <p class="card-text story-text"><?php echo $article["text"];?></p>
                     <p class="d-flex justify-content-center">
-                        <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">More lol infos</button></a>
+                        <a href="<?php the_permalink(); ?>" class="post__link"><button type="button" class="btn btn-dark">More infos</button></a>
                     </p>
                 </div>
             </div> <!-- END OF CARD STORY -->
