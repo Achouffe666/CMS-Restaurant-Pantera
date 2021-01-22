@@ -37,13 +37,13 @@
             <div class="open-days"><img src="<?php echo get_template_directory_uri(); ?>/svg/time-clock.svg"><?php the_field('open_hours_row_4_day', 'option'); ?><hr> <?php the_field('open_hours_row_1_hours', 'option'); ?></div>
 </div>
     </div>
-    <div class="col-3 sub-footer">
+    <div class="col-2 sub-footer">
         <h6><?php the_field('adress_title', 'option'); ?></h6>
         <div class="contact"><img src="<?php echo get_template_directory_uri(); ?>/svg/call (10).svg" alt="phone"><a href="tel: <?php the_field('adress_phone_number', 'option'); ?>"><?php the_field('adress_phone_number', 'option'); ?></a></div>
         <div class="contact"><img src="<?php echo get_template_directory_uri(); ?>/svg/place (14).svg" alt="Map"><?php the_field('adress_street', 'option'); ?><br><div style="margin-left: 7.5%"><?php the_field('adress_post_code', 'option'); ?><br><?php the_field('adress_country', 'option'); ?></div></div>
         <div class="contact"><img src="<?php echo get_template_directory_uri(); ?>/svg/mail-1.svg" alt="Mail"><a href="mailto: devDesign@gmail.com"><?php the_field('adress_email', 'option'); ?></a></div>
     </div>
-    <div class="col-3 sub-footer">
+    <div class="col-4 sub-footer">
         <h6><?php the_field('images_title', 'option'); ?></h6>
         <div class="insta-image">
             <img src="<?php echo get_field('images_image_1','options')['url']?>" alt="">

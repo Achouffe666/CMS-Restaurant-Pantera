@@ -25,6 +25,42 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page('footer');
 }
 
+// add_action( 'admin_post_nopriv_process_form', 'process_form_data' );
+// add_action( 'admin_post_process_form', 'process_form_data' );
+// function process_form_data() {
+    
+//     global $wpdb;
+
+//         if (isset($_POST['submit'])) {
+
+
+//             $name = $_POST['name'];
+//             $email = $_POST['email'];
+//             $phonenumber = $_POST['phonenumber'];
+//             $tablenumber = '4';
+//             $place = "Chef's restaurant";
+//             $time = "11:30";
+//             $date = "2021/02/02";
+//             $message = "Hey";
+            
+//             $message = $wpdb->prepare(" INSERT INTO `Client reservation`(`Name`, `Email`, `Phonenumber`, `Table for`, `Place`, `Time`, `Date`, `Message`) 
+//                                         VALUES (:name, :email, :phonenumber, :tablenumber, :place, :time, :date, :message) ");
+//             $message->execute(array(
+//                                 ':name' => $name,
+//                                 ':email' => $email,
+//                                 ':phonenumber' => $phonenumber,
+//                                 ':tablenumber' => $tablenumber,
+//                                 ':place' => $place,
+//                                 ':time' => $time,
+//                                 ':date' => $date,
+//                                 ':message' => $message
+//                                 ));
+           
+//             echo "Entrée ajoutée dans la table";
+//                             }
+//     }
+
+
 
 add_action("wp_enqueue_scripts", "pantera_register_assets");
 add_theme_support("post-thumbnails");
