@@ -19,7 +19,7 @@ if ($recentPosts->have_posts())
 while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
 
 
-    <div class="col-3">
+    <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="card">
         <?php the_post_thumbnail("post-thumbnail", ["class" => "card-img", "alt" => "", "style" => "height: auto;"
     ]) ?> 

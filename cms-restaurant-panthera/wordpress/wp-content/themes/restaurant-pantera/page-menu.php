@@ -1,12 +1,15 @@
-<?php get_header();?>
+<?php get_header();
+$bannerTop = get_field("banner_top");
 
-<header style="background-image:url('<?php echo get_field("banner_top_image")['url']; ?>');">
+?>
+<header style="background-image:url('<?=  $bannerTop['img']['url']; ?>');">
 <div class="navbar menubar">
 <h1><a href="<?php echo home_url( '/' ); ?>"><?php echo get_field("banner_top_main_title");?></a></h1>
 <div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div>
 </div>
 <div class="first-title">
-    <p><?php echo get_field("banner_top_subtitle");?></p>
+<p><?= $bannerTop['subtitle'];?></p>
+    <p class="upp"><?= $bannerTop['main_title'];?></p>
 </div>
 <div class="left-bars">
     <div class="bars bars-1"></div>
@@ -30,14 +33,13 @@ $menu = get_field('the_menu');
 
 ?>
 <div class="title-menu ">
-    <h2 class="d-flex justify-content-center"><?php echo get_field("banner_presentation_title");?>
-    </h2>
-    <h1 class="d-flex justify-content-center"> <?php echo get_field("banner_presentation_subtitle");?></h1>
+    <h2 class="d-flex justify-content-center"><?= $menu['subtitle'];?></h2>
+    <h1 class="d-flex justify-content-center"> <?= $menu['title'];?></h1>
 </div>
 
 <div class="menu-container">
 <div class="row">
-    <div class="col">
+    <div class="col-lg-12 col-md-12 col-sm-12">
 
     <?php
 
