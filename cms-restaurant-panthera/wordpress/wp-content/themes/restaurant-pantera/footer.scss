@@ -138,3 +138,80 @@ $hachures-noire: url('images/hachures-noires.png');
 }
     
 }
+
+@media all and (max-width: 1299px){
+    .sub-footer {margin :0 5% 0 0;
+        padding-top: 5%;
+        
+}
+.newsletter {
+    display:flex;
+    justify-content:center;
+    padding-left: 5%;
+    margin: 2%;
+    text-align:center;
+}
+.newsletter-input {
+   margin-left: 5%;
+}
+}
+/*TABLET AND SMARTPHONE*/
+@media all and (max-width: 1299px) {
+
+    .sub-footer {
+      
+      display: grid;
+      grid-template-columns: 1;
+      grid-template-rows: repeat(6);
+
+      .grid1 {
+       text-align: center;
+        padding-top: 20%;
+        grid-column: 1;
+        grid-row: 1/2;
+      }
+    
+    
+    .grid2 {
+        text-align: center;
+        display:flex;
+        justify-content:center;
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    
+    
+    .grid3 {
+        
+     text-align:center;
+        grid-column: 1;
+        grid-row: 3/4;
+    }
+    
+    .grid4 {
+     
+        
+        text-align: center;
+        grid-column: 1;
+        grid-row: 4/5;
+    }
+    
+    .grid5 {
+     
+        
+        text-align: center;
+        grid-column: 1;
+        grid-row: 5/6;
+    }
+
+    .grid6 {
+     
+        
+        text-align: center;
+        grid-column: 1;
+        grid-row: 6/7;
+    }
+
+    
+      
+    }}

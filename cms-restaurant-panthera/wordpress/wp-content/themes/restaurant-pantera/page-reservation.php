@@ -36,11 +36,11 @@ foreach ($repeater as $element){
   <?php if($r==0){ ?>
 <div class="row presentations-cards">
 
-  <div class="col-6 presentation-cards-image">
+  <div class="col-lg-6 col-md-12 col-sm-12 presentation-cards-image">
     <img src="<?php echo $element['image']['url'];?>">
   </div>
   <!-- if i=0 => -->
-  <div class="col-6 presentation-cards-text">
+  <div class="col-lg-6 col-md-12 col-sm-12 presentation-cards-text">
     <h5><?php echo $element['title'];?></h5>
     <h6><?php echo $element['subtitle'];?></h6>
     <p>
@@ -51,14 +51,14 @@ foreach ($repeater as $element){
 <?php }else{ ?>
 <!-- else -->
 <div class="row presentations-cards">
-<div class="col-6 presentation-cards-text">
+<div class="col-lg-6 col-md-12 col-sm-12 presentation-cards-text">
     <h5><?php echo $element['title'];?></h5>
     <h6><?php echo $element['subtitle'];?></h6>
     <p>
     <?php echo $element['text_area'];?>  
   </p>
   </div>
-  <div class="col-6 presentation-cards-image">
+  <div class="col-lg-6 col-md-12 col-sm-12 presentation-cards-image">
     <img src="<?php echo $element['image']['url'];?>">
   </div>
 </div>
@@ -67,7 +67,7 @@ foreach ($repeater as $element){
  $r++;
 }?>
 
-<div class='map'>
+<div class='col-lg-12 col-md-12 col-sm-12 map'>
   <h5><?php echo get_field("location_title");?></h5>
   <h6><?php echo get_field("location_subtitle");?></h6>
 
@@ -92,7 +92,7 @@ foreach ($repeater as $element){
 endif; ?>
 
 
-<div class="reservation">
+<div class="col-lg-12 col-md-12 col-sm-12 reservation">
   <h5><?php echo get_field("reservation_title");?></h5>
   <h6><?php echo get_field("reservation_subtitle");?></h6>
   <div class='reservation-container'>
@@ -102,21 +102,21 @@ endif; ?>
       <form method = 'POST'>
       <input type="hidden" name="action" value="process_form">
         <div class="form-row">
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-6 col-sm-12">
             <label for="name">Your Name</label>
             <input type="text" name="name" id="name" class="form-control">
           </div>
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-6 col-sm-12">
             <label for="email">Your email</label>
             <input type="email" name="email" id="email" class="form-control">
           </div>
         </div>
           <div class="form-row">
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-6 col-sm-12">
               <label for="phonenumber">Your phone Number</label>
               <input type="tel" phonenumber="phonenumber" id="phonenumber" class="form-control">
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-6 col-sm-12">
               <label for="table-number">Table for</label>
               <select name="table-number" id="table-number" class="form-control">
                 <option value="1">1 person</option>
@@ -160,5 +160,6 @@ endif; ?>
     </div>
 </div>
 </div>
+<?php include ("include-last-post.php"); ?>
 
 <?php get_footer(); ?>

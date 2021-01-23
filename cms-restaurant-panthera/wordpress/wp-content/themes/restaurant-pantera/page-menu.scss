@@ -6,7 +6,7 @@
 
 
     .menu-container {
-        padding: 5% 16% 11% 16%;
+        padding: 5% 17% 11% 17%;
 
         .border-dark {
             
@@ -41,4 +41,12 @@
 
     }
 
+  /*TABLET AND SMARTPHONE*/
+@media all and (max-width: 1299px) {
+    
+    .menu-container{
+        padding:0;
+       
+    }
   
+}

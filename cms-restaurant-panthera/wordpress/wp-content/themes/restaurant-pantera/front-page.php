@@ -221,5 +221,5 @@
     </div>
 </div>
 
-<?php include("include-last-post.php") ?>
+<?php include("include-last-post.php"); ?>
 <?php get_footer() ?>

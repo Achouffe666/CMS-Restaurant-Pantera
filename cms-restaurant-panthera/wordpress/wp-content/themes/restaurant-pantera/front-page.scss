@@ -1,12 +1,12 @@
 .bg-white {
 
     
-        border-image: url('images/hachures-blanches-1.png') 30 fill / 30px / 30px;
-        padding-top: 40px;
-        display:flex;
-        flex-direction: column;
-    
-    
+    border-image: url('images/hachures-blanches-1.png') 30 fill / 30px / 30px;
+    padding-top: 40px;
+    display:flex;
+    flex-direction: column;
+
+
 }
 
 .card-main-box {
@@ -16,14 +16,13 @@ margin-top: -200px;
 
 .quality-cards {
 
-    margin-right:15px;
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 0px solid black !important;
-    border-radius: 50px 50px 0px 0px!important;
-    width: 30rem;
-    
+margin-right:15px;
+display:flex;
+justify-content: center;
+flex-direction: column;
+border: 0px solid black !important;
+border-radius: 50px 50px 0px 0px!important;
+width: 30rem;
 
 
 
@@ -58,21 +57,21 @@ margin-top: -200px;
 margin-bottom:50px;
 .story {
 
-        border:none!important;
-        background-color: transparent;
-        width: 50rem;
-        height: 45rem;
-    }
+    border:none!important;
+    background-color: transparent;
+    width: 50rem;
+    height: 45rem;
+}
 
-    .story-card {
+.story-card {
 
-        margin-left:-200px;
-        margin-top: 150px;
-        background-color: white;
-    
+    margin-left:-200px;
+    margin-top: 150px;
+    background-color: white;
 
 
-    }
+
+}
 
 .story-card-right {
 background-color: white;
@@ -90,8 +89,8 @@ margin-top: 150px;
 
 .chef-img {
 
-    position:relative;
-    width:50%;
+position:relative;
+width:50%;
 }
 
 .discover-title {
@@ -143,26 +142,20 @@ border-image: url('images/hachures-grises-180.png') 30 fill / 30px / 30px;
 {
 
 padding-top: 40px;
-opacity: 50%;
+
 background-image: url('images/burger_party_grey.png');
 opacity:100%;
 margin-bottom:5%;
 
-    padding-top: 40px;
-    
-    background-image: url('images/burger_party_grey.png');
-    opacity:100%;
-    margin-bottom:5%;
-    
 .resto {
 
-    @extend .the-chef;
+@extend .the-chef;
 }
 .resto-img {
 
-    
-    width: 50%;
-    
+
+width: 50%;
+
 }
 
 .discover-restaurant{
