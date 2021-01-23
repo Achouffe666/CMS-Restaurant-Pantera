@@ -207,21 +207,20 @@
 
 <div class="container-fluid  row  citation">
     
-    <div class="g-bg col-6 d-flex justify-content-center flex-column">
+    <div class="g-bg col-lg-6 col-sm-12 d-flex justify-content-center flex-column">
         <p class="white-quote"> " </p>
-        <p class="text-citation"> <?php the_field('testimony_text');?> </p>
+       <div class="card-text text-citation">  <?php the_field('testimony_text');?> </div>
         <p class="author-citation"> <?php the_field('testimony_name');?></p>
     </div>
 
     <?php
     $image_id2 = get_field('testimony_image');
     ?>
-    <div class=" col-6 picture-citation" style="background-image:url('<?php echo $image_id2 ['url']; ?>;')">
+   
+    <div class="col-6 card-img-left picture-citation" style="background-image:url('<?php echo $image_id2 ['url']; ?>;')">
     
     </div>
 </div>
 
-<?php include("include-last-post.php"); ?>
+<?php include("include-last-post.php") ?>
 <?php get_footer() ?>
-
-

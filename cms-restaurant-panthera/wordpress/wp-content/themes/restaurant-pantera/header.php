@@ -11,28 +11,6 @@
     <?php wp_head() ?>
     <title>Restaurant Pantera</title>
 </head>
-<body>
-
-<!-- <header>
-<div class="navbar menubar">
-<h1><a href="<?php echo home_url( '/' ); ?>">Pantera Restaurant</a></h1>
-<div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div>
-</div>
-<div class="first-title">
-    <p>For happy Day</p>
-    <p class="upp"> Enjoy <br/>Happy meal </p>
-</div>
-<div class="left-bars">
-    <div class="bars bars-1"></div>
-    <div class="bars bars-2"></div>
-    <div class="bars bars-3"></div>
-    <div class="bars bars-4"></div>
-</div>
-<div class="subtitle">
-<div class="white-bar"></div><a href="#"> Check our menu </a>
-</div>
-
-</header> -->
-
+<body >
 
 

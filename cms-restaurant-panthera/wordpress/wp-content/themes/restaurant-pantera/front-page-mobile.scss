@@ -1,5 +1,11 @@
 @media all and (max-width: 480px){
 
+
+header {
+
+    height:75vw;
+    width:100%;
+}
 .card-main-box {
 
     margin-top:0;
@@ -110,6 +116,32 @@
 
     width:100%;
     padding:0!important;
+}
+}
+
+.citation {
+
+    flex-direction:column;
+    height:100%;
+    font-size: 1rem;
+    
+
+.g-bg {
+
+    height:100%;
+    width:100%;
+
+}
+.white-quote {
+
+    font-size: 1rem;
+}
+
+.text-citation{
+
+    height: 50%;
+    width:100%;
+    font-size: 1rem;
 }
 }
 }

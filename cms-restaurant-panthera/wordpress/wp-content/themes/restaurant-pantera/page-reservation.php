@@ -97,8 +97,10 @@ endif; ?>
   <h6><?php echo get_field("reservation_subtitle");?></h6>
   <div class='reservation-container'>
   <img src="<?php echo get_field("reservation_image")['url']; ?>">
+
     <div class='reservation-form'>
-      <form action="">
+      <form method = 'POST'>
+      <input type="hidden" name="action" value="process_form">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="name">Your Name</label>
@@ -108,6 +110,7 @@ endif; ?>
             <label for="email">Your email</label>
             <input type="email" name="email" id="email" class="form-control">
           </div>
+        </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="phonenumber">Your phone Number</label>
@@ -127,7 +130,7 @@ endif; ?>
               </select>
             </div>
           </div>
-        </div>
+
 
           <div class="form-group">
             <label for="message">Place</label>
@@ -152,7 +155,7 @@ endif; ?>
             <label for="message">Your Message</label>
             <textarea type="text" name="message" id="message" class="form-control"></textarea>
           </div>
-          <input type="submit" value="Reserve now!">
+          <input type="submit" name = "submit" value="Reserve now!" class="revervation-button">
       </form>
     </div>
 </div>
