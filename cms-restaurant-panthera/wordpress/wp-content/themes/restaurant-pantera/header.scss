@@ -17,6 +17,17 @@ body {
 
     width:50%;
     margin-top:25px;
+    @media all and (max-width: 1007px) {
+        margin-top:0px;
+        margin-left:0px;
+        padding-left:0px;
+        font-size: 13px;
+        
+    }
+    @media all and (min-width: 641px) and (max-width: 1007px) {
+            margin-left:50px;
+            
+               }
 
     ul{ 
         
@@ -49,6 +60,11 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
     height: 40vw;
+
+    @media all and (max-width: 1007px) {
+        height: min-content;
+    }
+   
     
 }
 .menubar {
@@ -59,12 +75,20 @@ header {
 
 h1 {
     margin-top:25px!important;
+    @media all and (max-width: 640px) {
+        margin-top: 5px!important;
+        font-size: 1.2rem !important;
+    }
     a {
         text-decoration: none;
         color:white;
         font-family: $Poppins;
         text-transform: uppercase;
         margin-left:150px;
+        @media all and (max-width: 640px) {
+            margin-left:20px;
+        }
+
         font-weight: bolder;
         
         &:link{
@@ -84,6 +108,9 @@ h1 {
 color: white;
 font-size: 55px;
 margin-left: 165px;
+@media all and (max-width: 640px) {
+    margin-left:60px;
+}
 margin-top: 50px;
 display:flex;
 flex-direction: column;
@@ -92,8 +119,19 @@ width: 35%;
     text-transform: uppercase;
     font-size: 100px;
     font-weight: bolder;
-    
+    @media all and (max-width: 1007px) {
+        font-size: 20px;
+    }
 }
+@media all and (max-width: 1007px) {
+    margin-top: 0px;
+    width: 100%;
+
+}
+@media all and (max-width: 640px) {
+    font-size: 20px;
+}
+
 }
 .left-bars{
 margin-top: -75px;
@@ -121,6 +159,10 @@ a {
     &link {
         text-decoration: none;
     }
+    @media all and (max-width: 1007px) {
+        
+        margin-bottom:30px;
+    }
     
 }
 .white-bar{
@@ -130,6 +172,9 @@ a {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 165px;
+    @media all and (max-width: 640px) {
+        margin-left:20px;
+    }
 }
 }
 

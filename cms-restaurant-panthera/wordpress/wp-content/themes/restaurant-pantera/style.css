@@ -16,6 +16,19 @@ body {
   width: 50%;
   margin-top: 25px;
 }
+@media all and (max-width: 1007px) {
+  .menu {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 13px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 1007px) {
+  .menu {
+    margin-left: 50px;
+  }
+}
 .menu ul {
   display: flex;
   width: 100%;
@@ -43,6 +56,11 @@ header {
   background-size: 100%;
   height: 40vw;
 }
+@media all and (max-width: 1007px) {
+  header {
+    height: min-content;
+  }
+}
 
 .menubar {
   width: 100%;
@@ -51,6 +69,12 @@ header {
 h1 {
   margin-top: 25px !important;
 }
+@media all and (max-width: 640px) {
+  h1 {
+    margin-top: 5px !important;
+    font-size: 1.2rem !important;
+  }
+}
 h1 a {
   text-decoration: none;
   color: white;
@@ -58,6 +82,11 @@ h1 a {
   text-transform: uppercase;
   margin-left: 150px;
   font-weight: bolder;
+}
+@media all and (max-width: 640px) {
+  h1 a {
+    margin-left: 20px;
+  }
 }
 h1 a:link {
   text-decoration: none;
@@ -77,10 +106,31 @@ h1 a:hover {
   flex-direction: column;
   width: 35%;
 }
+@media all and (max-width: 640px) {
+  .first-title {
+    margin-left: 60px;
+  }
+}
 .first-title .upp {
   text-transform: uppercase;
   font-size: 100px;
   font-weight: bolder;
+}
+@media all and (max-width: 1007px) {
+  .first-title .upp {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 1007px) {
+  .first-title {
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+@media all and (max-width: 640px) {
+  .first-title {
+    font-size: 20px;
+  }
 }
 
 .left-bars {
@@ -111,6 +161,11 @@ h1 a:hover {
 .subtitle alink {
   text-decoration: none;
 }
+@media all and (max-width: 1007px) {
+  .subtitle a {
+    margin-bottom: 30px;
+  }
+}
 .subtitle .white-bar {
   height: 2px;
   width: 75px;
@@ -118,6 +173,11 @@ h1 a:hover {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 165px;
+}
+@media all and (max-width: 640px) {
+  .subtitle .white-bar {
+    margin-left: 20px;
+  }
 }
 
 .foods-cards {
@@ -741,7 +801,10 @@ h1 a:hover {
 }
 
 .menu-container {
-  padding: 5% 17% 11% 17%;
+  padding: 5% 18% 11% 18%;
+}
+.menu-container h5 {
+  overflow-wrap: break-word;
 }
 .menu-container .border-dark {
   border-width: 3px !important;

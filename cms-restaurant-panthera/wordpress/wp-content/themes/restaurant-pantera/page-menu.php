@@ -4,7 +4,7 @@ $bannerTop = get_field("banner_top");
 ?>
 <header style="background-image:url('<?=  $bannerTop['img']['url']; ?>');">
 <div class="navbar menubar">
-<h1><a href="<?php echo home_url( '/' ); ?>"><?php echo get_field("banner_top_main_title");?></a></h1>
+<h1><a href="<?php echo home_url( '/' ); ?>"><?php echo "PANTERA RESTAURANT" ?></a></h1>
 <div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div>
 </div>
 <div class="first-title">

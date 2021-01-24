@@ -6,7 +6,10 @@
 
 
     .menu-container {
-        padding: 5% 17% 11% 17%;
+        padding: 5% 18% 11% 18%;
+        h5 {
+            overflow-wrap: break-word;
+        }
 
         .border-dark {
             
@@ -37,15 +40,17 @@
 
        .menu-padding{
            padding: 10% 0 0 0;
+           
        }
 
     }
 
   /*TABLET AND SMARTPHONE*/
 @media all and (max-width: 1299px) {
+
     
     .menu-container{
-        padding:0;
+         padding:0;
        
     }
   
