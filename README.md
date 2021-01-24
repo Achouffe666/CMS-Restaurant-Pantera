@@ -1,5 +1,6 @@
 # CMS-Restaurant-Pantera
 
+http://team-pantera.byethost7.com/
 * Build your own theme for a CMS
 * Create a fancy client interface with custom fields
 * Follow a design 
