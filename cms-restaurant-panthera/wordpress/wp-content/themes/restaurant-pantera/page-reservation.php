@@ -18,8 +18,8 @@
 </div>
 
 </header>
-
-<div class="bg-white">
+<div class="test">
+<div class="bg-res">
 <div class="page-title">
   <h5><?php echo get_field("banner_presentation_title");?></h5>
   <h6><?php echo get_field("banner_presentation_subtitle");?></h6>
@@ -66,8 +66,8 @@ foreach ($repeater as $element){
 <?php 
  $r++;
 }?>
-
-<div class='col-lg-12 col-md-12 col-sm-12 map'>
+</div>
+<div class='map'>
   <h5><?php echo get_field("location_title");?></h5>
   <h6><?php echo get_field("location_subtitle");?></h6>
 
@@ -92,31 +92,31 @@ foreach ($repeater as $element){
 endif; ?>
 
 
-<div class="col-lg-12 col-md-12 col-sm-12 reservation">
+<div class="reservation">
   <h5><?php echo get_field("reservation_title");?></h5>
   <h6><?php echo get_field("reservation_subtitle");?></h6>
-  <div class='reservation-container'>
-  <img src="<?php echo get_field("reservation_image")['url']; ?>">
+  <div class=' row reservation-container'>
+  <img class="col-lg-7 col-md-12 col-sm-12 col-12 img-res" src="<?php echo get_field("reservation_image")['url']; ?>">
 
-    <div class='reservation-form'>
+    <div class=' col-lg-5 col-md-12 col-sm-12 col-12 reservation-form'>
       <form method = 'POST'>
       <input type="hidden" name="action" value="process_form">
         <div class="form-row">
-          <div class="form-group col-md-6 col-sm-12">
+          <div class="form-group col-lg-6 col-md-12 col-sm-12">
             <label for="name">Your Name</label>
             <input type="text" name="name" id="name" class="form-control">
           </div>
-          <div class="form-group col-md-6 col-sm-12">
+          <div class="form-group col-lg-6 col-md-12 col-sm-12">
             <label for="email">Your email</label>
             <input type="email" name="email" id="email" class="form-control">
           </div>
         </div>
           <div class="form-row">
-            <div class="form-group col-md-6 col-sm-12">
+            <div class="form-group col-lg-6 col-md-12 col-sm-12">
               <label for="phonenumber">Your phone Number</label>
               <input type="tel" phonenumber="phonenumber" id="phonenumber" class="form-control">
             </div>
-            <div class="form-group col-md-6 col-sm-12">
+            <div class="form-group col-md-6">
               <label for="table-number">Table for</label>
               <select name="table-number" id="table-number" class="form-control">
                 <option value="1">1 person</option>
@@ -160,6 +160,7 @@ endif; ?>
     </div>
 </div>
 </div>
-<?php include ("include-last-post.php"); ?>
-
+</div>
+<?php include("menuoverview.php"); ?>
+<?php include("include-last-post.php"); ?>
 <?php get_footer(); ?>

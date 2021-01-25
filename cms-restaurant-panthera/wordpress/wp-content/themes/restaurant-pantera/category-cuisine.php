@@ -3,7 +3,10 @@
 <header class="header-category">
 <div class="navbar menubar">
 <h1><a href="<?php echo home_url( '/' ); ?>">Pantera Restaurant</a></h1>
-<div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div>
+
+
+
+ <div class="menu"><?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?></div> 
 </div>
 <div class="first-title">
     <p>The Chef's selection</p>

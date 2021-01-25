@@ -15,13 +15,15 @@ body {
 .menu {
   width: 50%;
   margin-top: 25px;
+  flex-wrap: wrap;
 }
 @media all and (max-width: 1007px) {
   .menu {
     margin-top: 0px;
     margin-left: 0px;
     padding-left: 0px;
-    font-size: 13px;
+    font-size: 16px;
+    width: 80%;
   }
 }
 @media all and (min-width: 641px) and (max-width: 1007px) {
@@ -44,6 +46,10 @@ body {
 .menu ul a:link {
   text-decoration: none;
   color: white;
+}
+.menu ul a:hover {
+  background-color: white;
+  color: black !important;
 }
 .menu ul img {
   width: 15px;
@@ -100,7 +106,7 @@ h1 a:hover {
 .first-title {
   color: white;
   font-size: 55px;
-  margin-left: 165px;
+  margin-left: 10%;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -124,7 +130,7 @@ h1 a:hover {
 @media all and (max-width: 1007px) {
   .first-title {
     margin-top: 0px;
-    width: 100%;
+    width: auto;
   }
 }
 @media all and (max-width: 640px) {
@@ -664,8 +670,8 @@ h1 a:hover {
   padding-bottom: 1%;
 }
 
-.bg-white {
-  border-image: url("images/hachures-blanches-1.png") 30 fill/30px/30px;
+.bg-res {
+  border-image: url("images/hachures-grises-180.png") 30 fill/30px/30px;
   padding-top: 40px;
 }
 
@@ -685,31 +691,28 @@ h1 a:hover {
 }
 
 .presentations-cards {
-  border: black solid 1px;
+  border: #DEE2E6 solid 1px;
   margin-top: 2.5%;
   margin-left: 10% !important;
   margin-right: 10% !important;
-  height: 750px;
+  height: min-content;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .presentations-cards .presentation-cards-image {
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 .presentations-cards .presentation-cards-image img {
   width: 100%;
-  height: 100%;
+  height: min-content;
 }
 .presentations-cards .presentation-cards-text {
-  height: 100%;
+  height: min-content;
 }
 .presentations-cards .presentation-cards-text h5 {
   font-size: 50px;
-  margin-top: 5%;
 }
 .presentations-cards .presentation-cards-text h6 {
   font-size: 50px;
@@ -719,9 +722,9 @@ h1 a:hover {
 .presentations-cards .presentation-cards-text p {
   text-align: left;
   margin-top: 2.5%;
-  margin-left: 25%;
-  margin-right: 25%;
-  line-height: 55px;
+  margin-left: 15%;
+  margin-right: 15%;
+  line-height: 40px;
 }
 
 .map {
@@ -742,7 +745,7 @@ h1 a:hover {
 .map .google-map {
   height: 800px;
   width: 100%;
-  border: black solid 1px;
+  border: #DEE2E6 solid 1px;
   filter: grayscale(100%);
 }
 
@@ -750,7 +753,7 @@ h1 a:hover {
   margin-top: 5%;
   margin-bottom: 5%;
   width: 100%;
-  height: 800px;
+  height: min-content;
 }
 .reservation h5 {
   text-align: center;
@@ -764,22 +767,24 @@ h1 a:hover {
 }
 .reservation .reservation-container {
   margin-top: 5%;
-  padding-bottom: 5%;
-  height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
 }
 .reservation .reservation-container img {
-  transform: translateX(12%);
-  height: 125%;
+  height: auto;
   width: 40%;
 }
+@media all and (min-width: 960px) {
+  .reservation .reservation-container img {
+    transform: translateX(12%);
+  }
+}
 .reservation .reservation-container .reservation-form {
+  margin-top: 2%;
+  margin-bottom: 2%;
   text-align: left;
   position: relative;
   z-index: 1;
-  margin-right: 5%;
   padding: 2%;
   width: 25%;
   background-color: #F5F5F5;
